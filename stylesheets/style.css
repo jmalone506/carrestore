@@ -89,10 +89,7 @@ footer {
 }
 
 
-.rounded {
-  border-radius: 0.25rem !important;
-  color: black;
-}
+
 
 .bg-custom {
   background-color: white;
@@ -275,6 +272,8 @@ h4 {
 .nav-item, .input-group {
   display: inline-block;
   color: white;
+  font-family: "Avantgarde", sans-serif;
+  font-size: 25px;
 }
 
 .img-fluid {
@@ -286,11 +285,18 @@ h4 {
   max-width: 100%;
   text-align: center;
   color: white;
+  display: inline-block;
+}
+
+.footerIcons, .footerText {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 50px 20px 0px;
 }
 
 hr.rounded {
   border-top: 0.5px solid black;
-  border-radius: 1px;
+  border-radius: 0.5px;
 }
 
 
