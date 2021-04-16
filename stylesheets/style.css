@@ -42,6 +42,7 @@ h4 {
 .nav {
   width: 400px;
   display: block;
+  padding-top: 2%;
 }
 .one {
   width: 30px;
@@ -75,10 +76,7 @@ h4 {
   font-size: 25px;
 }
 
-.img-fluid {
-  width: 537.8px;
-  height: 300px;
-}
+
 
 #footerContainer {
   max-width: 100%;
@@ -91,20 +89,110 @@ h4 {
 .footerText {
   display: inline-block;
   text-align: center;
-  margin: 20px 20px 20px 20px;
+  padding: 2% 2% 2% 2%;
 }
 
 hr.rounded {
   border-top: 0.5px solid black;
   border-radius: 0.5px;
 }
-/* 
-.carousel-item {
-  height: 500px;
-  width: 800px;
-  margin: 20px 20px 20px 20px
-} */
 
-.carouselContainer {
+.carouselContainer, .container, .mainContainer {
   margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: white;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+    color: white;
+}
+
+input[type="number"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+    color: white;
+}
+
+input[type="number"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+    color: white;
+}
+
+.form-control, label {
+  font-size: 25px;
+}
+
+.form-group {
+  padding: 2%;
+}
+
+.form-inline {
+  margin-right: auto;
+}
+
+.submitBtn {
+text-align: center;
+margin-top: 20px;
+font-size: 20px;
+}
+
+.btn {
+font-size: 25px;
+text-align: center;
+  width: 100px;
+  height: 55px;
+}
+
+.login {
+  font-size: 40px;
+  color: aliceblue;
+  text-align: left;
+}
+
+#loginHeader {
+  color:white; 
+  font-family:sans-serif; 
+  font-size: 50px;
+}
+
+#loginFooter, #text {
+  color:white; 
+  font-family:sans-serif; 
+  font-size: 25px;
+}
+
+#textHeader{
+  font-size: 60px;
+  color:purple; 
+  font-family:cursive; 
+  text-align:left;
+}
+
+#text {
+  text-align: left;
+}
+
+.area{
+  background-color: yellow;
 }
