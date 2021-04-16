@@ -76,8 +76,6 @@ h4 {
   font-size: 25px;
 }
 
-
-
 #footerContainer {
   max-width: 100%;
   text-align: center;
@@ -97,9 +95,8 @@ hr.rounded {
   border-radius: 0.5px;
 }
 
-.carouselContainer, .container, .mainContainer {
+.carouselContainer, .container, .mainContainer, #signup-form, #login-form {
   margin: auto;
-  align-items: center;
   text-align: center;
 }
 
@@ -118,7 +115,7 @@ input[type="text"]:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-    color: white;
+  color: white;
 }
 
 input[type="number"],
@@ -129,17 +126,18 @@ select.form-control {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
-    color: white;
+  color: white;
 }
 
 input[type="number"]:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-    color: white;
+  color: white;
 }
 
-.form-control, label {
+.form-control,
+label {
   font-size: 25px;
 }
 
@@ -151,48 +149,53 @@ select.form-control:focus {
   margin-right: auto;
 }
 
-.submitBtn {
-text-align: center;
-margin-top: 20px;
-font-size: 20px;
+.submitBtn,
+.signupBtn {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .btn {
-font-size: 25px;
-text-align: center;
-  width: 100px;
+  font-size: 25px;
+  text-align: center;
+  width: 200px;
   height: 55px;
+  background-color: black;
+  color: aliceblue;
 }
 
-.login {
+.login,
+.signup {
   font-size: 40px;
   color: aliceblue;
   text-align: left;
 }
 
 #loginHeader {
-  color:white; 
-  font-family:sans-serif; 
+  color: white;
+  font-family: sans-serif;
   font-size: 50px;
 }
 
-#loginFooter, #text {
-  color:white; 
-  font-family:sans-serif; 
+#loginFooter,
+#text {
+  color: white;
+  font-family: sans-serif;
   font-size: 25px;
 }
 
-#textHeader{
+#textHeader {
   font-size: 60px;
-  color:purple; 
-  font-family:cursive; 
-  text-align:left;
+  color: purple;
+  font-family: cursive;
+  text-align: left;
 }
 
 #text {
   text-align: left;
 }
 
-.area{
+.area {
   background-color: yellow;
 }
