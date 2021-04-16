@@ -10,9 +10,6 @@ function Cars() {
   // Setting our component's initial state
   const [cars, setCars] = useState([])
   const [formObject, setFormObject] = useState({
-    model: "",
-    make: "",
-    year: ""
   })
 
   // Load all books and store them with setBooks
@@ -22,7 +19,7 @@ function Cars() {
 
   // Loads all books and sets them to books
   function loadCars() {
-    API.getBooks()
+    API.getCars()
       .then(res => 
         setCars(res.data)
       )
@@ -47,7 +44,7 @@ function Cars() {
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.title && formObject.author) {
-      API.saveBook({
+      API.saveCar({
         model: formObject.model,
         make: formObject.make,
         year: formObject.year
@@ -89,7 +86,7 @@ function Cars() {
                 value={formObject.year}
               />
               <FormBtn
-                disabled={!(formObject.model && formObject.make)}
+                // disabled={!(formObject.model && formObject.make)}
                 onClick={handleFormSubmit}
               >
                 Submit car
@@ -107,7 +104,7 @@ function Cars() {
                     <ListItem key={car._id}>
                       <a href={"/cars/" + car._id}>
                         <strong>
-                          {car.model} by {book.make}
+                          {car.model} by {car.make}
                         </strong>
                       </a>
                       <DeleteBtn onClick={() => deleteCar(car._id)} />
