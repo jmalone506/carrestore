@@ -93,12 +93,14 @@ h4 {
 hr.rounded {
   border-top: 0.5px solid black;
   border-radius: 0.5px;
+  margin: 3ch 3ch 3ch 3ch;
 }
 
-.carouselContainer, .container, .mainContainer, #signup-form, #login-form {
+.carouselContainer, .container, .mainContainer, #signup-form, .login-form, .buyACarContainer {
   margin: auto;
   text-align: center;
 }
+
 
 input[type="text"],
 select.form-control {
@@ -185,7 +187,7 @@ label {
   font-size: 25px;
 }
 
-#textHeader {
+#textHeader, #buyACarHeader {
   font-size: 60px;
   color: purple;
   font-family: cursive;
