@@ -96,7 +96,7 @@ hr.rounded {
   margin: 3ch 3ch 3ch 3ch;
 }
 
-.carouselContainer, .container, .mainContainer, #signup-form, .login-form, .buyACarContainer {
+.carouselContainer, .container, .mainContainer, .signupForm, .login-form, .buyACarContainer, .questionsContainer {
   margin: auto;
   text-align: center;
 }
@@ -169,7 +169,7 @@ label {
 
 .login,
 .signup {
-  font-size: 40px;
+  font-size: 30px;
   color: aliceblue;
   text-align: left;
 }
@@ -177,18 +177,18 @@ label {
 #loginHeader {
   color: white;
   font-family: sans-serif;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 #loginFooter,
 #text {
   color: white;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #textHeader, #buyACarHeader {
-  font-size: 60px;
+  font-size: 45px;
   color: purple;
   font-family: cursive;
   text-align: left;
@@ -200,4 +200,11 @@ label {
 
 .area {
   background-color: yellow;
+}
+
+.questionsContainer{
+  color: white;
+  font-family: sans-serif;
+  font-size: 28px;
+  padding: 2% 2%;
 }
