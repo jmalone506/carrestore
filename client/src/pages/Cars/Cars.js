@@ -6,33 +6,33 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 
-function Books() {
+function Cars() {
   // Setting our component's initial state
-  const [books, setBooks] = useState([])
+  const [cars, setCars] = useState([])
   const [formObject, setFormObject] = useState({
-    title: "",
-    author: "",
-    synopsis: ""
+    model: "",
+    make: "",
+    year: ""
   })
 
   // Load all books and store them with setBooks
   useEffect(() => {
-    loadBooks()
+    loadCars()
   }, [])
 
   // Loads all books and sets them to books
-  function loadBooks() {
+  function loadCars() {
     API.getBooks()
       .then(res => 
-        setBooks(res.data)
+        setCars(res.data)
       )
       .catch(err => console.log(err));
   };
 
   // Deletes a book from the database with a given id, then reloads books from the db
-  function deleteBook(id) {
-    API.deleteBook(id)
-      .then(res => loadBooks())
+  function deleteCar(id) {
+    API.deleteCar(id)
+      .then(res => loadCars())
       .catch(err => console.log(err));
   }
 
@@ -48,16 +48,16 @@ function Books() {
     event.preventDefault();
     if (formObject.title && formObject.author) {
       API.saveBook({
-        title: formObject.title,
-        author: formObject.author,
-        synopsis: formObject.synopsis
+        model: formObject.model,
+        make: formObject.make,
+        year: formObject.year
       })
         .then(() => setFormObject({
-          title: "",
-          author: "",
-          synopsis: ""
+          model: "",
+          make: "",
+          year: ""
         }))
-        .then(() => loadBooks())
+        .then(() => loadCars())
         .catch(err => console.log(err));
     }
   };
@@ -67,50 +67,50 @@ function Books() {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>What car?</h1>
             </Jumbotron>
             <form>
               <Input
                 onChange={handleInputChange}
-                name="title"
-                placeholder="Title (required)"
-                value={formObject.title}
+                name="model"
+                placeholder="model(required)"
+                value={formObject.model}
               />
               <Input
                 onChange={handleInputChange}
-                name="author"
-                placeholder="Author (required)"
-                value={formObject.author}
+                name="make"
+                placeholder="make (required)"
+                value={formObject.make}
               />
               <TextArea
                 onChange={handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
-                value={formObject.synopsis}
+                name="year"
+                placeholder="year (Optional)"
+                value={formObject.year}
               />
               <FormBtn
-                disabled={!(formObject.author && formObject.title)}
+                disabled={!(formObject.model && formObject.make)}
                 onClick={handleFormSubmit}
               >
-                Submit Book
+                Submit car
               </FormBtn>
             </form>
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Books On My List</h1>
+              <h1>cars On My List</h1>
             </Jumbotron>
-            {books.length ? (
+            {cars.length ? (
               <List>
-                {books.map(book => {
+                {cars.map(car => {
                   return (
-                    <ListItem key={book._id}>
-                      <a href={"/books/" + book._id}>
+                    <ListItem key={car._id}>
+                      <a href={"/cars/" + car._id}>
                         <strong>
-                          {book.title} by {book.author}
+                          {car.model} by {book.make}
                         </strong>
                       </a>
-                      <DeleteBtn onClick={() => deleteBook(book._id)} />
+                      <DeleteBtn onClick={() => deleteCar(car._id)} />
                     </ListItem>
                   );
                 })}
@@ -125,4 +125,4 @@ function Books() {
   }
 
 
-export default Books;
+export default Cars;
