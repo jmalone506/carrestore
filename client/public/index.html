@@ -9,29 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <html lang="en">
-        <head>
-          <meta name="google-signin-scope" content="profile email">
-          <meta name="google-signin-client_id" content="518771907465-9mn91uss4quc2ha1p04v38h8s7jalh85.apps.googleusercontent.com">
-          <script src="https://apis.google.com/js/platform.js" async defer></script>
-        </head>
-        <body>
-          <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-          <script>
-            function onSignIn(googleUser) {
-              // Useful data for your client-side scripts:
-              var profile = googleUser.getBasicProfile();
-              console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-              console.log('Full Name: ' + profile.getName());
-              console.log('Given Name: ' + profile.getGivenName());
-              console.log('Family Name: ' + profile.getFamilyName());
-              console.log("Image URL: " + profile.getImageUrl());
-              console.log("Email: " + profile.getEmail());
-              // The ID token you need to pass to your backend:
-              var id_token = googleUser.getAuthResponse().id_token;
-              console.log("ID Token: " + id_token);
-            }
-          </script>
+  
         </body>
       </html>
 <!-- add bootstrap -->
@@ -69,7 +47,8 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
+    <script src="https://apis.google.com/js/platform.js?onload=onGapiLoaded" ></script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
