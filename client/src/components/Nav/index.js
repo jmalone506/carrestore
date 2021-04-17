@@ -1,23 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import logo from "../../assets/images/logo.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 function Nav() {
   return (
-//     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-//       <a className="navbar-brand" href="/">
-//         React Reading List
-//       </a>
-//     </nav>
-//   );
-// }
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
-        Car Hacks
-      </Link>
-      <div>
-        <ul className="navbar-nav">
+
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo.."></img></a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <FontAwesomeIcon icon={faBars} style={{ color: '#fff' }} />
+        </button>
+        
+        
+          
+    
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <Link
               to="/"
@@ -30,23 +33,56 @@ function Nav() {
               Home
             </Link>
           </li>
-          <li className="nav-item">
+            <li className="nav-item">
             <Link
-              to="/discover"
-              className={window.location.pathname === "/signup" ? "nav-link active" : "nav-link"}
+                to="/buying"
+              className={window.location.pathname === "/buying" ? "nav-link active" : "nav-link"}
             >
-              Sign Up
+              Buying
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/search"
+              to="/selling"
               className={window.location.pathname === "/selling" ? "nav-link active" : "nav-link"}
             >
               Selling
             </Link>
           </li>
+            <li className="nav-item">
+              <Link
+                to="/maintenance"
+                className={window.location.pathname === "/maintenance" ? "nav-link active" : "nav-link"}
+              >
+                Maintenance
+            </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/accessorize"
+                className={window.location.pathname === "/accessorize" ? "nav-link active" : "nav-link"}
+              >
+                Accessorize
+            </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/forum"
+                className={window.location.pathname === "/forum" ? "nav-link active" : "nav-link"}
+              >
+                Forum
+            </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/history"
+                className={window.location.pathname === "/history" ? "nav-link active" : "nav-link"}
+              >
+                Search History
+            </Link>
+            </li>
         </ul>
+        </div>
       </div>
     </nav>
   );

@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Background from "../../assets/images/Background-1.jpg"
-
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-
 import { Input, TextArea, FormBtn } from "../../components/Form";
 
-function Cars() {
+function Home() {
   // Setting our component's initial state
   const [cars, setCars] = useState([])
   const [formObject, setFormObject] = useState({
@@ -27,13 +25,7 @@ function Cars() {
       .catch(err => console.log(err));
   };
 
-  // Deletes a book from the database with a given id, then reloads books from the db
-  function deleteCar(id) {
-    API.deleteCar(id)
-      .then(res => loadCars())
-      .catch(err => console.log(err));
-  }
-
+  
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -88,26 +80,23 @@ function Cars() {
           <form>
             <Input
               onChange={handleInputChange}
-              name="model"
+              name="name"
               placeholder="email"
               value={formObject.model}
             />
             <Input
               onChange={handleInputChange}
-              name="make"
+              name="password"
               placeholder="password"
               value={formObject.make}
             />
             <Input
               onChange={handleInputChange}
-              name="make"
+              name="experience"
               placeholder="Car experience"
               value={formObject.make}
             />
-            <select value={this.state.gender} onChange={this.handleSubmit}>
-              <option name="male"> Male</option>
-              <option name="female">Female</option>
-            </select>
+
             <FormBtn
               // disabled={!(formObject.model && formObject.make)}
               onClick={handleFormSubmit}
@@ -123,4 +112,4 @@ function Cars() {
 }
 
 
-export default Cars;
+export default Home;
