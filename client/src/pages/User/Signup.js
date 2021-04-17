@@ -4,6 +4,8 @@ import Background from "../../assets/images/Background-1.jpg"
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import Type from "./Type"
+import ReactDOM from "react-dom";
 
 function SignUp() {
     // Setting our component's initial state
@@ -97,6 +99,7 @@ function SignUp() {
                             value={formObject.make}
                         />
 
+< Type />
                         <FormBtn
                             disabled={!(formObject.model && formObject.make)}
                             onClick={handleFormSubmit}

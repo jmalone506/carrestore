@@ -5,6 +5,8 @@ import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 
+
+
 function Home() {
   // Setting our component's initial state
   const [cars, setCars] = useState([])
@@ -70,6 +72,7 @@ function Home() {
         <Col size="md-8">
           <Jumbotron>
             <h1>About Car Hacks</h1>
+           
           </Jumbotron>
 
         </Col>
@@ -81,22 +84,21 @@ function Home() {
             <Input
               onChange={handleInputChange}
               name="name"
-              placeholder="email"
+              placeholder="Add Your Email"
               value={formObject.model}
             />
             <Input
               onChange={handleInputChange}
               name="password"
-              placeholder="password"
+              placeholder="Create A Password"
               value={formObject.make}
             />
-            <Input
-              onChange={handleInputChange}
-              name="experience"
-              placeholder="Car experience"
-              value={formObject.make}
-            />
-
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>What's your level of Car Experience?</option>
+              <option value="1">Beginner</option>
+              <option value="2">Intermediate</option>
+              <option value="3">Expert</option>
+            </select>
             <FormBtn
               // disabled={!(formObject.model && formObject.make)}
               onClick={handleFormSubmit}
@@ -104,6 +106,26 @@ function Home() {
               Sign Up
               </FormBtn>
           </form>
+
+        </Col>
+      </Row>
+
+      <Row>
+        <Col size="md-8">
+          <Jumbotron>
+            <h1></h1>
+
+          </Jumbotron>
+
+        </Col>
+        <Col size="md-4 sm-12">
+          <Jumbotron>
+            <h1></h1>
+          </Jumbotron>
+     
+          
+
+      
 
         </Col>
       </Row>
