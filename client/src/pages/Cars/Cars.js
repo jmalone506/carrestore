@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Jumbotron from "../../components/Jumbotron";
-import DeleteBtn from "../../components/DeleteBtn";
+
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import { List, ListItem } from "../../components/List";
+
 import { Input, TextArea, FormBtn } from "../../components/Form";
 
 function Cars() {
@@ -62,7 +62,7 @@ function Cars() {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-8">
             <Jumbotron>
               <h1>What car?</h1>
             </Jumbotron>
@@ -93,28 +93,37 @@ function Cars() {
               </FormBtn>
             </form>
           </Col>
-          <Col size="md-6 sm-12">
+          <Col size="md-4 sm-12">
             <Jumbotron>
-              <h1>cars On My List</h1>
+              <h1>Sign Up</h1>
             </Jumbotron>
-            {cars.length ? (
-              <List>
-                {cars.map(car => {
-                  return (
-                    <ListItem key={car._id}>
-                      <a href={"/cars/" + car._id}>
-                        <strong>
-                          {car.model} by {car.make}
-                        </strong>
-                      </a>
-                      <DeleteBtn onClick={() => deleteCar(car._id)} />
-                    </ListItem>
-                  );
-                })}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
+            <form>
+              <Input
+                onChange={handleInputChange}
+                name="model"
+                placeholder="email"
+                value={formObject.model}
+              />
+              <Input
+                onChange={handleInputChange}
+                name="make"
+                placeholder="password"
+                value={formObject.make}
+              />
+              <TextArea
+                onChange={handleInputChange}
+                name="year"
+                placeholder="year (Optional)"
+                value={formObject.year}
+              />
+              <FormBtn
+                // disabled={!(formObject.model && formObject.make)}
+                onClick={handleFormSubmit}
+              >
+                Sign Up
+              </FormBtn>
+            </form>
+   
           </Col>
         </Row>
       </Container>
