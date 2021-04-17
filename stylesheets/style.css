@@ -74,6 +74,7 @@ h4 {
   color: white;
   font-family: "Avantgarde", sans-serif;
   font-size: 25px;
+  cursor: pointer;
 }
 
 #footerContainer {
@@ -88,6 +89,14 @@ h4 {
   display: inline-block;
   text-align: center;
   padding: 2% 2% 2% 2%;
+}
+
+.footerIcons {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 350px;
+  bottom: 100px;
+  cursor: pointer;
 }
 
 hr.rounded {
@@ -163,8 +172,12 @@ label {
   text-align: center;
   width: 200px;
   height: 55px;
-  background-color: black;
+  background: linear-gradient(45deg, black, gray);
   color: aliceblue;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  border-radius: 8%;
 }
 
 .login,
@@ -172,6 +185,7 @@ label {
   font-size: 30px;
   color: aliceblue;
   text-align: left;
+
 }
 
 #loginHeader {
@@ -189,9 +203,9 @@ label {
 
 #textHeader, #buyACarHeader {
   font-size: 45px;
-  color: purple;
+  color: black;
   font-family: cursive;
-  text-align: left;
+  text-align: center;
 }
 
 #text {
@@ -199,7 +213,9 @@ label {
 }
 
 .area {
-  background-color: yellow;
+  background: linear-gradient(45deg, white, gray);
+  color: aliceblue;
+  border-radius: 2%;
 }
 
 .questionsContainer{
