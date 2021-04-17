@@ -95,7 +95,7 @@ h4 {
   transform: rotate(-90deg);
   position: absolute;
   left: 350px;
-  bottom: 100px;
+  bottom: -100px;
   cursor: pointer;
 }
 
@@ -185,7 +185,6 @@ label {
   font-size: 30px;
   color: aliceblue;
   text-align: left;
-
 }
 
 #loginHeader {
@@ -216,6 +215,7 @@ label {
   background: linear-gradient(45deg, white, gray);
   color: aliceblue;
   border-radius: 2%;
+  padding: 5px 5px;
 }
 
 .questionsContainer{
