@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Jumbotron from "../../components/Jumbotron";
+import Background from "../../assets/images/Background-1.jpg"
 
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
@@ -61,6 +62,8 @@ function Cars() {
 
     return (
       <Container fluid>
+        <div styles={{ backgroundImage: `url(${Background})` }}>
+        </div>
         <Row>
           <Col size="md-8">
             <Jumbotron>
