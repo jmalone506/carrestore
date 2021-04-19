@@ -83,7 +83,13 @@ function Home() {
           <form>
             <Input
               onChange={handleInputChange}
-              name="name"
+              name="fullName"
+              placeholder="Add Your Full Name"
+              value={formObject.model}
+            />
+            <Input
+              onChange={handleInputChange}
+              name="email"
               placeholder="Add Your Email"
               value={formObject.model}
             />
