@@ -1,3 +1,4 @@
 module.exports = {
-    Car: require("./Cars")
+    Car: require("./Cars"),
+    SignUp: require("./SignUp")
 };

@@ -69,10 +69,16 @@ function SignUp() {
 
 
             <Row>
-                <Col size="md-8">
+                <Col size="md-4 p-3">
                     <Jumbotron>
                         <h1>About Car Hacks</h1>
                     </Jumbotron>
+
+                </Col>
+                <Col size="md-4">
+                    <Jumbotron>
+                    <h1>About Car Hacks</h1>
+                </Jumbotron>
 
                 </Col>
                 <Col size="md-4 sm-12">
@@ -82,32 +88,35 @@ function SignUp() {
                     <form>
                         <Input
                             onChange={handleInputChange}
-                            name="name"
-                            placeholder="email"
+                            name="fullName"
+                            placeholder="Add Your Full Name"
+                            value={formObject.model}
+                        />
+                        <Input
+                            onChange={handleInputChange}
+                            name="email"
+                            placeholder="Add Your Email"
                             value={formObject.model}
                         />
                         <Input
                             onChange={handleInputChange}
                             name="password"
-                            placeholder="password"
+                            placeholder="Create A Password"
                             value={formObject.make}
                         />
-                        <Input
-                            onChange={handleInputChange}
-                            name="experience"
-                            placeholder="Car experience"
-                            value={formObject.make}
-                        />
-
-< Type />
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>What's your level of Car Experience?</option>
+                            <option value="1">Beginner</option>
+                            <option value="2">Intermediate</option>
+                            <option value="3">Expert</option>
+                        </select>
                         <FormBtn
-                            disabled={!(formObject.model && formObject.make)}
+                            // disabled={!(formObject.model && formObject.make)}
                             onClick={handleFormSubmit}
                         >
                             Sign Up
               </FormBtn>
                     </form>
-
                 </Col>
             </Row>
         </Container>

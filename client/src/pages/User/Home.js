@@ -4,7 +4,7 @@ import Background from "../../assets/images/Background-1.jpg"
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-
+import Button from "../../components/Button"
 
 
 function Home() {
@@ -58,7 +58,7 @@ function Home() {
     <Container fluid>
       <div styles={{ backgroundImage: `url(${Background})` }}>
       </div>
-
+  
       <Row>
         <Col size="md-12">
           <Jumbotron>
@@ -77,41 +77,7 @@ function Home() {
 
         </Col>
         <Col size="md-4 sm-12">
-          <Jumbotron>
-            <h1>Sign Up</h1>
-          </Jumbotron>
-          <form>
-            <Input
-              onChange={handleInputChange}
-              name="fullName"
-              placeholder="Add Your Full Name"
-              value={formObject.model}
-            />
-            <Input
-              onChange={handleInputChange}
-              name="email"
-              placeholder="Add Your Email"
-              value={formObject.model}
-            />
-            <Input
-              onChange={handleInputChange}
-              name="password"
-              placeholder="Create A Password"
-              value={formObject.make}
-            />
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-              <option selected>What's your level of Car Experience?</option>
-              <option value="1">Beginner</option>
-              <option value="2">Intermediate</option>
-              <option value="3">Expert</option>
-            </select>
-            <FormBtn
-              // disabled={!(formObject.model && formObject.make)}
-              onClick={handleFormSubmit}
-            >
-              Sign Up
-              </FormBtn>
-          </form>
+          
 
         </Col>
       </Row>

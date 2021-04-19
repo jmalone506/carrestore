@@ -32,6 +32,7 @@ nav a.nav-link {
 .navbar-nav > li > a {
   margin-right: 0.20rem;
   margin-left: 0.20rem;
+  height: 6rem;
   color: var(--primary-white) !important;
   border-top: 0.1875rem solid var(--primary-dark)
 }
@@ -54,4 +55,13 @@ nav a.nav-link {
   max-width: 100%;
   font-size: larger;
 
+}
+
+.header {
+  color: var(--primary-white);
+  font-weight: 400;
+}
+
+.nav-item {
+  padding-top: 4.5rem;
 }
