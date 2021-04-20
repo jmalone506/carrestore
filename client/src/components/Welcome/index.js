@@ -15,7 +15,7 @@ function Welcome() {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 
-      <a class="navbar-brand d-lg-none" href="#"><img className="logo" src={pic} alt="logo.."></img></a>
+      <a class="navbar-brand d-lg-none" href="#"></a>
       <a className="navbar-brand" href="/"></a>
 
 
@@ -27,32 +27,23 @@ function Welcome() {
       <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
 
         <ul class="navbar-nav">
+        
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Login</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
+
         </ul>
 
 
-    <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a>
+        <a class="navbar-brand d-none d-lg-block" href="#"><img className="logo" src={pic} alt="logo.."></img></a>
 
 
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Signup</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
+
         </ul>
       </div>
     </nav>
