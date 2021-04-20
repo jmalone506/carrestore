@@ -1,22 +1,28 @@
 const mongoose = require("mongoose")
 
-const signUpTemplate = new mongoose.Schema({
-    fullName:{
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    password:{
-        type: String,
-        required: true
-    },
-    date:{
-        type:Date,
-        default:Date.now
-    }
-})
 
-module.exports = mongoose.model("carsdb", signUpTemplate)
+const userSchema = mongoose.Schema({
+    name:{ 
+        type: String
+    },
+    email: { 
+        type: String
+    },
+    password: { 
+        type: String
+    },
+    id: { 
+        type: String 
+    },
+});
+
+userSchema.methods.generateHash = function(password){
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+};
+
+userSchema.methods.validPassword = function (password) {
+    return bcrypt.compareSync(password, this.password);
+};
+
+
+export default mongoose.model("User", userSchema);

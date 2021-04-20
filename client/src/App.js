@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/User/Home.js";
 import Wrapper from "./components/Wrapper";
-import Navbar from "./components/Navbar";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
     <div>
       <Router>
       
-        <Navbar />
+
         <Wrapper>
           <Route exact path="/" component={Home} />
 

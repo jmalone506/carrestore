@@ -5,64 +5,18 @@ import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Button from "../../components/Button"
-
+import Welcome from "../../components/Welcome"
 
 function Home() {
-  // Setting our component's initial state
-  const [cars, setCars] = useState([])
-  const [formObject, setFormObject] = useState({
-  })
 
-  // Load all books and store them with setBooks
-  useEffect(() => {
-    loadCars()
-  }, [])
-
-  // Loads all books and sets them to books
-  function loadCars() {
-    API.getCars()
-      .then(res =>
-        setCars(res.data)
-      )
-      .catch(err => console.log(err));
-  };
-
-  
-  // Handles updating component state when the user types into the input field
-  function handleInputChange(event) {
-    const { name, value } = event.target;
-    setFormObject({ ...formObject, [name]: value })
-  };
-
-  // When the form is submitted, use the API.saveBook method to save the book data
-  // Then reload books from the database
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    if (formObject.title && formObject.author) {
-      API.saveCar({
-        model: formObject.model,
-        make: formObject.make,
-        year: formObject.year
-      })
-        .then(() => setFormObject({
-          model: "",
-          make: "",
-          year: ""
-        }))
-        .then(() => loadCars())
-        .catch(err => console.log(err));
-    }
-  };
 
   return (
     <Container fluid>
-      
-  
-
-
-
-
-
+      <Row>
+        <Col size="lg-12">
+      <Welcome />
+        </Col>
+      </Row>
       <Row>
         <Col size="md-12">
           <Jumbotron>
