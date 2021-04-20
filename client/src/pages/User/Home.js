@@ -56,9 +56,13 @@ function Home() {
 
   return (
     <Container fluid>
-      <div styles={{ backgroundImage: `url(${Background})` }}>
-      </div>
+      
   
+
+
+
+
+
       <Row>
         <Col size="md-12">
           <Jumbotron>
