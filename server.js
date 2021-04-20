@@ -1,10 +1,11 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const mongoose = require("mongoose");
 const routes = require("./routes");
 
 const PORT = process.env.PORT || 3001;
-const cors = require("cors")
+
 
 // Connect to the Mongo DB
 mongoose.connect(
@@ -22,7 +23,6 @@ if (process.env.NODE_ENV === "production") {
 
 // Add routes, both API and view
 app.use("/home", routes);
-
 
 
 // Start the API server
