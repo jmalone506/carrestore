@@ -4,8 +4,10 @@ import Background from "../../assets/images/Background-1.jpg"
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-import Type from "./Type"
 import ReactDOM from "react-dom";
+// import { GoogleLogin } from 'react-google-login';
+import GoogleBtn from "../../components/GoogleBtn/"
+import Welcome from "../../components/Welcome"
 
 function SignUp() {
     // Setting our component's initial state
@@ -56,9 +58,7 @@ function SignUp() {
 
     return (
         <Container fluid>
-            <div styles={{ backgroundImage: `url(${Background})` }}>
-            </div>
-
+            <Welcome></Welcome>
             <Row>
                 <Col size="md-12">
                     <Jumbotron>
@@ -69,47 +69,39 @@ function SignUp() {
 
 
             <Row>
-                <Col size="md-4 p-3">
-                    <Jumbotron>
-                        <h1>About Car Hacks</h1>
-                    </Jumbotron>
+                <Col size="md-3 p-3">
 
                 </Col>
-                <Col size="md-4">
-                    <Jumbotron>
-                    <h1>About Car Hacks</h1>
-                </Jumbotron>
-
-                </Col>
-                <Col size="md-4 sm-12">
-                    <Jumbotron>
+              
+                <Col size="md-6 sm-12">
+              
                         <h1>Sign Up</h1>
-                    </Jumbotron>
+                        <br></br>
+                    <GoogleBtn>Sign Up Through Google</GoogleBtn>
+                    <br></br>
+                    <p>or</p>
                     <form>
                         <Input
                             onChange={handleInputChange}
-                            name="fullName"
+                            name="name"
                             placeholder="Add Your Full Name"
-                            value={formObject.model}
+                            value={formObject.name}
                         />
                         <Input
                             onChange={handleInputChange}
                             name="email"
                             placeholder="Add Your Email"
-                            value={formObject.model}
+                            value={formObject.email}
                         />
                         <Input
                             onChange={handleInputChange}
                             name="password"
                             placeholder="Create A Password"
-                            value={formObject.make}
+                            value={formObject.password}
                         />
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                            <option selected>What's your level of Car Experience?</option>
-                            <option value="1">Beginner</option>
-                            <option value="2">Intermediate</option>
-                            <option value="3">Expert</option>
-                        </select>
+                       
+                        
+
                         <FormBtn
                             // disabled={!(formObject.model && formObject.make)}
                             onClick={handleFormSubmit}
@@ -117,6 +109,11 @@ function SignUp() {
                             Sign Up
               </FormBtn>
                     </form>
+                    
+                </Col>
+                <Col size="md-3">
+                    
+
                 </Col>
             </Row>
         </Container>

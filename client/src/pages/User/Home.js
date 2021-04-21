@@ -7,6 +7,7 @@ import { Input, TextArea, FormBtn } from "../../components/Form";
 import Button from "../../components/Button"
 import Welcome from "../../components/Welcome"
 
+
 function Home() {
 
 
@@ -17,10 +18,11 @@ function Home() {
       <Welcome />
         </Col>
       </Row>
+      
       <Row>
         <Col size="md-12">
           <Jumbotron>
-            <h1>Image</h1>
+            <h1>Image Carousel</h1>
           </Jumbotron>
         </Col>
       </Row>
@@ -30,14 +32,15 @@ function Home() {
         <Col size="md-8">
           <Jumbotron>
             <h1>About Car Hacks</h1>
-           
+
           </Jumbotron>
 
         </Col>
         <Col size="md-4 sm-12">
-          
+
 
         </Col>
+
       </Row>
 
       <Row>

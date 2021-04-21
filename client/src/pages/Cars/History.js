@@ -8,7 +8,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Navbar from "../../components/Navbar";
 
-function Selling() {
+function History() {
 
 
     return (
@@ -17,7 +17,7 @@ function Selling() {
             <Navbar></Navbar>
             <Row>
                 <Col size="md-12">
-                    <h1>Selling </h1>
+                    <h1>Your Recent Searches </h1>
                     <Jumbotron>
                         <h1>Image</h1>
                     </Jumbotron>
@@ -41,4 +41,4 @@ function Selling() {
 }
 
 
-export default Selling;
+export default History;

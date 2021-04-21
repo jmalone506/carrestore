@@ -6,67 +6,18 @@ import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import Navbar from "../../components/Navbar";
 
 function Cars() {
-  // Setting our component's initial state
-  const [cars, setCars] = useState([])
-  const [formObject, setFormObject] = useState({
-  })
 
-  // Load all books and store them with setBooks
-  useEffect(() => {
-    loadCars()
-  }, [])
-
-  // Loads all books and sets them to books
-  function loadCars() {
-    API.getCars()
-      .then(res =>
-        setCars(res.data)
-      )
-      .catch(err => console.log(err));
-  };
-
-  // Deletes a book from the database with a given id, then reloads books from the db
-  function deleteCar(id) {
-    API.deleteCar(id)
-      .then(res => loadCars())
-      .catch(err => console.log(err));
-  }
-
-  // Handles updating component state when the user types into the input field
-  function handleInputChange(event) {
-    const { name, value } = event.target;
-    setFormObject({ ...formObject, [name]: value })
-  };
-
-  // When the form is submitted, use the API.saveBook method to save the book data
-  // Then reload books from the database
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    if (formObject.title && formObject.author) {
-      API.saveCar({
-        model: formObject.model,
-        make: formObject.make,
-        year: formObject.year
-      })
-        .then(() => setFormObject({
-          model: "",
-          make: "",
-          year: ""
-        }))
-        .then(() => loadCars())
-        .catch(err => console.log(err));
-    }
-  };
 
   return (
     <Container fluid>
-      <div styles={{ backgroundImage: `url(${Background})` }}>
-      </div>
-
+    
+    <Navbar></Navbar>
       <Row>
         <Col size="md-12">
+          <h1>Welcome [user] </h1>
           <Jumbotron>
             <h1>Image</h1>
           </Jumbotron>
@@ -82,40 +33,7 @@ function Cars() {
 
         </Col>
         <Col size="md-4 sm-12">
-          <Jumbotron>
-            <h1>Sign Up</h1>
-          </Jumbotron>
-          <form>
-            <Input
-              onChange={handleInputChange}
-              name="model"
-              placeholder="email"
-              value={formObject.model}
-            />
-            <Input
-              onChange={handleInputChange}
-              name="make"
-              placeholder="password"
-              value={formObject.make}
-            />
-            <Input
-              onChange={handleInputChange}
-              name="make"
-              placeholder="Car experience"
-              value={formObject.make}
-            />
-            <select value={this.state.gender} onChange={this.handleSubmit}>
-              <option name="male"> Male</option>
-              <option name="female">Female</option>
-            </select>
-            <FormBtn
-              // disabled={!(formObject.model && formObject.make)}
-              onClick={handleFormSubmit}
-            >
-              Sign Up
-              </FormBtn>
-          </form>
-
+      
         </Col>
       </Row>
     </Container>
