@@ -15,7 +15,7 @@ function Welcome() {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 
-      <a class="navbar-brand d-lg-none" href="#"></a>
+      <a class="navbar-brand d-lg-none" href="/"></a>
       <a className="navbar-brand" href="/"></a>
 
 
@@ -27,7 +27,7 @@ function Welcome() {
       <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
 
    
-        <a class="navbar-brand d-none d-lg-block" href="#"><img className="logo" src={pic} alt="logo.."></img></a>
+        <a class="navbar-brand d-none d-lg-block" href="/"><img className="logo" src={pic} alt="logo.."></img></a>
 
 
 
