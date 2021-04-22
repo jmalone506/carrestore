@@ -11,7 +11,7 @@ import Welcome from "../../components/Welcome"
 
 function SignUp() {
     // Setting our component's initial state
-    const [cars, setCars] = useState([])
+    const [user, setUser] = useState([])
     const [formObject, setFormObject] = useState({
     })
 
@@ -24,7 +24,7 @@ function SignUp() {
     function loadCars() {
         API.getCars()
             .then(res =>
-                setCars(res.data)
+                setUser(res.data)
             )
             .catch(err => console.log(err));
     };
@@ -40,16 +40,16 @@ function SignUp() {
     // Then reload books from the database
     function handleFormSubmit(event) {
         event.preventDefault();
-        if (formObject.title && formObject.author) {
+        if (formObject.name && formObject.email) {
             API.saveCar({
-                model: formObject.model,
-                make: formObject.make,
-                year: formObject.year
+                name: formObject.name,
+                email: formObject.email,
+                password: formObject.password
             })
                 .then(() => setFormObject({
-                    model: "",
-                    make: "",
-                    year: ""
+                    name: "",
+                    email: "",
+                    password: ""
                 }))
                 .then(() => loadCars())
                 .catch(err => console.log(err));
