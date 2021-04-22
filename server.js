@@ -21,8 +21,8 @@ app.get("/", (req, res) => {
     res.json({ message: "Welcome to Car Hacks" });
 });
 
-require('./app/routes/auth.routes')(app);
-require('./app/routes/user.routes')(app);
+require('./routes/api/auth.routes')(app);
+require('./routes/api/user.routes')(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
@@ -30,6 +30,9 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });
 
+mongoose.connect(
+     process.env.MONGODB_URI || "mongodb://localhost/carsdb"
+ );
 
 
 const db = require("./models");
