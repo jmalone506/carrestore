@@ -1,3 +1,4 @@
 module.exports = {
-    secret: "cars-hack-not-cardib"
-};
+    mongoURI: 'mongodb+srv://hullorose:hullorose@cluster0.storg.mongodb.net/carsdb?retryWrites=true&w=majority'
+}
+
