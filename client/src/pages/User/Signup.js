@@ -15,12 +15,7 @@ function SignUp() {
     const [formObject, setFormObject] = useState({
     })
 
-    // Load all books and store them with setBooks
-    useEffect(() => {
-        loadCars()
-    }, [])
 
-    // Loads all books and sets them to books
     function loadCars() {
         API.getCars()
             .then(res =>
@@ -41,7 +36,7 @@ function SignUp() {
     function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.name && formObject.email) {
-            API.saveCar({
+            API.saveUser({
                 name: formObject.name,
                 email: formObject.email,
                 password: formObject.password

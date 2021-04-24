@@ -16,6 +16,9 @@ export default {
   // Saves a book to the database
   saveCar: function(carData) {
     return axios.post("/api/cars", carData);
+  },
+  saveUser: function(userData) {
+    return axios.post("/api/users/signup", userData);
   }
 };
 

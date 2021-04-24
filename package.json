@@ -21,6 +21,7 @@
     "react-app-rewire-alias": "^1.0.3",
     "react-app-rewired": "^2.1.8"
   },
+
   "dependencies": {
     "bcryptjs": "2.4.3",
     "body-parser": "^1.19.0",
