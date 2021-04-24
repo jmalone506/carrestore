@@ -10,51 +10,16 @@ import GoogleBtn from "../../components/GoogleBtn/"
 import Welcome from "../../components/Welcome"
 
 function SignUp() {
-    // Setting our component's initial state
-    const [cars, setCars] = useState([])
-    const [formObject, setFormObject] = useState({
-    })
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-    // Load all books and store them with setBooks
-    useEffect(() => {
-        loadCars()
-    }, [])
+    function validateForm() {
+        return email.length > 0 && password.length > 0;
+    }
 
-    // Loads all books and sets them to books
-    function loadCars() {
-        API.getCars()
-            .then(res =>
-                setCars(res.data)
-            )
-            .catch(err => console.log(err));
-    };
-
-
-    // Handles updating component state when the user types into the input field
-    function handleInputChange(event) {
-        const { name, value } = event.target;
-        setFormObject({ ...formObject, [name]: value })
-    };
-
-    // When the form is submitted, use the API.saveBook method to save the book data
-    // Then reload books from the database
-    function handleFormSubmit(event) {
+    function handleSubmit(event) {
         event.preventDefault();
-        if (formObject.title && formObject.author) {
-            API.saveCar({
-                model: formObject.model,
-                make: formObject.make,
-                year: formObject.year
-            })
-                .then(() => setFormObject({
-                    model: "",
-                    make: "",
-                    year: ""
-                }))
-                .then(() => loadCars())
-                .catch(err => console.log(err));
-        }
-    };
+    }
 
     return (
         <Container fluid>
@@ -83,25 +48,24 @@ function SignUp() {
                     <form>
 
                         <Input
-                            onChange={handleInputChange}
-                            name="email"
-                            placeholder="Add Your Email"
-                            value={formObject.email}
+                            autoFocus
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                         <Input
-                            onChange={handleInputChange}
-                            name="password"
-                            placeholder="Create A Password"
-                            value={formObject.password}
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                         />
 
 
 
                         <FormBtn
-                            // disabled={!(formObject.model && formObject.make)}
-                            onClick={handleFormSubmit}
+                            disabled={!validateForm()}
+                            onClick={handleSubmit}
                         >
-                            Sign Up
+                            Login
               </FormBtn>
                     </form>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Home from "./pages/User/Home.js";
 import Wrapper from "./components/Wrapper";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,13 +18,13 @@ function App() {
   return (
     <div>
       <Router>
-      
+
 
         <Wrapper>
 
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/signup" exact component={SignUp} />
+            <Route exact path="/" component={Home} />
+            <Route path="/signup" component={SignUp} />
             <Route path="/login" component={Login} />
 
             <Route path="/cars" exact component={Cars} />

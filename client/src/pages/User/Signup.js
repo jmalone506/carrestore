@@ -5,6 +5,7 @@ import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import ReactDOM from "react-dom";
+import { useHistory } from "react-router-dom";
 // import { GoogleLogin } from 'react-google-login';
 import GoogleBtn from "../../components/GoogleBtn/"
 import Welcome from "../../components/Welcome"
@@ -15,9 +16,10 @@ function SignUp() {
     const [formObject, setFormObject] = useState({
     })
 
+    const History = useHistory();
 
-    function loadCars() {
-        API.getCars()
+    function loadUser() {
+        API.getUser()
             .then(res =>
                 setUser(res.data)
             )
@@ -25,14 +27,13 @@ function SignUp() {
     };
 
 
-    // Handles updating component state when the user types into the input field
+
     function handleInputChange(event) {
         const { name, value } = event.target;
         setFormObject({ ...formObject, [name]: value })
     };
 
-    // When the form is submitted, use the API.saveBook method to save the book data
-    // Then reload books from the database
+
     function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.name && formObject.email) {
@@ -46,7 +47,11 @@ function SignUp() {
                     email: "",
                     password: ""
                 }))
-                .then(() => loadCars())
+                .then(() => {
+                    loadUser();
+                    History.push("/cars")
+                })
+
                 .catch(err => console.log(err));
         }
     };
@@ -67,11 +72,11 @@ function SignUp() {
                 <Col size="md-3 p-3">
 
                 </Col>
-              
+
                 <Col size="md-6 sm-12">
-              
-                        <h1>Sign Up</h1>
-                        <br></br>
+
+                    <h1>Sign Up</h1>
+                    <br></br>
                     <GoogleBtn>Sign Up Through Google</GoogleBtn>
                     <br></br>
                     <p>or</p>
@@ -94,20 +99,20 @@ function SignUp() {
                             placeholder="Create A Password"
                             value={formObject.password}
                         />
-                       
-                        
+
+
 
                         <FormBtn
-                            // disabled={!(formObject.model && formObject.make)}
                             onClick={handleFormSubmit}
                         >
                             Sign Up
-              </FormBtn>
+                        </FormBtn>
+
                     </form>
-                    
+
                 </Col>
                 <Col size="md-3">
-                    
+
 
                 </Col>
             </Row>

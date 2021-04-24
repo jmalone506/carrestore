@@ -1,8 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const users = require('./routes/api/user.routes');
-const signup = require('./routes/api/auth.routes');
+const api = require('./routes');
 const app = express();
 // Body parser 
 
@@ -19,10 +18,12 @@ mongoose
     })
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
+
+
+
+app.use(api);
+
 app.get('/', (req, res) => res.send('Hello World!'));
-// Use Routes
-app.use('/api/users', users);
-app.use('/api/profile', signup);
 
 const port = process.env.PORT || 3002;
 app.listen(port, () => console.log(`Server running on port ${port}`));

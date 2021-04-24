@@ -7,10 +7,10 @@ const bcrypt = require('bcryptjs');
 const User = require('../../models/user.model')
 
 // @route   GET api/users/test
-router.get('/api/user/test', (req, res) => res.json({ msg: "Users works" }));
+router.get('/api/users/test', (req, res) => res.json({ msg: "Users works" }));
 
 // @route   GET api/users/register
-router.post('/signup', (req, res) => {
+router.post('/api/users/signup', (req, res) => {
     User.findOne({ email: req.body.email })
         .then(user => {
             if (user) {
