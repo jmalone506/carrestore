@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Col, Row, Container } from "../../components/Grid";
-// import { GoogleLogin } from 'react-google-login';
-import GoogleBtn from "../../components/GoogleBtn"
 import Welcome from "../../components/Welcome"
 import loginIMG from "../../images/login.png";
 import "./style.css";
-
+// import { GoogleLogin } from 'react-google-login';
+// import GoogleBtn from "../../components/GoogleBtn"
 class Login extends React.Component {
     constructor(props) {
         super(props);

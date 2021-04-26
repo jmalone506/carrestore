@@ -17,7 +17,7 @@ function SignUp() {
     const History = useHistory();
 
     function loadUser() {
-        API.saveUser()
+        API.getUser()
             .then(res =>
                 setUser(res.data)
             )
@@ -38,18 +38,16 @@ function SignUp() {
             API.saveUser({
                 name: formObject.name,
                 email: formObject.email,
-                password: formObject.password,
-                password2: formObject.password2
+                password: formObject.password
             })
                 .then(() => setFormObject({
                     name: "",
                     email: "",
-                    password: "",
-                    password2: ""
+                    password: ""
                 }))
                 .then(() => {
                     loadUser();
-                    History.push("/selling")
+                    History.push("/cars")
                 })
 
                 .catch(err => console.log(err));
@@ -67,58 +65,53 @@ function SignUp() {
 
 
             <Row>
-                <Col size="md-3 p-3">
 
-                </Col>
+                <div className="container mt-5">
+                    <div className="row">
+                        <div className="col">
+                            <div className="card mx-auto">
+                                <div className="card-body">
+                                    <h1
+                                        className="card-title"
+                                        style={{ borderBottom: "1px solid #efefef" }}
+                                    >
+                                        Sign Up Here
+                </h1>
+                                    <form>
+                                        <Input
+                                            onChange={handleInputChange}
+                                            name="name"
+                                            placeholder="Add Your Full Name"
+                                            value={formObject.name}
+                                        />
+                                        <Input
+                                            onChange={handleInputChange}
+                                            name="email"
+                                            placeholder="Add Your Email"
+                                            value={formObject.email}
+                                        />
+                                        <Input
+                                            onChange={handleInputChange}
+                                            name="password"
+                                            placeholder="Create A Password"
+                                            value={formObject.password}
+                                        />
 
-                <Col size="md-6 sm-12">
+                                        <button type="submit" className="btn btn-danger" onClick={handleFormSubmit}>
+                                            Sign Up
+        </button>
 
-                    <h1>Sign Up</h1>
-                    <br></br>
-                    <GoogleBtn>Sign Up Through Google</GoogleBtn>
-                    <br></br>
-                    <p>or</p>
-                    <form>
-                        <Input
-                            onChange={handleInputChange}
-                            name="name"
-                            placeholder="Add Your Full Name"
-                            value={formObject.name}
-                        />
-                        <Input
-                            onChange={handleInputChange}
-                            name="email"
-                            placeholder="Add Your Email"
-                            value={formObject.email}
-                        />
-                        <Input
-                            onChange={handleInputChange}
-                            name="password"
-                            placeholder="Create A Password"
-                            value={formObject.password}
-                        />
-                        <Input
-                            onChange={handleInputChange}
-                            name="password2"
-                            placeholder="Confirm Password"
-                            value={formObject.password2}
-                        />
-
-
-
-                        <FormBtn
-                            onClick={handleFormSubmit}
-                        >
-                            Sign Up
-                        </FormBtn>
-
-                    </form>
-
-                </Col>
-                <Col size="md-3">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-                </Col>
+
+
+
             </Row>
         </Container>
     );
