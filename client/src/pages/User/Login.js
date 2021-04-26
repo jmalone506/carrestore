@@ -1,120 +1,118 @@
 import React, { useEffect, useState } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import Welcome from "../../components/Welcome"
+import API from "../../utils/API";
+import { useHistory } from "react-router-dom";
 import loginIMG from "../../images/login.png";
+import Axios from "axios";
+
+
 import "./style.css";
 // import { GoogleLogin } from 'react-google-login';
 // import GoogleBtn from "../../components/GoogleBtn"
-class Login extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            email: "",
-            password: ""
-        };
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.clearForm = this.clearForm.bind(this);
-    }
-    handleChange(event) {
-        const target = event.target;
-        const value = target.value;
-        const name = target.name;
 
-        this.setState({
-            [name]: value
-        });
-    }
-    handleSubmit(event) {
-        event.preventDefault(event);
-        console.log(this.state);
-    }
-    clearForm() {
-        this.setState({
-            email: "",
-            password: ""
-        });
-    }
-    render() {
-        return (
-            <div className="loginPage"><Welcome></Welcome>
-                <Row>
-                    <Col size="md-12">
-                        <img className="loginIMG" src={loginIMG} alt="login image.."></img>
-                    </Col>
-                </Row>
 
-                <div className="container mt-5">
-                    <div className="row">
-                        <div className="col">
-                            <div className="card mx-auto">
-                                <div className="card-body">
-                                    <h1
-                                        className="card-title"
-                                        style={{ borderBottom: "1px solid #efefef" }}
-                                    >
-                                        Login Form
+function Login() {
+    const [user, setUser] = useState([])
+    const [loginEmail, setloginEmail] = useState("");
+    const [loginPassword, setLoginPassword] = useState("");
+
+    const History = useHistory();
+
+    function loadUser() {
+        API.getUser()
+            .then(res =>
+                setUser(res.data)
+            )
+            .catch(err => console.log(err));
+    };
+
+    const loginUser = () => {
+
+
+        Axios({
+            method: "POST",
+            data: {
+                email: loginEmail,
+                password: loginPassword,
+            },
+            withCredentials: true,
+            url: "http://localhost:3002/cars",
+        }).then(() => {
+            loadUser();
+            History.push("/cars")
+        })
+            .catch(err => console.log(err));
+    };
+
+
+
+    return (
+        <div className="loginPage"><Welcome></Welcome>
+            <Row>
+                <Col size="md-12">
+                    <img className="loginIMG" src={loginIMG} alt="login image.."></img>
+                </Col>
+            </Row>
+
+            <div className="container mt-5">
+                <div className="row">
+                    <div className="col">
+                        <div className="card mx-auto">
+                            <div className="card-body">
+                                <h1
+                                    className="card-title"
+                                    style={{ borderBottom: "1px solid #efefef" }}
+                                >
+                                    Login Form
                 </h1>
-                                    <form
-                                        className="needs-validation"
-                                        noValidate
-                                        onSubmit={this.handleSubmit}
-                                    >
-                                        <div className="form-group">
-                                            <label htmlFor="exampleInputEmail1">Email address</label>
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                className="form-control"
-                                                id="exampleInputEmail1"
-                                                aria-describedby="emailHelp"
-                                                required
-                                                placeholder="Enter email"
-                                                value={this.state.email}
-                                                onChange={this.handleChange}
-                                            />
-                                            <small id="emailHelp" className="form-text text-muted">
-                                                We'll never share your email with anyone else.
-          </small>
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleInputPassword1">Password</label>
-                                            <input
-                                                type="password"
-                                                name="password"
-                                                className="form-control"
-                                                id="exampleInputPassword1"
-                                                required
-                                                placeholder="Password"
-                                                value={this.state.password}
-                                                onChange={this.handleChange}
-                                            />
-                                        </div>
-                                        <button type="submit" className="btn btn-primary">
-                                            Login
-        </button>
-                                        <button
-                                            type="button"
-                                            className="btn btn-secondary float-right"
-                                            onClick={this.clearForm}
-                                        >
-                                            Clear
-        </button>
-                                    </form>
-                                </div>
+                                <form
+                                    className="needs-validation"
+                                    noValidate
+                                    onSubmit={loginUser}
+                                >
+                                    <div className="form-group">
+                                        <label>Email address</label>
+                                        <input
+                                            type="email"
+                                            className="form-control"
+                                            id="exampleInputEmail1"
+                                            required
+                                            placeholder="Enter email"
+                                            onChange={setloginEmail}
+                                        />
+
+                                    </div>
+                                    <div className="form-group">
+                                        <label>Password</label>
+                                        <input
+                                            type="password"
+                                            name="password"
+                                            className="form-control"
+                                            required
+                                            placeholder="Password"
+
+                                            onChange={setLoginPassword}
+                                        />
+                                    </div>
+                                    <button type="submit" className="btn btn-primary" >
+                                        Login
+                                     </button>
+
+                                    <p>Don't have an account? <a href="./signup">Sign up Here!</a></p>
+                                </form>
                             </div>
                         </div>
                     </div>
-</div>
-                 
-
-
-
                 </div>
-        );
-    }
-}
+            </div>
 
+
+
+
+        </div>
+    );
+}
 
 
 

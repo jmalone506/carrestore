@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import { Input, TextArea, FormBtn } from "../../components/Form";
+import { Input} from "../../components/Form";
 import { useHistory } from "react-router-dom";
 // import { GoogleLogin } from 'react-google-login';
 import GoogleBtn from "../../components/GoogleBtn/"
@@ -65,6 +65,7 @@ function SignUp() {
 
 
             <Row>
+
 
                 <div className="container mt-5">
                     <div className="row">
