@@ -7,8 +7,12 @@
 }
 :root {
   --primary-white: #ffffff;
-  --primary-blue: #6F675D;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-green: #74ee15;
+  --primary-light-blue: #4deeea;
+  --primary-blue: #001eff;
+  --primary-yellow: #ffe700;
+  --primary-red: #ee2228;
+  --primary-dark: #000000;
 }
 
 body {
@@ -17,12 +21,16 @@ body {
 
 nav {
   z-index: 2;
+  
+}
+
+.color-nav {
+  background-color: var(--primary-dark) !important;
 }
 
 .logo {
   width: 5.5rem;
 }
-
 
 nav a.nav-link {
   letter-spacing: 0.04rem;
@@ -43,12 +51,12 @@ nav a.nav-link {
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-blue);
+  border-top: 0.1875rem solid var(--primary-green);
 
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-blue);
+  border-top: 0.1875rem solid var(--primary-green);
 }
 
 .navbar-toggler {

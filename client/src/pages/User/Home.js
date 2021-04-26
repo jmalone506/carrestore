@@ -1,4 +1,5 @@
 import Jumbotron from "../../components/Jumbotron";
+import Header from "../../components/Header";
 import { Col, Row, Container } from "../../components/Grid";
 import Welcome from "../../components/Welcome"
 
@@ -16,19 +17,17 @@ function Home() {
       
       <Row>
         <Col size="md-12">
-          <Jumbotron>
-            <h1>Image Carousel</h1>
-          </Jumbotron>
+         
+          <Header>
+ 
+          </Header>
         </Col>
       </Row>
 
 
       <Row>
         <Col size="md-8">
-          <Jumbotron>
-            <h1>About Car Hacks</h1>
-
-          </Jumbotron>
+          
 
         </Col>
         <Col size="md-4 sm-12">
@@ -40,16 +39,11 @@ function Home() {
 
       <Row>
         <Col size="md-8">
-          <Jumbotron>
-            <h1></h1>
-
-          </Jumbotron>
+     
 
         </Col>
         <Col size="md-4 sm-12">
-          <Jumbotron>
-            <h1></h1>
-          </Jumbotron>
+       
      
           
 

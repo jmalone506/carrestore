@@ -1,0 +1,12 @@
+header {
+    height: 80vmax;
+    padding-top: 42%;
+    height: 40vmin;
+    background-size: cover;
+}
+
+@media(max-width:768px){
+    .header {
+      width: 30.1rem;
+    }
+}

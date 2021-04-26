@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-
+import headerIMG from "../../images/welcome.gif"
 import "./style.css";
-import pic from "../../images/logo.png";
+import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,50 +12,88 @@ function Welcome() {
 
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="color-nav navbar navbar-expand-lg">
 
 
-      <a class="navbar-brand d-lg-none" href="/"></a>
-      <a className="navbar-brand" href="/"></a>
+      <a className="navbar-brand" href="/cars"><img className="logo" src={logo} alt="logo.."></img></a>
+  
 
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <FontAwesomeIcon icon={faBars} style={{ color: '#fff' }} />
       </button>
 
 
-      <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-
-   
-        <a class="navbar-brand d-none d-lg-block" href="/"><img className="logo" src={pic} alt="logo.."></img></a>
 
 
-
-        <ul className="navbar-nav">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <Link
-              to="/signup"
-              className={window.location.pathname === "/signup" ? "nav-link active" : "nav-link"}
+              to="/"
+              className={
+                window.location.pathname === "/" || window.location.pathname === "/home"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
             >
-              Sign Up
+              Home
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/login"
-              className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
+              to="/buying"
+              className={window.location.pathname === "/buying" ? "nav-link active" : "nav-link"}
             >
-              Login
+              Buying
             </Link>
           </li>
-
-
+          <li className="nav-item">
+            <Link
+              to="/selling"
+              className={window.location.pathname === "/selling" ? "nav-link active" : "nav-link"}
+            >
+              Selling
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/maintenance"
+              className={window.location.pathname === "/maintenance" ? "nav-link active" : "nav-link"}
+            >
+              Maintenance
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/accessorize"
+              className={window.location.pathname === "/accessorize" ? "nav-link active" : "nav-link"}
+            >
+              Accessorize
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/forum"
+              className={window.location.pathname === "/forum" ? "nav-link active" : "nav-link"}
+            >
+              Forum
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/history"
+              className={window.location.pathname === "/history" ? "nav-link active" : "nav-link"}
+            >
+              Search History
+            </Link>
+          </li>
+          {/* Logout */}
         </ul>
+
       </div>
     </nav>
     
 
-    
 
   );
 }

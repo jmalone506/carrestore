@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Jumbotron from "../../components/Jumbotron";
-
-import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import { Input, TextArea, FormBtn } from "../../components/Form";
-
 // import { GoogleLogin } from 'react-google-login';
 import GoogleBtn from "../../components/GoogleBtn/"
 import Welcome from "../../components/Welcome"
