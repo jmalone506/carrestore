@@ -1,3 +1,4 @@
+
 const config = require("../config/auth.config");
 const db = require("../models");
 const User = db.user;
@@ -10,9 +11,9 @@ exports.signup = (req, res) => {
     const user = new User({
         name: req.body.fullname,
         email: req.body.email,
-        password: bcrypt.hashSync(req.body.password, 8)
+        password: bcrypt.hashSync(req.body.password, 10)
     });
 
-  
-    
+
+
 };

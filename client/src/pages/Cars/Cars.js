@@ -1,11 +1,5 @@
-import React, { useEffect, useState } from "react";
 import Jumbotron from "../../components/Jumbotron";
-import Background from "../../assets/images/Background-1.jpg"
-
-import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-
-import { Input, TextArea, FormBtn } from "../../components/Form";
 import Navbar from "../../components/Navbar";
 
 function Cars() {
@@ -17,7 +11,7 @@ function Cars() {
     <Navbar></Navbar>
       <Row>
         <Col size="md-12">
-          <h1>Welcome [user] </h1>
+          <h1>Welcome username</h1>
           <Jumbotron>
             <h1>Image</h1>
           </Jumbotron>
@@ -33,7 +27,7 @@ function Cars() {
 
         </Col>
         <Col size="md-4 sm-12">
-      
+
         </Col>
       </Row>
     </Container>

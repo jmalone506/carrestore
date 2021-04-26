@@ -6,6 +6,6 @@ const carSchema = new Schema({
     make: { type: String, required: true }
 });
 
-const Car = mongoose.model("Car", carSchema);
+const Car = mongoose.model("carsdb", carSchema);
 
 module.exports = Car;

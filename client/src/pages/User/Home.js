@@ -1,10 +1,5 @@
-import React, { useEffect, useState } from "react";
 import Jumbotron from "../../components/Jumbotron";
-import Background from "../../assets/images/Background-1.jpg"
-import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import { Input, TextArea, FormBtn } from "../../components/Form";
-import Button from "../../components/Button"
 import Welcome from "../../components/Welcome"
 
 

@@ -8,6 +8,4 @@ db.mongoose = mongoose;
 db.user = require("./user.model");
 
 
-db.ROLES = ["user", "admin", "moderator"];
-
 module.exports = db;

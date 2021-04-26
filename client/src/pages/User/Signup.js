@@ -7,6 +7,7 @@ import { Input, TextArea, FormBtn } from "../../components/Form";
 import ReactDOM from "react-dom";
 import { useHistory } from "react-router-dom";
 // import { GoogleLogin } from 'react-google-login';
+
 import GoogleBtn from "../../components/GoogleBtn/"
 import Welcome from "../../components/Welcome"
 
@@ -19,7 +20,7 @@ function SignUp() {
     const History = useHistory();
 
     function loadUser() {
-        API.getUser()
+        API.saveUser()
             .then(res =>
                 setUser(res.data)
             )
@@ -40,16 +41,18 @@ function SignUp() {
             API.saveUser({
                 name: formObject.name,
                 email: formObject.email,
-                password: formObject.password
+                password: formObject.password,
+                password2: formObject.password2
             })
                 .then(() => setFormObject({
                     name: "",
                     email: "",
-                    password: ""
+                    password: "",
+                    password2: ""
                 }))
                 .then(() => {
                     loadUser();
-                    History.push("/cars")
+                    History.push("/selling")
                 })
 
                 .catch(err => console.log(err));
@@ -98,6 +101,12 @@ function SignUp() {
                             name="password"
                             placeholder="Create A Password"
                             value={formObject.password}
+                        />
+                        <Input
+                            onChange={handleInputChange}
+                            name="password2"
+                            placeholder="Confirm Password"
+                            value={formObject.password2}
                         />
 
 

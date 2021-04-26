@@ -18,8 +18,8 @@ export default {
     return axios.post("/api/cars", carData);
   },
 
-  getUser: function (userData) {
-    return axios.get("/api/login")
+  getUser: function (id) {
+    return axios.get("/api/login", id)
   },
 
   saveUser: function (userData) {
