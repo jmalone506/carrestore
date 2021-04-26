@@ -24,39 +24,39 @@ function Cars() {
       <Row>
         <Col size="md-6 sm-12">
           <Jumbotron>
-            <h1>About Car Hacks</h1>
+            <h1>Buying</h1>
           </Jumbotron>
 
         </Col>
         <Col size="md-6 sm-12">
           <Jumbotron>
-            <h1>About Car Hacks</h1>
+            <h1>Selling</h1>
           </Jumbotron>
         </Col>
       </Row>
       <Row>
         <Col size="md-6 sm-12">
           <Jumbotron>
-            <h1>About Car Hacks</h1>
+            <h1>Maintenance</h1>
           </Jumbotron>
 
         </Col>
         <Col size="md-6 sm-12">
           <Jumbotron>
-            <h1>About Car Hacks</h1>
+            <h1>Accesorize</h1>
           </Jumbotron>
         </Col>
       </Row>
       <Row>
         <Col size="md-6 sm-12">
           <Jumbotron>
-            <h1>About Car Hacks</h1>
+            <h1>Forum</h1>
           </Jumbotron>
 
         </Col>
         <Col size="md-6 sm-12">
           <Jumbotron>
-            <h1>About Car Hacks</h1>
+            <h1>Search History</h1>
           </Jumbotron>
         </Col>
       </Row>
