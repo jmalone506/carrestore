@@ -1,0 +1,17 @@
+:root {
+  --primary-white: #ffffff;
+  --primary-green: #74ee15;
+  --primary-light-blue: #4deeea;
+  --primary-blue: #001eff;
+  --primary-yellow: #ffe700;
+  --primary-red: #ee2228;
+  --primary-dark: #000000;
+}
+
+.background {
+    background-color: var(--primary-dark);
+}
+
+body {
+    background-color: var(--primary-dark) !important;
+}

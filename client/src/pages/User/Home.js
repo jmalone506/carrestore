@@ -1,14 +1,13 @@
-import Jumbotron from "../../components/Jumbotron";
 import Header from "../../components/Header";
 import { Col, Row, Container } from "../../components/Grid";
 import Welcome from "../../components/Welcome"
-
+import "./style.css"
 
 function Home() {
 
 
   return (
-    <Container fluid>
+    <Container fluid className="background">
       <Row>
         <Col size="lg-12">
       <Welcome />

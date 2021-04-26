@@ -15,7 +15,7 @@ function Welcome() {
     <nav className="color-nav navbar navbar-expand-lg">
 
 
-      <a className="navbar-brand" href="/cars"><img className="logo" src={logo} alt="logo.."></img></a>
+      <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo.."></img></a>
   
 
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,57 +39,27 @@ function Welcome() {
               Home
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/buying"
-              className={window.location.pathname === "/buying" ? "nav-link active" : "nav-link"}
-            >
-              Buying
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/selling"
-              className={window.location.pathname === "/selling" ? "nav-link active" : "nav-link"}
-            >
-              Selling
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/maintenance"
-              className={window.location.pathname === "/maintenance" ? "nav-link active" : "nav-link"}
-            >
-              Maintenance
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/accessorize"
-              className={window.location.pathname === "/accessorize" ? "nav-link active" : "nav-link"}
-            >
-              Accessorize
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/forum"
-              className={window.location.pathname === "/forum" ? "nav-link active" : "nav-link"}
-            >
-              Forum
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/history"
-              className={window.location.pathname === "/history" ? "nav-link active" : "nav-link"}
-            >
-              Search History
-            </Link>
-          </li>
-          {/* Logout */}
-        </ul>
 
+          <li className="nav-item">
+            <Link
+              to="/signup"
+              className={window.location.pathname === "/signup" ? "nav-link active" : "nav-link"}
+            >
+              Get Started
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link
+              to="/login"
+              className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
+            >
+              Login
+            </Link>
+          </li>
+         
+        </ul>
+        
       </div>
     </nav>
     

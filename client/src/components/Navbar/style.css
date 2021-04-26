@@ -1,6 +1,4 @@
-h1 {
-  font-family: 'Nova Square', cursive;;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 @media(max-width:768px){
     .navbar-nav {
@@ -23,17 +21,17 @@ body {
 
 nav {
   z-index: 2;
+  
 }
-/***NAVBAR***/
+
+.color-nav {
+  background-color: var(--primary-dark) !important;
+}
+
 .logo {
-  width: 8.5rem;
+  width: 10rem;
 }
 
-.bg-custom {
-   color: var(--primary-black)
-}
-
-/* MENU LINKS */
 nav a.nav-link {
   letter-spacing: 0.04rem;
   cursor: pointer;

@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Home from "./pages/User/Home.js";
 import Wrapper from "./components/Wrapper";
-
+import Home from "./pages/User/Home.js";
 import SignUp from "./pages/User/SignUp.js";
 import Login from "./pages/User/Login";
+
 import Cars from "./pages/Cars/Cars"
 import Buying from "./pages/Cars/Buying"
 import Selling from "./pages/Cars/Selling"
