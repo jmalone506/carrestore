@@ -4,8 +4,7 @@ import Welcome from "../../components/Welcome"
 import API from "../../utils/API";
 import { useHistory } from "react-router-dom";
 import loginIMG from "../../images/login.png";
-import Axios from "axios";
-
+import { Input } from "../../components/Form";
 
 import "./style.css";
 // import { GoogleLogin } from 'react-google-login';
@@ -13,9 +12,10 @@ import "./style.css";
 
 
 function Login() {
+    // Setting our component's initial state
     const [user, setUser] = useState([])
-    const [loginEmail, setloginEmail] = useState("");
-    const [loginPassword, setLoginPassword] = useState("");
+    const [formObject, setFormObject] = useState({
+    })
 
     const History = useHistory();
 
@@ -27,22 +27,31 @@ function Login() {
             .catch(err => console.log(err));
     };
 
-    const loginUser = () => {
+    function handleInputChange(event) {
+        const { name, value } = event.target;
+        setFormObject({ ...formObject, [name]: value })
+    };
 
 
-        Axios({
-            method: "POST",
-            data: {
-                email: loginEmail,
-                password: loginPassword,
-            },
-            withCredentials: true,
-            url: "http://localhost:3002/cars",
-        }).then(() => {
-            loadUser();
-            History.push("/cars")
-        })
-            .catch(err => console.log(err));
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        if (formObject.name && formObject.email) {
+            API.getUser({
+                email: formObject.email,
+                password: formObject.password
+            })
+                .then(() => setFormObject({
+                    name: "",
+                    email: "",
+                    password: ""
+                }))
+                .then(() => {
+                    loadUser();
+                    History.push("/cars")
+                })
+
+                .catch(err => console.log(err));
+        }
     };
 
 
@@ -66,39 +75,31 @@ function Login() {
                                 >
                                     Login Form
                 </h1>
-                                <form
-                                    className="needs-validation"
-                                    noValidate
-                                    onSubmit={loginUser}
-                                >
-                                    <div className="form-group">
-                                        <label>Email address</label>
-                                        <input
-                                            type="email"
-                                            className="form-control"
-                                            id="exampleInputEmail1"
-                                            required
-                                            placeholder="Enter email"
-                                            onChange={setloginEmail}
-                                        />
+                                <form>
 
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Password</label>
-                                        <input
-                                            type="password"
-                                            name="password"
-                                            className="form-control"
-                                            required
-                                            placeholder="Password"
+                                    <Input
 
-                                            onChange={setLoginPassword}
-                                        />
-                                    </div>
-                                    <button type="submit" className="btn btn-primary" >
-                                        Login
-                                     </button>
+                                        onChange={handleInputChange}
+                                        name="email"
+                                        placeholder="Type in your email"
+                                        value={formObject.email}
+                                    />
+                                    <Input
+                                        type="password"
+                                        name="password"
+                                        className="form-control"
+                                        id="exampleInputPassword1"
+                                        required
+                                        placeholder="Password"
+                                        value={formObject.password}
+                                        onChange={handleInputChange}
+                                    />
 
+                                    <button type="submit" className="btn btn-danger" onClick={handleFormSubmit}>
+                                        Sign Up
+        </button>
+
+                              
                                     <p>Don't have an account? <a href="./signup">Sign up Here!</a></p>
                                 </form>
                             </div>

@@ -4,7 +4,7 @@ import "./style.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span>change text</span>
+      <span>Car Hacks 2021</span>
     </footer>
   );
 }

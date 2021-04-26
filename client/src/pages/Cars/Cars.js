@@ -1,17 +1,19 @@
 import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer"
 
 function Cars() {
 
 
   return (
     <Container fluid>
-    
-    <Navbar></Navbar>
+
+      <Navbar></Navbar>
       <Row>
         <Col size="md-12">
-          <h1>Welcome username</h1>
+          <h1>Welcome </h1>
+         
           <Jumbotron>
             <h1>Image</h1>
           </Jumbotron>
@@ -20,17 +22,47 @@ function Cars() {
 
 
       <Row>
-        <Col size="md-8">
+        <Col size="md-6 sm-12">
           <Jumbotron>
             <h1>About Car Hacks</h1>
           </Jumbotron>
 
         </Col>
-        <Col size="md-4 sm-12">
-
+        <Col size="md-6 sm-12">
+          <Jumbotron>
+            <h1>About Car Hacks</h1>
+          </Jumbotron>
         </Col>
       </Row>
+      <Row>
+        <Col size="md-6 sm-12">
+          <Jumbotron>
+            <h1>About Car Hacks</h1>
+          </Jumbotron>
+
+        </Col>
+        <Col size="md-6 sm-12">
+          <Jumbotron>
+            <h1>About Car Hacks</h1>
+          </Jumbotron>
+        </Col>
+      </Row>
+      <Row>
+        <Col size="md-6 sm-12">
+          <Jumbotron>
+            <h1>About Car Hacks</h1>
+          </Jumbotron>
+
+        </Col>
+        <Col size="md-6 sm-12">
+          <Jumbotron>
+            <h1>About Car Hacks</h1>
+          </Jumbotron>
+        </Col>
+      </Row>
+      < Footer />
     </Container>
+  
   );
 }
 

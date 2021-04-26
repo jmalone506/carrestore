@@ -30,9 +30,9 @@ function Navbar() {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <Link
-              to="/"
+              to="/cars"
               className={
-                window.location.pathname === "/" || window.location.pathname === "/home"
+                window.location.pathname === "/cars" || window.location.pathname === "/home"
                   ? "nav-link active"
                   : "nav-link"
               }
@@ -91,7 +91,12 @@ function Navbar() {
           
         </ul>
         
-        <button className="btn-danger" src="/;"> Logout</button>
+        <button className="btn-danger" >  <Link
+          to="/"
+          className={window.location.pathname === "/logout" ? "nav-link active" : "nav-link"}
+        >
+          Logout
+            </Link></button>
       </div>
     </nav>
 
