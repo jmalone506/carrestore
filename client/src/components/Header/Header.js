@@ -11,7 +11,7 @@ function Header({ children }) {
     >
       {children}
 
-      <img className="header" src={headerIMG} alt="logo.."></img>
+      <img className="header" src={headerIMG} alt="header.."></img>
 
       <button className="signup btn" src="">
           <Link

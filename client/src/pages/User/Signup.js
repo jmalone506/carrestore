@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import { useHistory } from "react-router-dom";
 // import { GoogleLogin } from 'react-google-login';
-
 import GoogleBtn from "../../components/GoogleBtn/"
 import Welcome from "../../components/Welcome"
+import signupIMG from "../../images/signup.png"
 
 function SignUp() {
     // Setting our component's initial state
@@ -62,9 +61,7 @@ function SignUp() {
             <Welcome></Welcome>
             <Row>
                 <Col size="md-12">
-                    <Jumbotron>
-                        <h1>Image</h1>
-                    </Jumbotron>
+                    <img className="signupIMG" src={signupIMG} alt="sign up image.."></img>
                 </Col>
             </Row>
 

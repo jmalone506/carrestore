@@ -4,6 +4,7 @@ import { Col, Row, Container } from "../../components/Grid";
 // import { GoogleLogin } from 'react-google-login';
 import GoogleBtn from "../../components/GoogleBtn/"
 import Welcome from "../../components/Welcome"
+import loginIMG from "../../images/login.png"
 
 function Login() {
     // const [email, setEmail] = useState("");
@@ -40,9 +41,7 @@ function Login() {
                 <Welcome></Welcome>
                 <Row>
                     <Col size="md-12">
-                        <Jumbotron>
-                            <h1>Image</h1>
-                        </Jumbotron>
+                        <img className="loginIMG" src={loginIMG} alt="login image.."></img>
                     </Col>
                 </Row>
 
