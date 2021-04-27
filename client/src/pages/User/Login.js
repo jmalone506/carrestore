@@ -16,22 +16,14 @@ function Login() {
     const [user, setUser] = useState([])
     const [formObject, setFormObject] = useState({
     })
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     const History = useHistory();
 
-    function loadUser() {
-        API.getUser()
-            .then(res =>
-                setUser(res.data)
-            )
-            .catch(err => console.log(err));
-    };
-
-    function handleInputChange(event) {
-        const { name, value } = event.target;
-        setFormObject({ ...formObject, [name]: value })
-    };
-
+    function handleInputChange() {
+        return email.length > 0 && password.length > 0;
+    }
 
     function handleFormSubmit(event) {
         event.preventDefault();
@@ -46,13 +38,17 @@ function Login() {
                     password: ""
                 }))
                 .then(() => {
-                    loadUser();
                     History.push("/cars")
                 })
 
                 .catch(err => console.log(err));
         }
-    };
+    }
+
+
+
+
+
 
 
 
@@ -95,11 +91,11 @@ function Login() {
                                         onChange={handleInputChange}
                                     />
 
-                                    <button type="submit" className="btn btn-danger" onClick={handleFormSubmit}>
-                                        Sign Up
+                                    <button type="submit" className="btn btn-info" onClick={handleFormSubmit}>
+                                        Login
         </button>
 
-                              
+
                                     <p>Don't have an account? <a href="./signup">Sign up Here!</a></p>
                                 </form>
                             </div>
