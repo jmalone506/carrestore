@@ -4,7 +4,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import { Input} from "../../components/Form";
 import { useHistory } from "react-router-dom";
 // import { GoogleLogin } from 'react-google-login';
-import GoogleBtn from "../../components/GoogleBtn/"
+import GoogleBtn from "../../components/GoogleBtn"
 import Welcome from "../../components/Welcome"
 import signupIMG from "../../images/signup.png"
 
