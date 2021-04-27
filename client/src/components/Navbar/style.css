@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@media(max-width:768px){
+    .navbar-nav {
+      width: 7rem;
+    }
+}
+:root {
+  --primary-white: #ffffff;
+  --primary-green: #74ee15;
+  --primary-light-blue: #4deeea;
+  --primary-blue: #001eff;
+  --primary-yellow: #ffe700;
+  --primary-red: #ee2228;
+  --primary-dark: #000000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  z-index: 2;
+  
+}
+
+.color-nav {
+  background-color: var(--primary-dark) !important;
+}
+
+.logo {
+  width: 10rem;
+}
+
+nav a.nav-link {
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.20rem;
+  margin-left: 0.20rem;
+  height: 6rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark)
+}
+
+.navbar-brand {
+  max-width: 14.25rem;
+
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-green);
+
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-green);
+}
+
+.navbar-toggler {
+  max-width: 100%;
+  font-size: larger;
+
+}
+
+.header {
+  color: var(--primary-white);
+  font-weight: 400;
+}
+
+.nav-item {
+  padding-top: 4.5rem;
+}

@@ -1,0 +1,79 @@
+:root {
+  --primary-white: #ffffff;
+  --primary-green: #74ee15;
+  --primary-light-blue: #4deeea;
+  --primary-blue: #001eff;
+  --primary-yellow: #ffe700;
+  --primary-red: #ee2228;
+  --primary-dark: #000000;
+}
+
+header {
+    height: 60vmax;
+    padding-top: 42%;
+    height: 40vmin;
+    background-size: cover;
+    position:relative;
+    display:inline-block;
+}
+
+a {
+color: var(--primary-white) !important;
+}
+
+
+.btn {
+      font-size: 20px;
+      font-weight: bold;
+      display:block;
+      margin-top:35px;
+      width:100%;
+      text-align: center;
+    }
+
+.signup {
+    position:absolute;
+    bottom:25%;
+    right:75.5%;
+    width:200px;
+    height:60px;
+    margin:0px -50px -15px 0px;
+    background-color: var(--primary-red);
+    
+}
+
+
+.login {
+    position:absolute;
+    bottom:25%;
+    left:73.5%;
+    width:200px;
+    height:60px;
+    margin:0px -50px -15px 0px;
+    background-color: var(--primary-light-blue);
+}
+
+
+
+@media(max-width:768px){
+    .header {
+        width: 30.1rem;
+    }
+   
+    .login {
+        position:absolute;
+        bottom:11%;
+        left:71%;
+        width:120px;
+        height:60px;
+
+    }
+    .signup {
+        position:absolute;
+        bottom:11%;
+        right:77%;
+        width:120px;
+        height:60px;
+    }
+}
+
