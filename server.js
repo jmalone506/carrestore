@@ -1,11 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const session = require('express-session');
+const bodyParser = require('body-parser');
 const api = require('./routes');
 const app = express();
 
 // // DB Config
 const db = require('./config/keys.config').mongoURI;
+
+// body parser
+app.use(bodyParser.json());
 
 // Connect to MongoDB
 mongoose
@@ -18,16 +21,7 @@ mongoose
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
 
-// Express body parser
-app.use(express.urlencoded({ extended: true }));
 
-app.use(
-    session({
-        secret: 'cardbi',
-        resave: true,
-        saveUninitialized: true
-    })
-);
 
 // routes
 app.use(api);

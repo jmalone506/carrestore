@@ -355,6 +355,30 @@ const carSeed = [
         "Model_Name": "Mach-E"
     },
     {
+        "Make_Name": "AUDI",
+        "Model_Name": "A3"
+    },
+    {
+        "Make_Name": "AUDI",
+        "Model_Name": "A4"
+    },
+    {
+        "Make_Name": "AUDI",
+        "Model_Name": "A5"
+    },
+    {
+        "Make_Name": "AUDI",
+        "Model_Name": "Q3"
+    },
+    {
+        "Make_Name": "AUDI",
+        "Model_Name": "Q4"
+    },
+    {
+        "Make_Name": "AUDI",
+        "Model_Name": "Q5"
+    },
+    {
         "Make_Name": "CHEVROLET",
         "Model_Name": "Aveo"
     },
@@ -603,15 +627,11 @@ const carSeed = [
         "Model_Name": "W7"
     },
     {
-        "Make_ID": 467,
         "Make_Name": "CHEVROLET",
-        "Model_ID": 14451,
         "Model_Name": "D7"
     },
     {
-        "Make_ID": 467,
         "Make_Name": "CHEVROLET",
-        "Model_ID": 14457,
         "Model_Name": "S-10"
     },
     {
@@ -689,9 +709,259 @@ const carSeed = [
     {
         "Make_Name": "CHEVROLET",
         "Model_Name": "Onix"
-    }
+    },
+    {
+        "Make_Name": "DODGE",
+        "Model_Name": "Avenger"
+    },
+    {
+        "Make_Name": "DODGE",
+        "Model_Name": "Charger"
+    },
+    {
+        "Make_Name": "DODGE",
+        "Model_Name": "Challenger"
+    },
+    {
+        "Make_Name": "DODGE",
+        "Model_Name": "Dart"
+    },
+    {
+        "Make_Name": "DODGE",
+        "Model_Name": "Durango"
+    },
+    {
+        "Make_Name": "DODGE",
+        "Model_Name": "Nitro"
+    },
+    {
+        "Make_Name": "DODGE",
+        "Model_Name": "Ram"
+    },
+    {
+        "Make_Name": "HONDA",
+        "Model_Name": "Accord"
+    },
+    {
+        "Make_Name": "HONDA",
+        "Model_Name": "Civic"
+    },
+    {
+        "Make_Name": "HONDA",
+        "Model_Name": "Crv"
+    },
+    {
+        "Make_Name": "HONDA",
+        "Model_Name": "Element"
+    },
+    {
+        "Make_Name": "HONDA",
+        "Model_Name": "Pilot"
+    },
+    {
+        "Make_Name": "NISSAN",
+        "Model_Name": "Maxima"
+    },
+    {
+        "Make_Name": "NISSAN",
+        "Model_Name": "Frontier"
+    },
+    {
+        "Make_Name": "NISSAN",
+        "Model_Name": "Titan"
+    },
+    {
+        "Make_Name": "NISSAN",
+        "Model_Name": "Pathfinder"
+    },
+    {
+        "Make_Name": "NISSAN",
+        "Model_Name": "350z"
+    },
+    {
+        "Make_Name": "NISSAN",
+        "Model_Name": "GTR"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "Tribute"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "MX-5"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "RX-8"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "Mazda3"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "Mazda5"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "CX-7"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "CX-9"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "Mazda6"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "Mazda2"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "MPV"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "CX-5"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "B-Series"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "Protege"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "Millenia"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "626"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "323"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "MX-3"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "929"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "RX-7"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "MX-6"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "CX-3"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "GLC"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "Navajo"
+    },
+    {
+        "Make_Name": "MAZDA",
+        "Model_Name": "CX-30"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "Wrangler"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "Liberty"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "Cherokee"
+    },
+    {
 
-];
+        "Make_Name": "JEEP",
+        "Model_Name": "Compass"
+    },
+    {
+
+        "Make_Name": "JEEP",
+        "Model_Name": "Patriot"
+    },
+    {
+
+        "Make_Name": "JEEP",
+        "Model_Name": "Commander"
+    },
+    {
+
+        "Make_Name": "JEEP",
+        "Model_Name": "Grand Cherokee"
+    },
+    {
+
+        "Make_Name": "JEEP",
+        "Model_Name": "Renegade"
+    },
+    {
+
+        "Make_Name": "JEEP",
+        "Model_Name": "Grand Wagoneer"
+    },
+    {
+
+        "Make_Name": "JEEP",
+        "Model_Name": "Comanche"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "Wagoneer"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "J-10"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "J-20"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "CJ-7"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "CJ-8 Scrambler"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "CJ-5"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "CJ-6"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "Wrangler JK"
+    },
+    {
+        "Make_Name": "JEEP",
+        "Model_Name": "Gladiator"
+    }
+]
 
 db.Car
     .remove({})

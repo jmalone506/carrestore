@@ -20,7 +20,6 @@ function Cars() {
         </Col>
       </Row>
 
-
       <Row>
         <Col size="md-6 sm-12">
           <Jumbotron>

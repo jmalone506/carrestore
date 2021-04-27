@@ -30,6 +30,7 @@
     "express": "^4.16.3",
     "express-session": "^1.16.1",
     "express-ejs-layouts": "^2.5.0",
+    "react-google-login": "^5.2.2",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^3.1.2",
