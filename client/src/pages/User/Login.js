@@ -1,58 +1,71 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Component } from "react";
+import { Redirect } from 'react-router-dom'
 import { Col, Row, Container } from "../../components/Grid";
 import Welcome from "../../components/Welcome"
-import API from "../../utils/API";
-import { useHistory } from "react-router-dom";
 import loginIMG from "../../images/login.png";
 import { Input } from "../../components/Form";
-
+import axios from 'axios'
 import "./style.css";
+import API from "../../utils/API";
 // import { GoogleLogin } from 'react-google-login';
 // import GoogleBtn from "../../components/GoogleBtn"
 
-
-function Login() {
-    // Setting our component's initial state
-    const [user, setUser] = useState([])
-    const [formObject, setFormObject] = useState({
-    })
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-
-    const History = useHistory();
-
-    function handleInputChange() {
-        return email.length > 0 && password.length > 0;
-    }
-
-    function handleFormSubmit(event) {
-        event.preventDefault();
-        if (formObject.name && formObject.email) {
-            API.getUser({
-                email: formObject.email,
-                password: formObject.password
-            })
-                .then(() => setFormObject({
-                    name: "",
-                    email: "",
-                    password: ""
-                }))
-                .then(() => {
-                    History.push("/cars")
-                })
-
-                .catch(err => console.log(err));
+class Login extends Component {
+    constructor() {
+        super()
+        this.state = {
+            username: '',
+            password: '',
+            redirectTo: null
         }
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this)
+
+    }
+
+    handleChange(event) {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleSubmit(event) {
+        event.preventDefault()
+        // console.log('handleSubmit')
+
+        axios
+            .post('/api/users/login', {
+                username: this.state.username,
+                password: this.state.password
+            })
+            .then(response => {
+                console.log('login response: ')
+                console.log(response)
+                if (response.status === 200) {
+                    // update App.js state
+                    API.getUser({
+                        loggedIn: true,
+                        username: response.data.username
+                    })
+                    // update the state to redirect to home
+                    this.setState({
+                        redirectTo: '/cars'
+                    })
+                }
+            }).catch(error => {
+                console.log('login error: ')
+                console.log(error);
+
+            })
     }
 
 
 
-
-
-
-
-
-    return (
+    render() {
+        if (this.state.redirectTo) {
+            return <Redirect to={{ pathname: this.state.redirectTo }} />
+        } else {
+            return (
         <div className="loginPage"><Welcome></Welcome>
             <Row>
                 <Col size="md-12">
@@ -75,10 +88,10 @@ function Login() {
 
                                     <Input
 
-                                        onChange={handleInputChange}
+                                        onChange={this.handleChange}
                                         name="email"
                                         placeholder="Type in your email"
-                                        value={formObject.email}
+                                        value={this.state.email}
                                     />
                                     <Input
                                         type="password"
@@ -87,11 +100,11 @@ function Login() {
                                         id="exampleInputPassword1"
                                         required
                                         placeholder="Password"
-                                        value={formObject.password}
-                                        onChange={handleInputChange}
+                                        value={this.state.password}
+                                        onChange={this.handleChange}
                                     />
 
-                                    <button type="submit" className="btn btn-info" onClick={handleFormSubmit}>
+                                    <button type="submit" className="btn btn-info" onClick={this.handleSubmit}>
                                         Login
         </button>
 
@@ -108,9 +121,9 @@ function Login() {
 
 
         </div>
-    );
+            )
+        }
+    }
 }
-
-
 
 export default Login
