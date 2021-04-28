@@ -3,7 +3,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
 
 function Forum() {
-
+   
 
     return (
         <Container fluid>
