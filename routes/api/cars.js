@@ -1,16 +1,14 @@
 const router = require("express").Router();
-const carsController = require("../../controllers/carsController");
+const db = require("../../models/Cars");
 
-// Matches with "/api/books"
-router.route("/")
-    .get(carsController.findAll)
-    .post(carsController.create);
-
-// Matches with "/api/books/:id"
-router
-    .route("/:id")
-    .get(carsController.findById)
-    .put(carsController.update)
-    .delete(carsController.remove);
+router.get("/accessorize", (req, res) => {
+    // Use a regular expression to search titles for req.query.q
+    // using case insensitive match. https://docs.mongodb.com/manual/reference/operator/query/regex/index.html
+    db.Recipe.find({
+        Make_Name: { $regex: new RegExp(req.query.q, 'i') }
+    })
+        .then(recipes => res.json(recipes))
+        .catch(err => res.status(422).end());
+});
 
 module.exports = router;
