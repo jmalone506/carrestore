@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const db = require("../../models/Cars");
 
-router.get("/accessorize", (req, res) => {
+router.get("/api/accessorize", (req, res) => {
     // Use a regular expression to search titles for req.query.q
     // using case insensitive match. https://docs.mongodb.com/manual/reference/operator/query/regex/index.html
     db.Recipe.find({

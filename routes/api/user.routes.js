@@ -5,13 +5,8 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 // Load User model
 const User = require('../../models/user.model');
-const { forwardAuthenticated } = require('../../config/auth.config');
 
-// Login Page
-router.get('/api/users/login', forwardAuthenticated, (req, res) => res.render('login'));
 
-// Register Page
-router.get('/api/users/signup', forwardAuthenticated, (req, res) => res.render('register'));
 
 // Register
 router.post('/api/users/signup', (req, res) => {
@@ -51,7 +46,7 @@ router.post('/login', (req, res, next) => {
 // Logout
 router.get('/logout', (req, res) => {
     req.logout();
-    req.flash('success_msg', 'You are logged out');
+
     res.redirect('/');
 });
 

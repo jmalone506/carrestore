@@ -14,7 +14,7 @@ class Login extends Component {
     constructor() {
         super()
         this.state = {
-            username: '',
+            email: '',
             password: '',
             redirectTo: null
         }
@@ -31,28 +31,25 @@ class Login extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        // console.log('handleSubmit')
+        console.log('handleSubmit')
 
         axios
-            .post('/api/users/login', {
-                username: this.state.username,
+            .post('/login', {
+                email: this.state.email,
                 password: this.state.password
             })
             .then(response => {
                 console.log('login response: ')
                 console.log(response)
                 if (response.status === 200) {
-                    // update App.js state
-                    API.getUser({
-                        loggedIn: true,
-                        username: response.data.username
-                    })
+
                     // update the state to redirect to home
                     this.setState({
                         redirectTo: '/cars'
                     })
                 }
             }).catch(error => {
+
                 console.log('login error: ')
                 console.log(error);
 
@@ -66,61 +63,61 @@ class Login extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
-        <div className="loginPage"><Welcome></Welcome>
-            <Row>
-                <Col size="md-12">
-                    <img className="loginIMG" src={loginIMG} alt="login image.."></img>
-                </Col>
-            </Row>
+                <div className="loginPage"><Welcome></Welcome>
+                    <Row>
+                        <Col size="md-12">
+                            <img className="loginIMG" src={loginIMG} alt="login image.."></img>
+                        </Col>
+                    </Row>
 
-            <div className="container mt-5">
-                <div className="row">
-                    <div className="col">
-                        <div className="card mx-auto">
-                            <div className="card-body">
-                                <h1
-                                    className="card-title"
-                                    style={{ borderBottom: "1px solid #efefef" }}
-                                >
-                                    Login Form
+                    <div className="container mt-5">
+                        <div className="row">
+                            <div className="col">
+                                <div className="card mx-auto">
+                                    <div className="card-body">
+                                        <h1
+                                            className="card-title"
+                                            style={{ borderBottom: "1px solid #efefef" }}
+                                        >
+                                            Login Form
                 </h1>
-                                <form>
+                                        <form>
 
-                                    <Input
+                                            <Input
 
-                                        onChange={this.handleChange}
-                                        name="email"
-                                        placeholder="Type in your email"
-                                        value={this.state.email}
-                                    />
-                                    <Input
-                                        type="password"
-                                        name="password"
-                                        className="form-control"
-                                        id="exampleInputPassword1"
-                                        required
-                                        placeholder="Password"
-                                        value={this.state.password}
-                                        onChange={this.handleChange}
-                                    />
+                                                onChange={this.handleChange}
+                                                name="email"
+                                                placeholder="Type in your email"
+                                                value={this.state.email}
+                                            />
+                                            <Input
+                                                type="password"
+                                                name="password"
+                                                className="form-control"
+                                                id="exampleInputPassword1"
+                                                required
+                                                placeholder="Password"
+                                                value={this.state.password}
+                                                onChange={this.handleChange}
+                                            />
 
-                                    <button type="submit" className="btn btn-info" onClick={this.handleSubmit}>
-                                        Login
+                                            <button type="submit" className="btn btn-info" onClick={this.handleSubmit}>
+                                                Login
         </button>
 
 
-                                    <p>Don't have an account? <a href="./signup">Sign up Here!</a></p>
-                                </form>
+                                            <p>Don't have an account? <a href="./signup">Sign up Here!</a></p>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+
+
                 </div>
-            </div>
-
-
-
-
-        </div>
             )
         }
     }
