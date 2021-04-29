@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+const session = require("express-session");
+const passport = require("passport");
+
 
 const PORT = process.env.PORT || 3002;
 const api = require('./routes');
@@ -10,8 +12,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// body parser
-app.use(bodyParser.json());
+
 
 // // DB Config
 const db = require('./config/keys.config').mongoURI;
@@ -27,9 +28,18 @@ mongoose
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
 
+app.use(session({
+    secret: "cardbisecret",
+    resave: true,
+    saveUninitialized: true
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+require("./config/passport.config")(passport);
 // routes
 app.use(api);
 
-app.listen(PORT, () => 
+app.listen(PORT, () =>
     console.log(`Server running on port ${PORT}`)
 );

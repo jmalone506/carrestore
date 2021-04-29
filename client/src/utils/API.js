@@ -22,8 +22,8 @@ const API = {
     return axios.post("/api/cars", carData);
   },
 
-  getUser: function (id) {
-    return axios.get("/api/users/login" + id)
+  getUser: function (userData) {
+    return axios.post("/login", userData)
   },
 
   saveUser: function (userData) {
