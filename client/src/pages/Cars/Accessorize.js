@@ -7,7 +7,6 @@ import { Input } from "../../components/Form/";
 import Button from "../../components/Button";
 
 import { CarList, CarListItem } from "../../components/CarList/CarList";
-import { json } from "sequelize/types";
 
 
 function Accessorize() {
@@ -31,7 +30,7 @@ function Accessorize() {
                 console.log(response)
                 if (response.status === 200) {
 
-                    setCars({isLoaded: true, car: json.car})
+                    setCars(response.data)
                 }
             }).catch(error => {
 
@@ -82,13 +81,13 @@ function Accessorize() {
                         ) : (
                             <CarList>
                                 ({cars.map(car => {
-                                return (
+                                
                                     <CarListItem
                                         key={car.Make_Name}
                                         Make_Name={car.Make_Name}
                                         Model_Name={car.Model_Name}
                                     />
-                                );
+                                
                             })})
                             </CarList>
                         )}
