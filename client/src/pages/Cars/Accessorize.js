@@ -24,7 +24,7 @@ function Accessorize() {
         event.preventDefault();
 
         axios
-            .post('/accessorize')
+            .get('/accessorize?q=' + carSearch)
             .then(response => {
 
                 console.log(response)
@@ -64,7 +64,7 @@ function Accessorize() {
                                         <Button
                                             onClick={handleFormSubmit}
                                             type="success"
-
+                                            
                                         >
                                             Search
                     </Button>
@@ -81,13 +81,13 @@ function Accessorize() {
                         ) : (
                             <CarList>
                                 ({cars.map(car => {
-                                
+                                return (
                                     <CarListItem
-                                        key={car.Make_Name}
-                                        Make_Name={car.Make_Name}
-                                        Model_Name={car.Model_Name}
+                                        key={car._id}
+                                        make={car.make}
+                                        model={car.model}
                                     />
-                                
+                                );
                             })})
                             </CarList>
                         )}

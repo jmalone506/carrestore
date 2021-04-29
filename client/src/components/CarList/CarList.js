@@ -9,8 +9,8 @@ export function CarList({ children }) {
 
 
 export function CarListItem({
-    Make_Name,
-    Model_Name
+    make,
+    model
 }) {
     return (
         <li className="list-group-item">
@@ -20,8 +20,8 @@ export function CarListItem({
                        
                     </Col>
                     <Col size="xs-8 sm-9">
-                        <h3>Make Name:{Make_Name}</h3>
-                        <p>Model Name: {Model_Name}</p>
+                        <h3>Make Name:{make}</h3>
+                        <p>Model Name: {model}</p>
 
                     </Col>
                 </Row>
