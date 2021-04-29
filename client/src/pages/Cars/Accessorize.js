@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Jumbotron from "../../components/Jumbotron";
-
+import axios from "axios";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
 import { Input } from "../../components/Form/";
 import Button from "../../components/Button";
-import API from "../../utils/API";
+
 import { CarList, CarListItem } from "../../components/CarList/CarList";
 
 
@@ -21,11 +21,25 @@ function Accessorize() {
     };
 
     const handleFormSubmit = event => {
-
         event.preventDefault();
-        API.getList(carSearch)
-            .then(res => setCars(res.data))
-            .catch(err => console.log(err));
+
+        axios
+            .get('/accessorize?q=' + carSearch)
+            .then(response => {
+
+                console.log(response)
+                if (response.status === 200) {
+
+                    setCars(response.data)
+                }
+            }).catch(error => {
+
+                console.log(' error: ')
+                console.log(error);
+
+            })
+
+
     };
 
     return (
@@ -67,13 +81,14 @@ function Accessorize() {
                         ) : (
                             <CarList>
                                 ({cars.map(car => {
-                                    return (
-                                        <CarListItem
-                                            Make_Name={car.Make_Name}
-                                            Model_Name={car.Model_Name}
-                                        />
-                                    );
-                                })})
+                                return (
+                                    <CarListItem
+                                        key={car._id}
+                                        make={car.make}
+                                        model={car.model}
+                                    />
+                                );
+                            })})
                             </CarList>
                         )}
                     </Col>
