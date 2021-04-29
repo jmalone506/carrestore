@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Jumbotron from "../../components/Jumbotron";
-
+import axios from "axios";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
 import { Input } from "../../components/Form/";
 import Button from "../../components/Button";
-import API from "../../utils/API";
+
 import { CarList, CarListItem } from "../../components/CarList/CarList";
+import { json } from "sequelize/types";
 
 
 function Accessorize() {
@@ -21,11 +22,25 @@ function Accessorize() {
     };
 
     const handleFormSubmit = event => {
-
         event.preventDefault();
-        API.getList(carSearch)
-            .then(res => setCars(res.data))
-            .catch(err => console.log(err));
+
+        axios
+            .post('/accessorize')
+            .then(response => {
+
+                console.log(response)
+                if (response.status === 200) {
+
+                    setCars({isLoaded: true, car: json.car})
+                }
+            }).catch(error => {
+
+                console.log(' error: ')
+                console.log(error);
+
+            })
+
+
     };
 
     return (
@@ -50,7 +65,7 @@ function Accessorize() {
                                         <Button
                                             onClick={handleFormSubmit}
                                             type="success"
-                                            
+
                                         >
                                             Search
                     </Button>
@@ -67,13 +82,14 @@ function Accessorize() {
                         ) : (
                             <CarList>
                                 ({cars.map(car => {
-                                    return (
-                                        <CarListItem
-                                            Make_Name={car.Make_Name}
-                                            Model_Name={car.Model_Name}
-                                        />
-                                    );
-                                })})
+                                return (
+                                    <CarListItem
+                                        key={car.Make_Name}
+                                        Make_Name={car.Make_Name}
+                                        Model_Name={car.Model_Name}
+                                    />
+                                );
+                            })})
                             </CarList>
                         )}
                     </Col>

@@ -3,7 +3,7 @@ import axios from "axios";
 const API = {
 
   getList: function(query) {
-    return axios.get("/api/accessorize", { params: { q: query }})
+    return axios.get("/accessorize", { params: { q: query }})
   },
 
   getCars: function () {
