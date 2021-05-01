@@ -1,6 +1,6 @@
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
-import Cards from "../../components/Cards/BuyingCards"
+import saveCards from "../../components/Cards/BuyingCards"
 import CarouselIMG from "../../components/Carousel/BuyCarousel"
 
 function Buying() {
@@ -18,7 +18,7 @@ function Buying() {
             </Row>
 
 
-            < Cards />
+
 
         </Container>
 
