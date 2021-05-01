@@ -8,11 +8,11 @@ const PORT = process.env.PORT || 3002;
 const api = require('./routes');
 const app = express();
 
+
+
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-
 
 // // DB Config
 const db = require('./config/keys.config').mongoURI;
@@ -37,8 +37,16 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 require("./config/passport.config")(passport);
+
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
+
 // routes
 app.use(api);
+
+
 
 app.listen(PORT, () =>
     console.log(`Server running on port ${PORT}`)
