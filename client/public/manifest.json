@@ -1,7 +1,12 @@
 {
-  "short_name": "Car Hacks",
   "name": "Car Hacks",
-  "url": "/car-hacks",
+  "short_name": "Car Hacks",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,13 +22,7 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
-  ],
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "scope": "/",
-  "prefer_related_applications": false
+  ]
 }

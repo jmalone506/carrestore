@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import unregister from './service-worker';
+import register from './serviceWorker';
 import App from "./App";
 
 
@@ -12,4 +12,4 @@ ReactDOM.render(
     document.getElementById("root")
 );
 
-unregister();
+register();
