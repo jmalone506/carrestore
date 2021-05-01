@@ -13,7 +13,7 @@ function Cars() {
       <Row>
         <Col size="md-12">
           <h1>Welcome </h1>
-         
+
           <Jumbotron>
             <h1>Image</h1>
           </Jumbotron>
@@ -61,7 +61,7 @@ function Cars() {
       </Row>
       < Footer />
     </Container>
-  
+
   );
 }
 

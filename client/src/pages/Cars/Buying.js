@@ -1,12 +1,14 @@
 import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
+import Cards from "../../components/Cards/BuyingCards"
+
 
 function Buying() {
 
 
     return (
-        <Container fluid>
+        <Container fluid center>
 
             <Navbar></Navbar>
             <Row>
@@ -19,18 +21,10 @@ function Buying() {
             </Row>
 
 
-            <Row>
-                <Col size="md-8">
-                    <Jumbotron>
-                        <h1>About Car Hacks</h1>
-                    </Jumbotron>
+            < Cards />
 
-                </Col>
-                <Col size="md-4 sm-12">
-
-                </Col>
-            </Row>
         </Container>
+
     );
 }
 
