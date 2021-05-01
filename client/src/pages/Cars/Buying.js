@@ -1,8 +1,7 @@
-import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
 import Cards from "../../components/Cards/BuyingCards"
-
+import CarouselIMG from "../../components/Carousel/BuyCarousel"
 
 function Buying() {
 
@@ -14,9 +13,7 @@ function Buying() {
             <Row>
                 <Col size="md-12">
                     <h1>Buying </h1>
-                    <Jumbotron>
-                        <h1>Image</h1>
-                    </Jumbotron>
+                    <CarouselIMG />
                 </Col>
             </Row>
 

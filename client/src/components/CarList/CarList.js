@@ -13,19 +13,19 @@ export function CarListItem({
     model
 }) {
     return (
-        <li className="list-group-item">
-            <Container>
-                <Row>
-                    <Col size="xs-4 sm-2">
-                       
-                    </Col>
-                    <Col size="xs-8 sm-9">
+        <Container>
+            <Row>
+
+                <Col size="xs-12 sm-12">
+                    <li className="list-group-item">
+
                         <h3>Make Name:{make}</h3>
                         <p>Model Name: {model}</p>
 
-                    </Col>
-                </Row>
-            </Container>
-        </li>
+
+                    </li>
+                </Col>
+            </Row>
+        </Container>
     );
 }
