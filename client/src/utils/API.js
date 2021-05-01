@@ -2,24 +2,16 @@ import axios from "axios";
 
 const API = {
 
-  getList: function(query) {
-    return axios.get("/accessorize", { params: { q: query }})
+  getList: function (query) {
+    return axios.get("/accessorize", { params: { q: query } })
   },
 
-  getCars: function () {
-    return axios.get("/api/cars");
+  getBuyCard: function () {
+    return axios.get("/buy");
   },
 
-  getCar: function (id) {
-    return axios.get("/api/cars/" + id);
-  },
-
-  deleteCar: function (id) {
-    return axios.delete("/api/cars/" + id);
-  },
-
-  saveCar: function (carData) {
-    return axios.post("/api/cars", carData);
+  saveBuyCard: function (query) {
+    return axios.post("/history", { params: { q: query } });
   },
 
   getUser: function (userData) {

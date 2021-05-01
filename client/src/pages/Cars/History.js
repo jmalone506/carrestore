@@ -1,6 +1,8 @@
 import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
+// import AllCards from "../../components/Cards";
+
 
 function History() {
 
