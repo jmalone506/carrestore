@@ -1,6 +1,7 @@
 import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
+import CarouselIMG from "../../components/Carousel/MaintCarousel"
 
 function Maintenance() {
 
@@ -12,9 +13,7 @@ function Maintenance() {
             <Row>
                 <Col size="md-12">
                     <h1>Maintenance </h1>
-                    <Jumbotron>
-                        <h1>Image</h1>
-                    </Jumbotron>
+                    <CarouselIMG />
                 </Col>
             </Row>
 

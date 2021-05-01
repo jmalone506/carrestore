@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
-
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios"
 import "./style.css";
 import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,18 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
 
+  const History = useHistory();
 
+  const logout = () => {
+    axios.get("/logout")
+      .then((response) => {
+        console.log(response)
+        if (response.status === 200) {
+
+          History.push("/")
+        }
+      })
+  }
 
   return (
 
@@ -88,15 +99,10 @@ function Navbar() {
               Search History
             </Link>
           </li>
-          
+
         </ul>
-        
-        <button className="btn-danger" >  <Link
-          to="/"
-          className={window.location.pathname === "/logout" ? "nav-link active" : "nav-link"}
-        >
-          Logout
-            </Link></button>
+
+        <button className="btn-danger" onClick={logout}></button>
       </div>
     </nav>
 

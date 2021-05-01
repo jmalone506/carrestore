@@ -5,6 +5,7 @@ const User = db.user;
 
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
+const e = require("express");
 
 exports.signUp = (req, res) => {
     const user = new User({
@@ -23,11 +24,11 @@ exports.signUp = (req, res) => {
             })
         })
 
-    const login = (req, res, next) => {
-        var username = req.body.username
+    exports.login = (req, res, next) => {
+        var email = req.body.email
         var password = req.body.password
 
-        user.findOne({ $or: [{ email: username }] })
+        user.findOne({ $or: [{ email: email }] })
             .then(user => {
                 if (user) {
                     bcrypt.compare(password, user.password, function (err, result) {

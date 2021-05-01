@@ -1,6 +1,10 @@
 import axios from "axios";
 
-export default {
+const API = {
+
+  getList: function(query) {
+    return axios.get("/accessorize", { params: { q: query }})
+  },
 
   getCars: function () {
     return axios.get("/api/cars");
@@ -18,8 +22,8 @@ export default {
     return axios.post("/api/cars", carData);
   },
 
-  getUser: function (id) {
-    return axios.get("/api/users/login" + id)
+  getUser: function (userData) {
+    return axios.post("/login", userData)
   },
 
   saveUser: function (userData) {
@@ -27,3 +31,4 @@ export default {
   }
 };
 
+export default API;

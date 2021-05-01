@@ -1,6 +1,8 @@
 import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
+import SellingCard from "../../components/Cards/SellingCards";
+import CarouselIMG from "../../components/Carousel/SellCarousel"
 
 function Selling() {
 
@@ -12,24 +14,14 @@ function Selling() {
             <Row>
                 <Col size="md-12">
                     <h1>Selling </h1>
-                    <Jumbotron>
-                        <h1>Image</h1>
-                    </Jumbotron>
+                    <CarouselIMG />
                 </Col>
             </Row>
 
 
-            <Row>
-                <Col size="md-8">
-                    <Jumbotron>
-                        <h1>About Car Hacks</h1>
-                    </Jumbotron>
+            <SellingCard />
 
-                </Col>
-                <Col size="md-4 sm-12">
 
-                </Col>
-            </Row>
         </Container>
     );
 }

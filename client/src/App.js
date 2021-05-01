@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Wrapper from "./components/Wrapper";
 import Home from "./pages/User/Home.js";
-import SignUp from "./pages/User/SignUp.js";
+import SignUp from "./pages/User/Signup.js";
 import Login from "./pages/User/Login";
 
 import Cars from "./pages/Cars/Cars"

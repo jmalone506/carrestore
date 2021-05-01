@@ -1,9 +1,11 @@
 import React from "react";
 
-export function Input(props) {
+function Input(props) {
   return (
-    <div className="form-group">
-      <input className="form-control" {...props} />
+    <div className="input-group input-group-lg">
+      <input className="form-control" type="text" {...props} />
     </div>
   );
 }
+
+export default Input;
