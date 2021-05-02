@@ -7,6 +7,7 @@ import { useHistory } from "react-router-dom";
 import GoogleBtn from "../../components/GoogleBtn"
 import Welcome from "../../components/Welcome"
 import signupIMG from "../../images/signup.png"
+import "./style.css"
 
 function SignUp() {
     // Setting our component's initial state
@@ -55,50 +56,67 @@ function SignUp() {
     };
 
     return (
-        <Container classname="signupPage" fluid>
+        <Container classname="signuppage" fluid>
             <Welcome></Welcome>
-            <Row>
-                <Col size="col-lg-8 col-md-8 col-12 mb-5">
-                    <img className="signupIMG" src={signupIMG} alt="sign up image.."></img>
+            <Row className="d-flex justify-content-center text-center">
+                <Col size="col-12 mb-5">
+                    <img className="signupimg" src={signupIMG} alt="sign up image.."></img>
                 </Col>
 
-                <Col size="col-lg-4 col-md-4 col-12 mb-5">
+            </Row>
 
-                    <div className="card mx-auto">
-                        <div className="card-body">
-                            <h1
-                                className="card-title"
-                                style={{ borderBottom: "1px solid #efefef" }}
-                            >
-                                Sign Up Here
-                                 </h1>
-                            <form>
-                                <Input
-                                    onChange={handleInputChange}
-                                    name="name"
-                                    placeholder="Add Your Full Name"
-                                    value={formObject.name}
-                                />
-                                <Input
-                                    onChange={handleInputChange}
-                                    name="email"
-                                    placeholder="Add Your Email"
-                                    value={formObject.email}
-                                />
-                                <Input
-                                    onChange={handleInputChange}
-                                    name="password"
-                                    placeholder="Create A Password"
-                                    value={formObject.password}
-                                />
+            <Row>
 
-                                <button type="submit" className="btn btn-danger" onClick={handleFormSubmit}>
-                                    Sign Up
-                                    </button>
-                            </form>
+
+                <div className="container mt-5">
+                    <div className="row">
+                        <div className="col">
+                            <div className="card mx-auto">
+                                <div className="card-body">
+                                    <h1
+                                        className="card-title"
+                                        style={{ borderBottom: "1px solid #efefef" }}
+                                    >
+                                        Sign Up Here
+                </h1>
+                                    <form>
+                                        <Input
+                                            onChange={handleInputChange}
+                                            name="name"
+                                            placeholder="Add Your Full Name"
+                                            value={formObject.name}
+                                        />
+                                        <Input
+                                            onChange={handleInputChange}
+                                            name="email"
+                                            placeholder="Add Your Email"
+                                            value={formObject.email}
+                                        />
+                                        <Input
+                                            onChange={handleInputChange}
+                                            name="password"
+                                            placeholder="Create A Password"
+                                            value={formObject.password}
+                                        />
+
+                                        <button type="submit" className="btn btn-danger" onClick={handleFormSubmit}>
+                                            Sign Up
+        </button>
+
+                                    </form>
+                                    <br></br>
+                                    <p>Already have an account? </p>
+                                    <a href="./login"><button className="btn btn-secondary " >Login Here!</button></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </Col>
+                </div>
+
+
+
+
+
             </Row>
         </Container>
     );

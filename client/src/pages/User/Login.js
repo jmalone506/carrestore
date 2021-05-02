@@ -65,7 +65,7 @@ class Login extends Component {
                 <div className="loginPage"><Welcome></Welcome>
                     <Row>
                         <Col size="md-12">
-                            <img className="loginIMG" src={loginIMG} alt="login image.."></img>
+                            <img className="loginimg" src={loginIMG} alt="login image.."></img>
                         </Col>
                     </Row>
 
@@ -105,8 +105,11 @@ class Login extends Component {
                                             </button>
 
 
-                                            <p>Don"t have an account? <a href="./signup">Sign up Here!</a></p>
+                                            
                                         </form>
+                                        <br></br>
+                                        <p>Don"t have an account? </p>
+                                        <a href="./signup"><button className="btn btn-secondary " >Sign Up Here!</button></a>
                                     </div>
                                 </div>
                             </div>
