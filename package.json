@@ -1,7 +1,7 @@
 {
   "name": "carhacks",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Car Hacks is all-purpose app of having a car.",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -27,18 +27,15 @@
     "bcryptjs": "2.4.3",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
-    "cors": "^2.8.5",
-    "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "express-session": "^1.16.1",
     "express-ejs-layouts": "^2.5.0",
-    "react-google-login": "^5.2.2",
+    "express-session": "^1.16.1",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^3.1.2",
     "mongoose": "^5.12.3",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^5.8.6"
+    "react-google-login": "^5.2.2"
   }
 }
