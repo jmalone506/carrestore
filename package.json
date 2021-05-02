@@ -1,7 +1,7 @@
 {
   "name": "carhacks",
   "version": "1.0.0",
-  "description": "Car Hacks is all-purpose app of having a car.",
+  "description": "Car Hacks is all-purpose app related to the topic have cars.",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
