@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input } from "../../components/Form";
@@ -60,7 +60,7 @@ function SignUp() {
             <Welcome></Welcome>
             <Row className="d-flex justify-content-center text-center">
                 <Col size="col-12 mb-5">
-                    <img className="signupimg" src={signupIMG} alt="sign up image.."></img>
+                    <img className="signupimg" src={signupIMG} alt="welcome to car hacks"></img>
                 </Col>
 
             </Row>
