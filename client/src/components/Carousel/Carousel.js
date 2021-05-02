@@ -18,7 +18,7 @@ const Carousel = () => {
 
                     <img className="img d-block w-100" src={Car2} alt="First slide" />
                     <div className="carousel-caption d-none d-md-block bg-custom mb-4">
-                        <h1>Welcome To Car Hacks</h1>
+                        <h1 classname="headertext">Welcome To Car Hacks</h1>
 
                     </div>
                 </div>
