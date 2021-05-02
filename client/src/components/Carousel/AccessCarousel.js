@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
+import "./style.css";
+
 import Car1 from "../../images/Car1.png";
 import Car2 from "../../images/Car2.png";
 import Car3 from "../../images/Car3.png";
-import "./style.css"
+
 
 
 const Carousel = () => {
