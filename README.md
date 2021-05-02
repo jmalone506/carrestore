@@ -15,7 +15,7 @@
 ## Description:
   [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
 
-Car Hacks is a xx application that allows 
+Car Hacks is an application that helps users improve 
 
 ![Screenshot of table]()
 
@@ -23,9 +23,9 @@ Car Hacks is a xx application that allows
 ## User Story
 
 ```md
-AS A business
-I WANT a INVENTORY TRACKER
-SO THAT I can manage the business inventory
+AS A User
+I WANT a 
+SO THAT I can 
 ```
 <a name="acceptancecriteria"></a>
 ## Acceptance Criteria
@@ -63,9 +63,9 @@ npm eslint
 | Name | Github Profile|
 | ------------- | ------------- |
 
-| Alicia Qiu  | [:octocat: aliciaqiu27](https://github.com/aliciaqiu27)|
 | Roseanne Nguyen  | [:octocat: roseannenguyen](https://github.com/roseannenguyen)|
 | Josh Malone  | [:octocat: jmalone506](https://github.com/jmalone506)|
+| Alicia Qiu  | [:octocat: aliciaqiu27](https://github.com/aliciaqiu27)|
 | Jammie Hardy  | [:octocat: jamehardy2](https://github.com/jamehardy2)|
 
   ## Test:
