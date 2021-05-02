@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import buyCard from "./saveCard"
 import "./style.css"
 
 class Cards extends Component {
