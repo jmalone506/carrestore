@@ -15,13 +15,18 @@ const Carousel = () => {
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img className="d-block w-100" src={Car1} alt="First slide" />
+                    
+                    <img className="img d-block w-100" src={Car1} alt="First slide" />
+                    <div className="carousel-caption d-none d-md-block bg-custom mb-4">
+                        <h1>Welcome To Car Hacks</h1>
+                        
+                    </div>
                 </div>
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={Car2} alt="Second slide" />
+                    <img className=" img d-block w-100" src={Car2} alt="Second slide" />
                 </div>
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={Car3} alt="Third slide" />
+                    <img className="img d-block w-100" src={Car3} alt="Third slide" />
                 </div>
             </div>
             <a className="carousel-control-prev" href="#carousel-switch" role="button" data-slide="prev">

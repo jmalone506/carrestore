@@ -102,7 +102,7 @@ function Navbar() {
 
         </ul>
 
-        <button className="btn-danger" onClick={logout}></button>
+        <button className="btn-sm btn-danger" onClick={logout}>Log Out</button>
       </div>
     </nav>
 
