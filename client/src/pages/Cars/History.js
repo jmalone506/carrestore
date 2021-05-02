@@ -10,7 +10,7 @@ function History() {
     return (
         <Container fluid>
 
-            <Navbar></Navbar>
+            <Navbar />
             <Row>
                 <Col size="md-12">
                     <h1>Your Recent Searches </h1>
