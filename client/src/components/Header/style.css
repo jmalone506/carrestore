@@ -8,7 +8,7 @@
   --primary-dark: #000000;
 }
 
-h1 {
+.forumTitle {
     color: var(--primary-white);
      font-size: 7vw;
       font-weight: bold;

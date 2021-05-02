@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import forumIMG from "../../images/forum.png";
+import forumIMG from "../../images/forum.gif";
 
 
 function Forum( ) {
