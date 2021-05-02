@@ -67,8 +67,6 @@ npm eslint
 
   ## Test:
 No tests were installed for this project.
-  
-
 
 
 ## Available Scripts
