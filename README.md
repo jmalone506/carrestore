@@ -60,10 +60,10 @@ npm eslint
 | Name | Github Profile|
 | ------------- | ------------- |
 
-| Alicia Qiu  | [aliciaqiu27](https://github.com/aliciaqiu27)|
-| Roseanne Nguyen  | [roseannenguyen](https://github.com/roseannenguyen)|
-| Josh Malone  | [jmalone506](https://github.com/jmalone506)|
-| Jammie Hardy  | [jamehardy2](https://github.com/jamehardy2)|
+| Alicia Qiu  | [:octocat: aliciaqiu27](https://github.com/aliciaqiu27)|
+| Roseanne Nguyen  | [:octocat: roseannenguyen](https://github.com/roseannenguyen)|
+| Josh Malone  | [:octocat: jmalone506](https://github.com/jmalone506)|
+| Jammie Hardy  | [:octocat: jamehardy2](https://github.com/jamehardy2)|
 
   ## Test:
 No tests were installed for this project.
