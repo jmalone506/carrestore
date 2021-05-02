@@ -1,16 +1,14 @@
 const express = require('express');
+const session = require('express-session');
 const mongoose = require('mongoose');
-const session = require("express-session");
-const passport = require("passport");
 
-
+const passport = require('passport');
 const PORT = process.env.PORT || 3002;
 const api = require('./routes');
 const app = express();
 
 
-
-// Define middleware here
+// Define Middleware 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -28,26 +26,27 @@ mongoose
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
 
+
 app.use(session({
     secret: "cardbisecret",
     resave: true,
     saveUninitialized: true
 }));
 
+// Call Passport
 app.use(passport.initialize());
 app.use(passport.session());
-require("./config/passport.config")(passport);
+require('./config/passport.config')(passport);
 
-
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
+// Set Heroku
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
 }
 
-// routes
+// Routes
 app.use(api);
 
-
-
+// Port on Local Host
 app.listen(PORT, () =>
     console.log(`Server running on port ${PORT}`)
 );
