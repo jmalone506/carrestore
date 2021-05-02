@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 // // DB Config
-const url = require('../config/keys.config').mongoURI;
+const url = require("../config/keys.config").mongoURI;
 
 // Connect to MongoDB
 mongoose
@@ -12,7 +12,7 @@ mongoose
         useCreateIndex: true,
         useFindAndModify: false
     })
-    .then(() => console.log('MongoDB Connected'))
+    .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
 
 const carSeed = [
@@ -142,7 +142,7 @@ const carSeed = [
         "model": "Sienna"
     },
     {
-        
+
         "make": "TOYOTA",
         "model": "Camry"
     },

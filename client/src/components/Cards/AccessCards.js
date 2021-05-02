@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import carguru from "../../images/carguru.jpg"
-import "./style.css"
+import React, { Component } from "react";
 
+import "./style.css";
+import carguru from "../../images/carguru.jpg";
 class Cards extends Component {
     render() {
         return (

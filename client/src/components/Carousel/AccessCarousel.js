@@ -1,8 +1,10 @@
-import React from 'react'
-import Car1 from "../../images/Car1.png";
-import Car2 from "../../images/Car2.png";
-import Car3 from "../../images/Car3.png";
-import "./style.css"
+import React from "react";
+import "./style.css";
+
+import Car1 from "../../images/access1.png";
+import Car2 from "../../images/access2.png";
+import Car3 from "../../images/access3.png";
+
 
 
 const Carousel = () => {
@@ -16,6 +18,10 @@ const Carousel = () => {
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img className="d-block w-100" src={Car1} alt="First slide" />
+                    <div className="carousel-caption d-none d-md-block bg-custom mb-4">
+                        <h1>Accessorize Your Ride</h1>
+
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src={Car2} alt="Second slide" />
