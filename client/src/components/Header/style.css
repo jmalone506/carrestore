@@ -53,9 +53,31 @@ color: var(--primary-white) !important;
     background-color: var(--primary-light-blue);
 }
 
+@media(max-width:1440px){
+    .header {
+        width: 100vw;
+    }
+   
+    .login {
+        position:absolute;
+        bottom:11%;
+        left:71%;
+        width:120px;
+        height:60px;
+
+    }
+    .signup {
+        position:absolute;
+        bottom:11%;
+        right:77%;
+        width:120px;
+        height:60px;
+    }
+}
 
 
-@media(max-width:768px){
+
+@media(max-width:640px){
     .header {
         width: 30.1rem;
     }

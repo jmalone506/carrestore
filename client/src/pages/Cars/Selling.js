@@ -1,4 +1,3 @@
-import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
 import SellingCard from "../../components/Cards/SellingCards";
@@ -10,7 +9,7 @@ function Selling() {
     return (
         <Container fluid>
 
-            <Navbar></Navbar>
+            <Navbar />
             <Row>
                 <Col size="md-12">
                     <h1>Selling </h1>

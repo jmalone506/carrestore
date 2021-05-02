@@ -1,19 +1,19 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-const bcrypt = require('bcryptjs');
-const passport = require('passport');
+const bcrypt = require("bcryptjs");
+const passport = require("passport");
 // Load User model
-const User = require('../../models/user.model');
+const User = require("../../models/user.model");
 
 
 
 // Register
-router.post('/api/users/signup', (req, res) => {
+router.post("/api/users/signup", (req, res) => {
     User.findOne({ email: req.body.email })
         .then(user => {
             if (user) {
-                return res.status(400).json({ email: 'Email already exists' });
+                return res.status(400).json({ email: "Email already exists" });
             } else {
 
                 const newUser = new User({
@@ -35,19 +35,19 @@ router.post('/api/users/signup', (req, res) => {
 });
 
 // Login
-router.post('/login', (req, res, next) => {
-    passport.authenticate('local', {
-        successRedirect: '/cars',
-        failureRedirect: '/login',
+router.post("/login", (req, res, next) => {
+    passport.authenticate("local", {
+        successRedirect: "/cars",
+        failureRedirect: "/login",
         failureFlash: true
     })(req, res, next);
 });
 
 // Logout
-router.get('/logout', (req, res) => {
+router.get("/logout", (req, res) => {
     req.logout();
 
-    res.redirect('/');
+    res.redirect("/");
 });
 
 module.exports = router;
