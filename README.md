@@ -2,8 +2,15 @@
 
 ![Screenshot of logo](./client/public/logo192.png)
 
-![badge](https://img.shields.io/badge/license-MIT-informational)   ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore)
-
+![badge](https://img.shields.io/badge/license-MIT-informational)   
+![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) 
+![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jmalone506/carrestore)  
+![GitHub language count](https://img.shields.io/github/languages/count/jmalone506/carrestore?color=light-blue&logo=GitHub&style=flat)
+![react](https://img.shields.io/github/package-json/dependency-version/jmalone506/carrestore/axios?color=purple&label=axios&logo=NPM) 
+![npm](https://img.shields.io/badge/library-react.js-purple/?style=flat&logo=react)    
+![npm](https://img.shields.io/github/package-json/dependency-version/jmalone506/carrestore/mongoose?color=red&label=mongoose&logo=NPM)  
+![npm](https://img.shields.io/badge/authentication-passport-yellow)  
 
   ## Table of Contents
   - [Description](#description)
