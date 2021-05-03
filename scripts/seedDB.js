@@ -14,7 +14,7 @@ mongoose
     })
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
-    
+
 const bookSeed = [
     {
         title: "Change Your Oil",
@@ -46,8 +46,9 @@ const bookSeed = [
     }
 ];
 
-db.Post.remove({})
-    .then(() => db.Post.collection.insertMany(bookSeed))
+db.Book
+    .remove({})
+    .then(() => db.Book.collection.insertMany(bookSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
