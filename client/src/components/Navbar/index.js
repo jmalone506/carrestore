@@ -97,7 +97,7 @@ function Navbar() {
               to="/search"
               className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
             >
-              search
+              Search
             </Link>
           </li>
 
