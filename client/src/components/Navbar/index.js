@@ -5,7 +5,7 @@ import "./style.css";
 import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-
+import swal from '@sweetalert/with-react';
 
 function Navbar() {
 
@@ -16,7 +16,7 @@ function Navbar() {
       .then((response) => {
         console.log(response)
         if (response.status === 200) {
-
+          swal("Logout", "Goodbye Car Hacker. Remember to check your tire pressure!", "success");
           History.push("/")
         }
       })
@@ -94,10 +94,10 @@ function Navbar() {
 
           <li className="nav-item">
             <Link
-              to="/forum"
-              className={window.location.pathname === "/forum" ? "nav-link active" : "nav-link"}
+              to="/search"
+              className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
             >
-              Forum
+              Search
             </Link>
           </li>
 
