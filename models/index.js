@@ -7,6 +7,6 @@ db.mongoose = mongoose;
 
 db.user = require("./user.model");
 db.Car = require("./Cars");
-db.Buy = require("./Buy")
+db.POst = require("./Post")
 
 module.exports = db;

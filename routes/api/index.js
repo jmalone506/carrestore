@@ -1,11 +1,12 @@
 const router = require("express").Router();
+
 const carRoutes = require("./cars");
 const userRoutes = require("./user.routes");
-const buyRoutes = require("./buy.routes")
+const postRoutes = require("./posts.routes")
 
 router.use(carRoutes);
 router.use(userRoutes);
-router.use(buyRoutes);
+router.use(postRoutes)
 
 
 module.exports = router;

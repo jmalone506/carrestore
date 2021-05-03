@@ -6,13 +6,6 @@ const API = {
     return axios.get("/accessorize", { params: { q: query } })
   },
 
-  getBuyCard: function () {
-    return axios.get("/buy");
-  },
-
-  saveBuyCard: function (query) {
-    return axios.post("/history", { params: { q: query } });
-  },
 
   getUser: function (userData) {
     return axios.post("/login", userData)
