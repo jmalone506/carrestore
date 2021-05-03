@@ -1,6 +1,9 @@
 # Car Hacks :red_car:	
 
+![Screenshot of car app](./client/public/logo192.png)
+
 ![badge](https://img.shields.io/badge/license-MIT-informational)   ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore)
+
 
   ## Table of Contents
   - [Description](#description)
@@ -12,14 +15,13 @@
   - [Contributing](#contributing)
   - [Tests](#tests)
 
+![Screenshot of car app](./client/src/images/signup.png)
 ## Description:
   [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
 
 A car can take you to places regardless of age. The process is overwhelming wherever you may be on your car journey.
 Car Hacks is an app that can help you conveniently buy, maintain, modify, and sell your car with a tap of a button. There are millions of website out there to search on. Our app aimed to streamline the process by gathering all the best resources out there.
 
-
-![Screenshot of table]()
 
 <a name="userstory"></a>
 ## User Story
@@ -56,14 +58,12 @@ npm start
 npm eslint
 ```
 
-  ## Usage:
- This was used for learning purposes for the University of Arizona's Coding Boot Camp course. 
+![Screenshot of car app](./client/src/images/welcome.gif)
 
   ## License(s) Used:
   - ![badge](https://img.shields.io/badge/license-MIT-informational) 
 
   ## Contributing:
-| Name | Github Profile|
 
 | Roseanne Nguyen  | [:octocat: roseannenguyen](https://github.com/roseannenguyen)|
 | Josh Malone  | [:octocat: jmalone506](https://github.com/jmalone506)|
