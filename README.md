@@ -9,17 +9,20 @@
   - [Description](#description)
   - [User Story](#userstory)
   - [Acceptance Criteria](#acceptancecriteria)
+  - [Technologies](#technologies)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
+  - [Credits](#credits)
+  - [References](#references)
 
 ![Screenshot of start header](./client/src/images/signup.png)
 ## Description:
 Deployed Link: [https://carhacks.herokuapp.com/]
 
-A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. We're here to help. Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources. You do not have to deal with car salesman while getting the know what best deal for you.
+A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. We're here to help! Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources. In addition to not having to deal with car salesmen, you will have access to the best offers for your needs!  
 
 <a name="userstory"></a>
 ## User Story
@@ -48,6 +51,11 @@ This project required:
 - Must not expose sensitive API key information on the server
 ```
  
+   ## Technologies:
+MongoDB
+React
+Sweetheart lib
+
   ## Installation:
 ```text
 npm init 
@@ -73,7 +81,9 @@ npm eslint
 ![Screenshot of car app](./client/src/images/test1.PNG)
 ![Screenshot of car app](./client/src/images/test.PNG)
 
+  ## Credits:
+Car Hacks is a MERN application for the final project at the University of Arizona.
 
   ## References:
-
-
+https://react-bootstrap.github.io/
+https://www.mongodb.com/cloud/atlas
