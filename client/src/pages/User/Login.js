@@ -6,7 +6,7 @@ import { Input } from "../../components/Form";
 import Welcome from "../../components/Welcome"
 import loginIMG from "../../images/login.png";
 import "./style.css";
-
+import swal from '@sweetalert/with-react';
 
 class Login extends Component {
     constructor() {
@@ -40,7 +40,7 @@ class Login extends Component {
                 console.log("login response: ")
                 console.log(response)
                 if (response.status === 200) {
-
+                    swal("Login", "Permission Granted!", "success");
                     // update the state to redirect to home
                     this.setState({
                         redirectTo: "/cars"

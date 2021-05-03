@@ -7,7 +7,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Navbar from "../../components/Navbar";
-
+import swal from '@sweetalert/with-react';
 
 function Notes() {
 
@@ -50,7 +50,8 @@ function Notes() {
                 body: formObject.body
             })
                 .then(res => {
-                    loadNotes()
+                    loadNotes();
+                    swal("Car Note", "Added!", "success");
                 })
                 .catch(err => console.log(err));
         }
