@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 export const quotes = [
     {
-        title: "Car Buying",
+        title: "Car Quotes - Car Buying",
         content:
             "Always check the Carfax before buying a car.",
         footnote: "Joshua Malone",
