@@ -1,4 +1,4 @@
-# Car Hacks
+# Car Hacks :red_car:	
 
 ![badge](https://img.shields.io/badge/license-MIT-informational)   ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore)
 
@@ -15,7 +15,9 @@
 ## Description:
   [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
 
-Car Hacks is an application that helps users improve 
+A car can take you to places regardless of age. The process is overwhelming wherever you may be on your car journey.
+Car Hacks is an app that can help you conveniently buy, maintain, modify, and sell your car with a tap of a button. There are millions of website out there to search on. Our app aimed to streamline the process by gathering all the best resources out there.
+
 
 ![Screenshot of table]()
 
@@ -24,8 +26,9 @@ Car Hacks is an application that helps users improve
 
 ```md
 AS A User
-I WANT a 
-SO THAT I can 
+I WANT a car app
+SO THAT I can buy, maintain, modify, and sell your car with a tap of a 
+button while being to explore all the different options out there.
 ```
 <a name="acceptancecriteria"></a>
 ## Acceptance Criteria
@@ -61,12 +64,18 @@ npm eslint
 
   ## Contributing:
 | Name | Github Profile|
-| ------------- | ------------- |
 
 | Roseanne Nguyen  | [:octocat: roseannenguyen](https://github.com/roseannenguyen)|
 | Josh Malone  | [:octocat: jmalone506](https://github.com/jmalone506)|
 | Alicia Qiu  | [:octocat: aliciaqiu27](https://github.com/aliciaqiu27)|
 | Jammie Hardy  | [:octocat: jamehardy2](https://github.com/jamehardy2)|
 
+| ------------- | ------------- |
+
   ## Test:
 No tests were installed for this project.
+
+
+  ## References:
+
+
