@@ -1,6 +1,6 @@
 # Car Hacks :red_car:	
 
-![Screenshot of car app](./client/public/logo192.png)
+![Screenshot of logo](./client/public/logo192.png)
 
 ![badge](https://img.shields.io/badge/license-MIT-informational)   ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore)
 
@@ -15,12 +15,11 @@
   - [Contributing](#contributing)
   - [Tests](#tests)
 
-![Screenshot of car app](./client/src/images/signup.png)
+![Screenshot of start header](./client/src/images/signup.png)
 ## Description:
-  [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
+Deployed Link: [https://carhacks.herokuapp.com/]
 
-A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources.
-
+A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. We're here to help. Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources. You do not have to deal with car salesman while getting the know what best deal for you.
 
 <a name="userstory"></a>
 ## User Story
@@ -69,10 +68,10 @@ npm eslint
 | Alicia Qiu  | [:octocat: aliciaqiu27](https://github.com/aliciaqiu27)|
 | Jammie Hardy  | [:octocat: jamehardy2](https://github.com/jamehardy2)|
 
-| ------------- | ------------- |
 
   ## Test:
-No tests were installed for this project.
+![Screenshot of car app](./client/src/images/test1.PNG)
+![Screenshot of car app](./client/src/images/test.PNG)
 
 
   ## References:
