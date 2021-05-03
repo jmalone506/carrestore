@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Element } from "react-scroll";
 import { Marginer } from "../../components/Styled/Marginer";
 import styled from "styled-components";
-import "./style.css"
-import carguru from "../../images/carguru.jpg";
-import hemmings from "../../images/hemmings.png";
-
+import "./style.css";
+import autozone from "../../images/autozone.jpg";
+import pepboys from "../../images/pepboys.jpg";
+import maps from "../../images/maps.png";
 
 const MoreAboutContainer = styled(Element)`
 margin-top:50px;
@@ -76,78 +76,78 @@ class Cards extends Component {
     render() {
         return (
             <MoreAboutContainer>
-                <SectionTitle>Starting Your Car Buying Journey</SectionTitle>
+                <SectionTitle>Maintaining Your Ride</SectionTitle>
                 <AboutContainer>
                     <AboutText>
-                        Whether it's your first time buying car or fifth time, the process is never easy. {<br />}
-                        {<br />} <b>Here are our top tips for starting the car buying process:</b>
+                        Maintaining your whip could be daunting but no one likes being stranded on the road. {<br />}
+                        {<br />} <b>Keep your car in top shape by following these tips:</b>
                         {<br />}
                         {<br />} <ol>
-                            <li>Set your budget.</li>
-                            <li>Research the type of car you want.</li>
-                            <li>Decide: Would you buy online, at a dealership, or private party?</li>
+                            <li>Stay up to date on the routine maintenance. </li>
+                            <li> Check fluid regularly.</li>
+                            <li>Be aware of any vehicle recalls.</li>
                             <li>Resesarch loans and financing process.</li>
                             <li>Get Quotes from a variety of places.</li>
-                            <li>Ask for a car report. No one want a salvage title! </li>
-                            <li>Deal with the dealership or owner and settle on a price point you're content with!</li>
+                            <li>Find a local mechanic.</li>
+                            <li>Don’t avoid your check engine light.</li>
                         </ol>
                         {<br />}
                         {<br />}
-                        {<br />} This page highlights some of the best websites for car buying. Remember to take it slow! It's a car buying process for a reason. You got this!
+                        {<br />} Routine maintenance plays a pivotal role in your vehicle’s health. Maintenance could save you the hassle of having to shop for a new car, being stuck on the side of the road, or outrageous auto shop fees.
         </AboutText>
-                    <AboutImg src={carguru} />
+                    <AboutImg src={maps} />
                 </AboutContainer>
 
                 <ServicesContainer name="servicesSection">
-                    <SectionTitle>Favorite Car Buying Websites</SectionTitle>
+                    <SectionTitle>Favorite Car Maintenance Websites</SectionTitle>
                     <Marginer direction="vertical" margin="3em" />
                     <center>
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={autozone} alt="" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
+                                        <h3 className="card-title">Autozone</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            AutoZone is around every corner and have a wide variety of resources to help maintain your car! They offer some free car support.
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="https://www.autozone.com/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={pepboys} alt="" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
                                         <h3 className="card-title">Title</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            Pep Boys offers Tires, Auto Parts, and Auto Repair giving you the choices to choose what you want to do.
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="https://www.pepboys.com/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={maps} alt="" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
+                                        <h3 className="card-title">Google Maps Search</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            Sometimes, we can't do everything, and we need a mechanic. Google Maps makes searching for local mechanics easily.
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="https://www.google.com/maps/search/find+a+mechanic/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>
