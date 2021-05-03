@@ -3,32 +3,32 @@ import React, { Component } from "react";
 
 export const quotes = [
     {
-        title: "50 Inspirational Quotes For Startups And Entrepreneurs",
+        title: "Car Buying",
         content:
-            "If you just work on stuff that you like and you’re passionate about, you don’t have to have a master plan with how things will play out.",
-        footnote: "Mark Zuckerberg, Facebook Founder and CEO",
-        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mark_Zuckerberg_cropped.jpg/220px-Mark_Zuckerberg_cropped.jpg"
+            "Always check the Carfax before buying a car.",
+        footnote: "Joshua Malone",
+        pic: "https://i.imgur.com/3BeKnHa.png"
     },
     {
-        title: "50 Inspirational Quotes For Startups And Entrepreneurs",
+        title: "Tire Pops Sometimes",
         content:
-            "Any time is a good time to start a company.",
-        footnote: "Ron Conway, Noted Startup Investor, SV Angel",
-        pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDzSJUGCynBe_5AsxFMa5di6NDl79jlhaXU_GjzfKXvUYfQv2"
+            "It's okay to cry if your tire pops.",
+        footnote: "Roseanne Nguyen",
+        pic: "https://i.imgur.com/JGKEPk8.png"
     },
     {
-        title: "50 Inspirational Quotes For Startups And Entrepreneurs",
+        title: "Number One Mechanic Rule",
         content:
-            "Ideas are commodity. Execution of them is not.",
-        footnote: "Michael Dell, Dell Chairman and CEO",
-        pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvWiBIth-yWVarg0-P9t2-tzktb0H9w5RXtCN1l5YxSruAtyfbMQ"
+            "Put the tools back where you found them when you're done using them.",
+        footnote: "Jammie Hardy",
+        pic: "https://i.imgur.com/69TaJPw.png"
     },
     {
-        title: "50 Inspirational Quotes For Startups And Entrepreneurs",
+        title: "What does Yoda drive?",
         content:
-            "The way to get started is to quit talking and start doing.",
-        footnote: "Walt Disney, Co-Founder, Disney",
-        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Walt_Disney_1946.JPG/220px-Walt_Disney_1946.JPG"
+            "A toyota.",
+        footnote: "Alicia Qiu",
+        pic: "https://i.imgur.com/ZCH8UUS.png"
     }
 ];
 
@@ -38,15 +38,15 @@ class Quotes extends Component {
     render() {
         return (
 
-       
-                <QuotesRotator
-                    data={quotes}
-                    progressBarColor="#B5D43C"
-                    backgroundColor="#fff"
-                    textColor="#212121"
-                    timer="5000"
-                />
-        
+
+            <QuotesRotator
+                data={quotes}
+                progressBarColor="#B5D43C"
+                backgroundColor="#fff"
+                textColor="#212121"
+                timer="5000"
+            />
+
 
         )
     }
