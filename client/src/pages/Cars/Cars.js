@@ -3,7 +3,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
 import CarouselIMG from "../../components/Carousel/Carousel"
 import Quotes from "../../components/Quotes/Quotes"
-
+import HomeCards from "../../components/Cards/HomeCards.js"
 
 function Cars() {
 
@@ -13,12 +13,15 @@ function Cars() {
       <Navbar />
       <CarouselIMG />
 
-      <Container fluid>
 
-        <Quotes />
+ 
+      <Quotes />
 
-      </Container>
 
+        <HomeCards />
+
+     
+     
     </div>
   );
 

@@ -1,3 +1,7 @@
+.cardContainer {
+    margin-top: 50px;
+}
+
 .card {
     width: 25rem;
     align-content: center;
@@ -27,10 +31,23 @@
 .card-img-top {
     transform: scale(1);
     transition: transform 0.5s;
+    width: 25vw;
+    height: 20vw;
+    object-fit: contain;
 }
 
 .card-img-top:hover {
-    transform: scale(1.8);
+    transform: scale(1.5);
    
 }
 
+
+@media(max-width:640px){
+    .card-img-top {
+    transform: scale(1);
+    transition: transform 0.5s;
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+}
+}

@@ -14,9 +14,14 @@ function Accessorize() {
         <div>
             <Navbar />
             <CarouselIMG />
-            <Container>
 
-                <Access />
+            <Container fluid>
+                <Row>
+                    <Col size="md-12">
+                        <Access />
+                    </Col>
+                </Row>
+
 
             </Container>
         </div>
