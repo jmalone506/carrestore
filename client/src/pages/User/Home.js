@@ -7,7 +7,7 @@ function Home() {
 
 
   return (
-    <Container fluid className="background">
+    <Container fluid className="homebackground">
 
       <Welcome />
 

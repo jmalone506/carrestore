@@ -60,6 +60,7 @@ class Login extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
+                <Container fluid className="homebackground">
                 <div className="loginPage"><Welcome></Welcome>
                     <Row>
                         <Col size="md-12">
@@ -114,6 +115,7 @@ class Login extends Component {
                         </div>
                     </div>
                 </div>
+                </Container>
             )
         }
     }

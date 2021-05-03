@@ -55,7 +55,7 @@ function SignUp() {
     };
 
     return (
-        <Container classname="signuppage" fluid>
+        <Container classname="homebackground" fluid>
             <Welcome></Welcome>
             <Row className="d-flex justify-content-center text-center">
                 <Col size="col-12 mb-5">
@@ -108,7 +108,7 @@ function SignUp() {
                                     </form>
                                     <br></br>
                                     <p>Already have an account? </p>
-                                    <a href="./login"><button className="btn btn-secondary " >Login Here!</button></a>
+                                    <a classname="homelink" href="./login"><button className="btn btn-secondary " >Login Here!</button></a>
                                 </div>
                             </div>
                         </div>
