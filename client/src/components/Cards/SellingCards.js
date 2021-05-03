@@ -3,8 +3,10 @@ import { Element } from "react-scroll";
 import { Marginer } from "../../components/Styled/Marginer";
 import styled from "styled-components";
 import "./style.css"
-import carguru from "../../images/carguru.jpg";
-import hemmings from "../../images/hemmings.png";
+import carvana from "../../images/carvana.png";
+import tred from "../../images/tred.png";
+import offerup from "../../images/offerup.png"
+
 
 
 const MoreAboutContainer = styled(Element)`
@@ -76,78 +78,78 @@ class Cards extends Component {
     render() {
         return (
             <MoreAboutContainer>
-                <SectionTitle>Starting Your Car Buying Journey</SectionTitle>
+                <SectionTitle>So you want to sell your car?</SectionTitle>
                 <AboutContainer>
                     <AboutText>
-                        Whether it's your first time buying car or fifth time, the process is never easy. {<br />}
-                        {<br />} <b>Here are our top tips for starting the car buying process:</b>
+                        {<br />}
+                        {<br />} <b>Below are some key things to remember when selling your car:</b>
                         {<br />}
                         {<br />} <ol>
-                            <li>Set your budget.</li>
-                            <li>Research the type of car you want.</li>
-                            <li>Decide: Would you buy online, at a dealership, or private party?</li>
-                            <li>Resesarch loans and financing process.</li>
-                            <li>Get Quotes from a variety of places.</li>
-                            <li>Ask for a car report. No one want a salvage title! </li>
-                            <li>Deal with the dealership or owner and settle on a price point you're content with!</li>
+                            <li>Fix mechanical issues, and keep it clean. </li>
+                            <li>Ensure your title, registration, and any other documents are up to date.</li>
+                            <li>Sell in a market fit for your vehicle.</li>
+                            <li>Matching tires in good condition.</li>
+                            <li>Negotiate and finalize sale.</li>
+                            <li>Consider donating junk for a tax write off.</li>
                         </ol>
                         {<br />}
                         {<br />}
-                        {<br />} This page highlights some of the best websites for car buying. Remember to take it slow! It's a car buying process for a reason. You got this!
+                        {<br />} Selling a car depends on the current market value. It could be rough, but stay patient the right buyer will come along. We’ve shared some of the best sites to sell your vehicle.
         </AboutText>
-                    <AboutImg src={carguru} />
+                    <AboutImg src={tred} />
                 </AboutContainer>
 
                 <ServicesContainer name="servicesSection">
-                    <SectionTitle>Favorite Car Buying Websites</SectionTitle>
+                    <SectionTitle>Favorite Car Selling Websites</SectionTitle>
                     <Marginer direction="vertical" margin="3em" />
                     <center>
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={tred} alt="TRED buying car" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
+                                        <h3 className="card-title">Tred</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            Sell your car from your couch on Tred! Tred offers higher payout than other companies.
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="https://www.tred.com/" className="btn btn-danger">Visit</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 col-12">
+                                <div className="card text-center  mb-5" >
+                                    <div className="overflow">
+                                        <img src={offerup} alt="" className="card-img-top" />
+                                    </div>
+                                    <div className="card-body text-dark">
+                                        <h3 className="card-title">Offer Up</h3>
+                                        <p className="card-text text-secondary">
+
+                                            You can post your car to sell on Offer Up and not deal with any middle man!
+                                        </p>
+                                        <button type="button" disabled className="btn btn-secondary">Save Website</button>
+                                        <a href="https://offerup.com/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={carvana} alt="" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
+                                        <h3 className="card-title">Carvana</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            Carvana makes it car selling process simple. They accept car under 6 years old.
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-12">
-                                <div className="card text-center  mb-5" >
-                                    <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
-                                    </div>
-                                    <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
-                                        <p className="card-text text-secondary">
-
-                                            text
-                                </p>
-                                        <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="https://www.carvana.com/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>

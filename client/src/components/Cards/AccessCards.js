@@ -3,9 +3,10 @@ import { Element } from "react-scroll";
 import { Marginer } from "../../components/Styled/Marginer";
 import styled from "styled-components";
 import "./style.css"
-import carguru from "../../images/carguru.jpg";
-import hemmings from "../../images/hemmings.png";
 
+import greddy from "../../images/greddy.png";
+import muscle from "../../images//muscle.png";
+import sparco from "../../images/sparco.png";
 
 const MoreAboutContainer = styled(Element)`
 margin-top:50px;
@@ -76,78 +77,79 @@ class Cards extends Component {
     render() {
         return (
             <MoreAboutContainer>
-                <SectionTitle>Starting Your Car Buying Journey</SectionTitle>
+                <SectionTitle>Let Me Upgrade You:</SectionTitle>
                 <AboutContainer>
                     <AboutText>
-                        Whether it's your first time buying car or fifth time, the process is never easy. {<br />}
-                        {<br />} <b>Here are our top tips for starting the car buying process:</b>
+                        {<br />}
+                        {<br />} <b>You could be like Xzibit and "pimp" your ride: :</b>
                         {<br />}
                         {<br />} <ol>
-                            <li>Set your budget.</li>
-                            <li>Research the type of car you want.</li>
-                            <li>Decide: Would you buy online, at a dealership, or private party?</li>
-                            <li>Resesarch loans and financing process.</li>
-                            <li>Get Quotes from a variety of places.</li>
-                            <li>Ask for a car report. No one want a salvage title! </li>
-                            <li>Deal with the dealership or owner and settle on a price point you're content with!</li>
+                            <li>Tint your windows.</li>
+                           <li>Add some wheels.</li>  
+                            <li> Add an intake.</li>
+                            <li>(For truck owners ideally) let’s get lifted.</li>
+                            <li>Lamborghini doors on the escalade (Is that still a thing).</li>
+                            <li>Engine upgrade.</li>
+                            <li>Upgrade the sound system.</li> 
+                            <li>Give it a wrap.</li>
                         </ol>
                         {<br />}
                         {<br />}
-                        {<br />} This page highlights some of the best websites for car buying. Remember to take it slow! It's a car buying process for a reason. You got this!
+                        {<br />} Upgrading or accessorizing your vehicle is the fun part. Keep in mind it could be costly to your investment when posting it up for sale. So make sure this is something you want to do. We have some links for accessorizing your vehicle.
         </AboutText>
-                    <AboutImg src={carguru} />
+                    <AboutImg src={greddy} />
                 </AboutContainer>
 
                 <ServicesContainer name="servicesSection">
-                    <SectionTitle>Favorite Car Buying Websites</SectionTitle>
+                    <SectionTitle>Favorite Car Upgrades Website</SectionTitle>
                     <Marginer direction="vertical" margin="3em" />
                     <center>
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={greddy} alt="" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
                                         <h3 className="card-title">Title</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            Looking for most modern tune up for your car? Greddy a wide variety of performance parts!
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="http://www.greddy.com/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={muscle} alt="" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
+                                        <h3 className="card-title">American Muscle </h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            American Muscle is a leading retailer of aftermarket parts, catering to Mustang owners.
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="https://www.americanmuscle.com/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={sparco} alt="" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
+                                        <h3 className="card-title">Sparco</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            Sparco USA is an online retailer for action sports enthusiasts offering accessories for vehicles, racing and karts
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="https://www.sparcousa.com/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>

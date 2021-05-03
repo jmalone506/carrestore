@@ -5,7 +5,7 @@ import styled from "styled-components";
 import "./style.css"
 import carguru from "../../images/carguru.jpg";
 import hemmings from "../../images/hemmings.png";
-
+import carsandbids from "../../images/carsandbids.jpg";
 
 const MoreAboutContainer = styled(Element)`
 margin-top:50px;
@@ -106,13 +106,29 @@ class Cards extends Component {
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={hemmings} alt="hemmings classic car" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
+                                        <h3 className="card-title">Hemmings</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            Ever wanted a classic car? Hemmings has a huge database of classic cars for sale and up for auction.
+                                </p>
+                                        <button type="button" disabled className="btn btn-secondary">Save Website</button>
+                                        <a href="https://www.hemmings.com/" className="btn btn-danger">Visit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 col-12">
+                                <div className="card text-center  mb-5" >
+                                    <div className="overflow">
+                                        <img src={carguru} alt="carguru" className="card-img-top" />
+                                    </div>
+                                    <div className="card-body text-dark">
+                                        <h3 className="card-title">Car Guru</h3>
+                                        <p className="card-text text-secondary">
+
+                                            Car Guru is a user-friendly car search platfom. It's simple to find the best deals in your area.
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
                                         <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
@@ -122,36 +138,20 @@ class Cards extends Component {
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="card text-center  mb-5" >
                                     <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
+                                        <img src={carsandbids} alt="TRED buying car" className="card-img-top" />
                                     </div>
                                     <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
+                                        <h3 className="card-title">Cars and Bids</h3>
                                         <p className="card-text text-secondary">
 
-                                            text
+                                            Car and Bids is online car auctions all throughout the country. You don't even have to leave your home!
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
+                                        <a href="https://carsandbids.com/" className="btn btn-danger">Visit</a>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-6 col-12">
-                                <div className="card text-center  mb-5" >
-                                    <div className="overflow">
-                                        <img src={carguru} alt="" className="card-img-top" />
-                                    </div>
-                                    <div className="card-body text-dark">
-                                        <h3 className="card-title">Title</h3>
-                                        <p className="card-text text-secondary">
 
-                                            text
-                                </p>
-                                        <button type="button" disabled className="btn btn-secondary">Save Website</button>
-                                        <a href="https://www.cargurus.com/" className="btn btn-danger">Visit</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
                         </div>
                     </center>
                 </ServicesContainer>
