@@ -1,6 +1,9 @@
-# Car Hacks
+# Car Hacks :red_car:	
+
+![Screenshot of logo](./client/public/logo192.png)
 
 ![badge](https://img.shields.io/badge/license-MIT-informational)   ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore)
+
 
   ## Table of Contents
   - [Description](#description)
@@ -12,20 +15,20 @@
   - [Contributing](#contributing)
   - [Tests](#tests)
 
+![Screenshot of start header](./client/src/images/signup.png)
 ## Description:
-  [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
+Deployed Link: [https://carhacks.herokuapp.com/]
 
-Car Hacks is an application that helps users improve 
-
-![Screenshot of table]()
+A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. We're here to help. Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources. You do not have to deal with car salesman while getting the know what best deal for you.
 
 <a name="userstory"></a>
 ## User Story
 
 ```md
 AS A User
-I WANT a 
-SO THAT I can 
+I WANT a car app
+SO THAT I can buy, maintain, modify, and sell your car with a tap of a 
+button while being to explore all the different options out there.
 ```
 <a name="acceptancecriteria"></a>
 ## Acceptance Criteria
@@ -53,20 +56,24 @@ npm start
 npm eslint
 ```
 
-  ## Usage:
- This was used for learning purposes for the University of Arizona's Coding Boot Camp course. 
+![Screenshot of car app](./client/src/images/welcome.gif)
 
   ## License(s) Used:
   - ![badge](https://img.shields.io/badge/license-MIT-informational) 
 
   ## Contributing:
-| Name | Github Profile|
-| ------------- | ------------- |
 
 | Roseanne Nguyen  | [:octocat: roseannenguyen](https://github.com/roseannenguyen)|
 | Josh Malone  | [:octocat: jmalone506](https://github.com/jmalone506)|
 | Alicia Qiu  | [:octocat: aliciaqiu27](https://github.com/aliciaqiu27)|
 | Jammie Hardy  | [:octocat: jamehardy2](https://github.com/jamehardy2)|
 
+
   ## Test:
-No tests were installed for this project.
+![Screenshot of car app](./client/src/images/test1.PNG)
+![Screenshot of car app](./client/src/images/test.PNG)
+
+
+  ## References:
+
+
