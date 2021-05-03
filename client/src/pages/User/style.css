@@ -28,10 +28,7 @@
   --primary-dark: #000000;
 }
 
-.background {
-    background-color: var(--primary-dark);
-}
-
-body {
+ .homebackground {
     background-color: var(--primary-dark) !important;
-}
+} 
+

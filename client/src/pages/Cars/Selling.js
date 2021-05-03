@@ -12,7 +12,6 @@ function Selling() {
             <Navbar />
             <Row>
                 <Col size="md-12">
-                    <h1>Selling </h1>
                     <CarouselIMG />
                 </Col>
             </Row>

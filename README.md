@@ -17,6 +17,11 @@
 
 ![Screenshot of start header](./client/src/images/signup.png)
 ## Description:
+
+  [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
+
+Car Hacks is a MERN application that allows 
+=======
 Deployed Link: [https://carhacks.herokuapp.com/]
 
 A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. We're here to help. Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources. You do not have to deal with car salesman while getting the know what best deal for you.

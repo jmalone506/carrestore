@@ -7,6 +7,7 @@ var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
 const e = require("express");
 
+
 exports.signUp = (req, res) => {
     const user = new User({
         name: req.body.fullname,
@@ -61,3 +62,4 @@ exports.signUp = (req, res) => {
         signUp, login
     }
 };
+
