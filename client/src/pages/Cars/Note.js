@@ -18,16 +18,12 @@ function Notes() {
 
     function loadNotes() {
         API.getNotes()
-            .then(res => 
-                
-                console.log(res.data),
-                
-                setNotes(res.data)
-                
-            )
-            .catch(err => console.log(err));
-    };
-
+            .then(res => {
+                console.log(res.data);
+                setNotes(res.data);
+            }).catch(err => console.log(err));
+        }
+        
     function deleteNote(id) {
         API.deleteNote(id)
             .then(res => loadNotes())
