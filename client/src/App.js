@@ -13,8 +13,8 @@ import Selling from "./pages/Cars/Selling";
 import Accessorize from "./pages/Cars/Accessorize";
 import Forum from "./pages/Cars/Forum";
 import Maintenance from "./pages/Cars/Maintenance";
-
-
+import Notes from "./pages/Cars/Note";
+import Detail from "./pages/Cars/Detail";
 
 
 
@@ -37,7 +37,12 @@ function App() {
               <Route path="/accessorize" component={Accessorize} />
               <Route path="/forum" component={Forum} />
               <Route path="/maintenance" component={Maintenance} />
-     
+            <Route exact path={["/notes"]}>
+              <Notes />
+            </Route>
+            <Route exact path="/notes/:id">
+              <Detail />
+            </Route>
        
           </Switch>
         </Wrapper>

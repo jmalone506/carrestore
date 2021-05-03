@@ -1,36 +1,30 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row, Container } from "../../components/Grid";
-
-
-
+import { List, ListItem } from "../../components/List";
+import { Input, TextArea, FormBtn } from "../../components/Form";
+import Jumbotron from "../../components/Jumbotron";
+import DeleteBtn from "../../components/DeleteBtn";
+import API from "../../utils/API";
 import Navbar from "../../components/Navbar";
 import CarouselIMG from "../../components/Carousel/Carousel"
 
 
 
-export class Cars extends Component {
+function Cars() {
+  
 
+  return (
+    <div>
+      <Navbar />
+      <CarouselIMG />
 
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <CarouselIMG />
+      <Container fluid>
+      
+      </Container>
 
-        <Container fluid>
-          <Row>
-            <Col size="md-6">
-          
-            </Col>
-            <Col size="md-6 sm-12">
-            
-            </Col>
-          </Row>
-        </Container>
+    </div>
+  );
 
-      </div>
-    );
-  }
 }
 export default Cars;
 

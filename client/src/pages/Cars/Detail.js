@@ -1,73 +1,50 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
-
+import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
-import { useStoreContext } from "../../utils/GlobalState";
-import { SET_CURRENT_POST, ADD_FAVORITE, REMOVE_FAVORITE } from "../../utils/actions";
 
-const Detail = props => {
-  const [state, dispatch] = useStoreContext();
+function Detail(props) {
+  const [note, setNote] = useState({})
 
+  // When this component mounts, grab the book with the _id of props.match.params.id
+  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
+  const {id} = useParams()
   useEffect(() => {
-    API.getPost(props.match.params.id)
-      .then(res => dispatch({ type: SET_CURRENT_POST, post: res.data }))
+    API.getNote(id)
+      .then(res => setNote(res.data))
       .catch(err => console.log(err));
-  }, []);
-
-  const addFavorite = () => {
-    dispatch({
-      type: ADD_FAVORITE,
-      post: state.currentPost
-    });
-  };
-
-  const removeFavorite = () => {
-    dispatch({
-      type: REMOVE_FAVORITE,
-      _id: state.currentPost._id
-    });
-  };
+  }, [])
 
   return (
-    <>{state.currentPost ? (
       <Container fluid>
         <Row>
           <Col size="md-12">
-           
-              <h2>
-                {state.currentPost.title} by {state.currentPost.author}
-              </h2>
-         
+            <Jumbotron>
+              <h1>
+                {note.title} by {note.author}
+              </h1>
+            </Jumbotron>
           </Col>
         </Row>
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h5>Content:</h5>
-              <p>{state.currentPost.body}</p>
+              <h1>Note</h1>
+              <p>
+                {note.body}
+              </p>
             </article>
           </Col>
-          {state.favorites.indexOf(state.currentPost) !== -1 ? (
-            <button className="btn btn-danger" onClick={removeFavorite}>
-                Remove from Favorites!
-            </button>
-          ) : (
-            <button className="btn" onClick={addFavorite}>
-                ❤️ Add to Favorites
-            </button>
-          )}
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/cars">← Back to Posts</Link>
+            <Link to="/notes">← Back to Note Page</Link>
           </Col>
         </Row>
       </Container>
-    ) : (
-      <div>loading...</div>
-    )}</>
-  );
-};
+    );
+  }
+
 
 export default Detail;

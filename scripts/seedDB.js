@@ -15,7 +15,7 @@ mongoose
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
 
-const bookSeed = [
+const noteSeed = [
     {
         title: "Change Your Oil",
         author: "Roseanne",
@@ -27,7 +27,7 @@ const bookSeed = [
         title: "Why do Catalytic Convertors get stolen?",
         author: "Josh",
         body:
-            "The main reason that catalytic converters are stolen is because they're valuable to scrap metal dealers. They contain precious metals, including rhodium, platinum, and palladium. ... All cars made after 1974 are required to have catalytic converters. Some are more appealing to thieves than others.",
+            "The main reason that catalytic converters are stolen is because they're valuable to scrap metal dealers. They contain precious metals, including rhodium, platinum, and palladium. All cars made after 1974 are required to have catalytic converters. Some are more appealing to thieves than others.",
         date: new Date(Date.now())
     },
     {
@@ -46,9 +46,9 @@ const bookSeed = [
     }
 ];
 
-db.Book
+db.Note
     .remove({})
-    .then(() => db.Book.collection.insertMany(bookSeed))
+    .then(() => db.Note.collection.insertMany(noteSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
