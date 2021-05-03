@@ -1,4 +1,5 @@
 import React, { createContext, useReducer, useContext } from "react";
+
 import {
   SET_CURRENT_POST,
   REMOVE_POST,
@@ -8,7 +9,7 @@ import {
   UPDATE_FAVORITES,
   REMOVE_FAVORITE,
   LOADING
-} from "./actions";
+} from "./actions.js";
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;

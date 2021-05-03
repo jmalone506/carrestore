@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import { useStoreContext } from "../../utils/GlobalState";
-import { ADD_POST, LOADING } from "../../utils/actions";
-import API from "../../utils/API";
+import { useStoreContext } from "../../utils/GlobalState.js";
+import { ADD_POST, LOADING } from "../../utils/actions.js";
+import API from "../../utils/API.js";
 
 function CreatePostForm() {
   const titleRef = useRef();

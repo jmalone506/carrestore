@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Col, Row, Container } from "../../component/Grid";
-import CreatePostForm from "../../components/CreatePosstForm";
+import { Col, Row, Container } from "../../components/Grid";
+import CreatePostForm from "../../components/CreatePostForm";
 import PostsList from "../../components/PostsList";
 
 
