@@ -15,7 +15,7 @@
 ## Description:
   [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
 
-Car Hacks is a xx application that allows 
+Car Hacks is a MERN application that allows 
 
 ![Screenshot of table]()
 

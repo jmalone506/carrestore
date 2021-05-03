@@ -91,14 +91,7 @@ function Navbar() {
               Forum
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/history"
-              className={window.location.pathname === "/history" ? "nav-link active" : "nav-link"}
-            >
-              Future 
-            </Link>
-          </li>
+
 
         </ul>
 

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
-import CreatePostForm from "../../components/CreatePostForm";
-import PostsList from "../../components/PostsList";
+
 
 
 import Navbar from "../../components/Navbar";
@@ -21,10 +20,10 @@ export class Cars extends Component {
         <Container fluid>
           <Row>
             <Col size="md-6">
-              <CreatePostForm />
+          
             </Col>
             <Col size="md-6 sm-12">
-              <PostsList />
+            
             </Col>
           </Row>
         </Container>
