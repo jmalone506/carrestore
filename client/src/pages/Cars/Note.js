@@ -18,8 +18,12 @@ function Notes() {
 
     function loadNotes() {
         API.getNotes()
-            .then(res =>
+            .then(res => 
+                
+                console.log(res.data),
+                
                 setNotes(res.data)
+                
             )
             .catch(err => console.log(err));
     };
