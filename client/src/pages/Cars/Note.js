@@ -15,7 +15,7 @@ function Notes() {
     const [formObject, setFormObject] = useState({})
 
     useEffect(() => {
-        loadNotes()
+        loadNotes();
     }, [])
 
     function loadNotes() {
@@ -28,7 +28,9 @@ function Notes() {
 
     function deleteNote(id) {
         API.deleteNote(id)
-            .then(res => loadNotes())
+            .then(res => {
+                loadNotes();
+            })
             .catch(err => console.log(err));
     }
 
@@ -47,7 +49,9 @@ function Notes() {
                 author: formObject.author,
                 body: formObject.body
             })
-                .then(res => loadNotes())
+                .then(res => {
+                    loadNotes()
+                })
                 .catch(err => console.log(err));
         }
     };
@@ -58,7 +62,7 @@ function Notes() {
             <Row>
                 <Col size="md-6">
                     <Jumbotron>
-                        <h1>Make A Note For Yourself</h1>
+                        <h1>Car Notes</h1>
                     </Jumbotron>
                     <form>
                         <Input
