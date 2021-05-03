@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import { Input} from "../../components/Form";
+import { Input } from "../../components/Form";
 import { useHistory } from "react-router-dom";
-// import { GoogleLogin } from 'react-google-login';
-import GoogleBtn from "../../components/GoogleBtn"
-import Welcome from "../../components/Welcome"
-import signupIMG from "../../images/signup.png"
+
+import Welcome from "../../components/Welcome";
+import signupIMG from "../../images/signup.png";
+import "./style.css";
 
 function SignUp() {
     // Setting our component's initial state
@@ -55,14 +55,14 @@ function SignUp() {
     };
 
     return (
-        <Container fluid>
+        <Container classname="homebackground" fluid>
             <Welcome></Welcome>
-            <Row>
-                <Col size="md-12">
-                    <img className="signupIMG" src={signupIMG} alt="sign up image.."></img>
+            <Row className="d-flex justify-content-center text-center">
+                <Col size="col-12 mb-5">
+                    <img className="signupimg" src={signupIMG} alt="welcome to car hacks"></img>
                 </Col>
-            </Row>
 
+            </Row>
 
             <Row>
 
@@ -72,6 +72,9 @@ function SignUp() {
                         <div className="col">
                             <div className="card mx-auto">
                                 <div className="card-body">
+                                    
+                                  
+
                                     <h1
                                         className="card-title"
                                         style={{ borderBottom: "1px solid #efefef" }}
@@ -103,6 +106,9 @@ function SignUp() {
         </button>
 
                                     </form>
+                                    <br></br>
+                                    <p>Already have an account? </p>
+                                    <a classname="homelink" href="./login"><button className="btn btn-secondary " >Login Here!</button></a>
                                 </div>
                             </div>
                         </div>

@@ -8,6 +8,30 @@
   --primary-dark: #000000;
 }
 
+.forumTitle, .futureTitle {
+    color: var(--primary-white);
+     font-size: 5vw;
+      font-weight: bold;
+      display:block;
+       position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      width:100%;
+      text-align: center;
+      z-index: 1 !important;
+}
+
+.forumIMG, .futureIMG {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    background-size: cover;
+    position:relative;
+    display:inline-block;
+    
+}
+
 header {
     height: 60vmax;
     padding-top: 42%;
@@ -17,9 +41,11 @@ header {
     display:inline-block;
 }
 
-a {
+
+
+/* a {
 color: var(--primary-white) !important;
-}
+} */
 
 
 .btn {
@@ -29,6 +55,7 @@ color: var(--primary-white) !important;
       margin-top:35px;
       width:100%;
       text-align: center;
+      
     }
 
 .signup {
@@ -39,6 +66,7 @@ color: var(--primary-white) !important;
     height:60px;
     margin:0px -50px -15px 0px;
     background-color: var(--primary-red);
+    color: var(--primary-white) !important;
     
 }
 
@@ -53,9 +81,35 @@ color: var(--primary-white) !important;
     background-color: var(--primary-light-blue);
 }
 
+@media(max-width:1440px){
+    .header {
+        width: 100vw;
+    }
+
+    .forum {
+        width: 100vw;
+    }
+   
+    .login {
+        position:absolute;
+        bottom:11%;
+        left:71%;
+        width:120px;
+        height:60px;
+
+    }
+    .signup {
+        position:absolute;
+        bottom:11%;
+        right:77%;
+        width:120px;
+        height:60px;
+    }
+}
 
 
-@media(max-width:768px){
+
+@media(max-width:640px){
     .header {
         width: 30.1rem;
     }

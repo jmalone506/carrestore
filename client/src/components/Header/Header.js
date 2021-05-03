@@ -14,7 +14,7 @@ function Header({ children }) {
       <img className="header" src={headerIMG} alt="header.."></img>
 
       <button className="signup btn" src="">
-          <Link
+        <Link
           activeStyle={{ color: "#FFFFFF", textDecoration: "none" }}
           to="/signup"
           className={window.location.pathname === "/signup" ? "nav-link active" : "nav-link"}
@@ -25,10 +25,10 @@ function Header({ children }) {
 
       <button className="login btn">
         <Link activeStyle={{ color: "#FFFFFF", textDecoration: "none" }}
-        to="/login"
-        className={window.location.pathname === "/login"}
-      >
-        Login
+          to="/login"
+          className={window.location.pathname === "/login"}
+        >
+          Login
             </Link>
       </button>
     </div>

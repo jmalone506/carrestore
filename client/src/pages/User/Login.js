@@ -1,21 +1,19 @@
-import React, { useEffect, useState, Component } from "react";
-import { Redirect } from 'react-router-dom'
+import React, { Component } from "react";
+import axios from "axios";
+import { Redirect } from "react-router-dom"
 import { Col, Row, Container } from "../../components/Grid";
+import { Input } from "../../components/Form";
 import Welcome from "../../components/Welcome"
 import loginIMG from "../../images/login.png";
-import { Input } from "../../components/Form";
-import axios from 'axios'
 import "./style.css";
-import API from "../../utils/API";
-// import { GoogleLogin } from 'react-google-login';
-// import GoogleBtn from "../../components/GoogleBtn"
+
 
 class Login extends Component {
     constructor() {
         super()
         this.state = {
-            email: '',
-            password: '',
+            email: "",
+            password: "",
             redirectTo: null
         }
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -31,31 +29,30 @@ class Login extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        console.log('handleSubmit')
+        console.log("handleSubmit")
 
         axios
-            .post('/login', {
+            .post("/login", {
                 email: this.state.email,
                 password: this.state.password
             })
             .then(response => {
-                console.log('login response: ')
+                console.log("login response: ")
                 console.log(response)
                 if (response.status === 200) {
 
                     // update the state to redirect to home
                     this.setState({
-                        redirectTo: '/cars'
+                        redirectTo: "/cars"
                     })
                 }
             }).catch(error => {
 
-                console.log('login error: ')
+                console.log("login error: ")
                 console.log(error);
 
             })
     }
-
 
 
     render() {
@@ -63,10 +60,11 @@ class Login extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
+                <Container fluid className="homebackground">
                 <div className="loginPage"><Welcome></Welcome>
                     <Row>
                         <Col size="md-12">
-                            <img className="loginIMG" src={loginIMG} alt="login image.."></img>
+                            <img className="loginimg" src={loginIMG} alt="login image.."></img>
                         </Col>
                     </Row>
 
@@ -80,7 +78,7 @@ class Login extends Component {
                                             style={{ borderBottom: "1px solid #efefef" }}
                                         >
                                             Login Form
-                </h1>
+                                        </h1>
                                         <form>
 
                                             <Input
@@ -103,21 +101,21 @@ class Login extends Component {
 
                                             <button type="submit" className="btn btn-info" onClick={this.handleSubmit}>
                                                 Login
-        </button>
+                                            </button>
 
 
-                                            <p>Don't have an account? <a href="./signup">Sign up Here!</a></p>
+
                                         </form>
+                                        <br></br>
+                                        <p>Don"t have an account? </p>
+                                        <a href="./signup"><button className="btn btn-secondary " >Sign Up Here!</button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
+                </Container>
             )
         }
     }

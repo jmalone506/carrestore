@@ -4,4 +4,5 @@ export * from "./Selling.js";
 export * from "./Accessorize.js";
 export * from "./Forum.js";
 export * from "./Maintenance.js";
-export * from "./History.js";
+export * from "./Note.js";
+export * from "./Detail.js";

@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+.card {
+  align-items: center;
+  justify-content: center;
+
+}
+
+.signupimg {
+  z-index: -1;
+  position: relative; 
+  width:100vw;
+}
+
+.loginimg {
+  z-index: -1;
+  position: relative; 
+  width:100vw;
+}
+
 :root {
   --primary-white: #ffffff;
   --primary-green: #74ee15;
@@ -8,10 +28,7 @@
   --primary-dark: #000000;
 }
 
-.background {
-    background-color: var(--primary-dark);
-}
-
-body {
+ .homebackground {
     background-color: var(--primary-dark) !important;
-}
+} 
+

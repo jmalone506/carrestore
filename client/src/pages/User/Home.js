@@ -7,49 +7,20 @@ function Home() {
 
 
   return (
-    <Container fluid className="background">
-      <Row>
-        <Col size="lg-12">
+    <Container fluid className="homebackground">
+
       <Welcome />
-        </Col>
-      </Row>
-      
+
       <Row>
         <Col size="md-12">
-         
-          <Header>
- 
-          </Header>
+
+          <Header />
+
+
         </Col>
       </Row>
 
 
-      <Row>
-        <Col size="md-8">
-          
-
-        </Col>
-        <Col size="md-4 sm-12">
-
-
-        </Col>
-
-      </Row>
-
-      <Row>
-        <Col size="md-8">
-     
-
-        </Col>
-        <Col size="md-4 sm-12">
-       
-     
-          
-
-      
-
-        </Col>
-      </Row>
     </Container>
   );
 }

@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
-
 class Google extends React.Component {
 
     insertGapiScript() {
-        const script = document.createElement('script')
-        script.src = 'https://apis.google.com/js/platform.js'
+        const script = document.createElement("script")
+        script.src = "https://apis.google.com/js/platform.js"
         script.onload = () => {
             this.initializeGoogleSignIn()
         }
@@ -13,43 +12,43 @@ class Google extends React.Component {
     }
 
     initializeGoogleSignIn() {
-        window.gapi.load('auth2', () => {
+        window.gapi.load("auth2", () => {
             window.gapi.auth2.init({
-                client_id: '518771907465-9mn91uss4quc2ha1p04v38h8s7jalh85.apps.googleusercontent.com'
+                client_id: "518771907465-9mn91uss4quc2ha1p04v38h8s7jalh85.apps.googleusercontent.com"
             })
-            console.log('Api init')
+            console.log("Api init")
 
-            window.gapi.load('signin2', () => {
+            window.gapi.load("signin2", () => {
                 const params = {
                     onSucess: () => {
-                        console.log('User has finished signing in!')
+                        console.log("User has finished signing in!")
 
                     }
                 }
-                window.gapi.signin2.render('loginButton', params)
+                window.gapi.signin2.render("loginButton", params)
             })
         })
 
     }
     componentDidMount() {
-        console.log('Loading');
+        console.log("Loading");
 
         this.insertGapiScript();
 
-        window.gapi.load('auth2', () => {
+        window.gapi.load("auth2", () => {
             window.gapi.auth2.init({
-                client_id: '518771907465-9mn91uss4quc2ha1p04v38h8s7jalh85.apps.googleusercontent.com'
+                client_id: "518771907465-9mn91uss4quc2ha1p04v38h8s7jalh85.apps.googleusercontent.com"
             })
-            console.log('Api init')
+            console.log("Api init")
 
-            window.gapi.load('signin2', () => {
+            window.gapi.load("signin2", () => {
                 const params = {
                     onSucess: () => {
-                        console.log('User has finished signing in!')
+                        console.log("User has finished signing in!")
 
                     }
                 }
-                window.gapi.signin2.render('loginButton', params)
+                window.gapi.signin2.render("loginButton", params)
             })
         })
 

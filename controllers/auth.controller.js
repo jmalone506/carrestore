@@ -7,6 +7,7 @@ var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
 const e = require("express");
 
+
 exports.signUp = (req, res) => {
     const user = new User({
         name: req.body.fullname,
@@ -16,11 +17,11 @@ exports.signUp = (req, res) => {
 
     user.save()
         .then(user => {
-            message: 'User Added Success'
+            message: "User Added Success"
         })
         .catch(error => {
             res.json({
-                message: 'An error occured!'
+                message: "An error occured!"
             })
         })
 
@@ -38,21 +39,21 @@ exports.signUp = (req, res) => {
                             })
                         }
                         if (result) {
-                            let token = jwt.sign({ name: user.name }, 'verySecretValue', { expiresIn: '1h' })
+                            let token = jwt.sign({ name: user.name }, "verySecretValue", { expiresIn: "1h" })
                             res.json({
-                                message: 'Login Successful!',
+                                message: "Login Successful!",
                                 token
                             })
                         } else {
                             res.json({
-                                message: 'Password doesnt match!'
+                                message: "Password doesnt match!"
                             })
 
                         }
                     })
                 } else {
                     res.json({
-                        message: 'No user found'
+                        message: "No user found"
                     })
                 }
             })
@@ -61,3 +62,4 @@ exports.signUp = (req, res) => {
         signUp, login
     }
 };
+

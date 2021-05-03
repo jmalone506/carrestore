@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios"
 import "./style.css";
@@ -85,24 +85,26 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
+              to="/notes"
+              className={window.location.pathname === "/notes" ? "nav-link active" : "nav-link"}
+            >
+              Notes
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link
               to="/forum"
               className={window.location.pathname === "/forum" ? "nav-link active" : "nav-link"}
             >
               Forum
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/history"
-              className={window.location.pathname === "/history" ? "nav-link active" : "nav-link"}
-            >
-              Search History
-            </Link>
-          </li>
+
 
         </ul>
 
-        <button className="btn-danger" onClick={logout}></button>
+        <button className="btn-sm btn-danger" onClick={logout}>Log Out</button>
       </div>
     </nav>
 
