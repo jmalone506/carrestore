@@ -38,8 +38,7 @@ router.post("/api/users/signup", (req, res) => {
 router.post("/login", (req, res, next) => {
     passport.authenticate("local", {
         successRedirect: "/cars",
-        failureRedirect: "/login",
-        failureFlash: true
+        failureRedirect: "/login"
     })(req, res, next);
 });
 

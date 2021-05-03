@@ -1,23 +1,27 @@
-import React, { Component } from "react";
-
+import React from "react";
+import { Col, Row, Container } from "../../components/Grid";
 import Navbar from "../../components/Navbar";
 import CarouselIMG from "../../components/Carousel/Carousel"
-import HomeSection1 from "../../components/Section/HomeSection1"
+import Quotes from "../../components/Quotes/Quotes"
 
 
-export class Cars extends Component {
+function Cars() {
 
 
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <CarouselIMG />
-        <HomeSection1 />
+  return (
+    <div>
+      <Navbar />
+      <CarouselIMG />
 
-      </div>
-    );
-  }
+      <Container fluid>
+
+        <Quotes />
+
+      </Container>
+
+    </div>
+  );
+
 }
 export default Cars;
 

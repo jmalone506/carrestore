@@ -6,9 +6,7 @@ import { Input } from "../../components/Form";
 import Welcome from "../../components/Welcome"
 import loginIMG from "../../images/login.png";
 import "./style.css";
-
-// import { GoogleLogin } from "react-google-login";
-// import GoogleBtn from "../../components/GoogleBtn"
+import swal from '@sweetalert/with-react';
 
 class Login extends Component {
     constructor() {
@@ -42,7 +40,7 @@ class Login extends Component {
                 console.log("login response: ")
                 console.log(response)
                 if (response.status === 200) {
-
+                    swal("Login", "Permission Granted!", "success");
                     // update the state to redirect to home
                     this.setState({
                         redirectTo: "/cars"
@@ -62,6 +60,7 @@ class Login extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
+                <Container fluid className="homebackground">
                 <div className="loginPage"><Welcome></Welcome>
                     <Row>
                         <Col size="md-12">
@@ -116,6 +115,7 @@ class Login extends Component {
                         </div>
                     </div>
                 </div>
+                </Container>
             )
         }
     }

@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios"
 import "./style.css";
 import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-
+import swal from '@sweetalert/with-react';
 
 function Navbar() {
 
@@ -16,7 +16,7 @@ function Navbar() {
       .then((response) => {
         console.log(response)
         if (response.status === 200) {
-
+          swal("Logout", "Goodbye Car Hacker. Remember to check your tire pressure!", "success");
           History.push("/")
         }
       })
@@ -85,20 +85,22 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
+              to="/notes"
+              className={window.location.pathname === "/notes" ? "nav-link active" : "nav-link"}
+            >
+              Notes
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link
               to="/forum"
               className={window.location.pathname === "/forum" ? "nav-link active" : "nav-link"}
             >
               Forum
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/history"
-              className={window.location.pathname === "/history" ? "nav-link active" : "nav-link"}
-            >
-              Search History
-            </Link>
-          </li>
+
 
         </ul>
 

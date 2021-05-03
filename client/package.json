@@ -7,6 +7,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@sweetalert/with-react": "^0.1.1",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
@@ -16,8 +17,10 @@
     "react-dom": "^17.0.2",
     "react-google-login": "^5.2.2",
     "react-hanger": "^2.3.2",
+    "react-quotes-rotator": "^1.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "sweetalert": "^2.1.2",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

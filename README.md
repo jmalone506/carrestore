@@ -2,9 +2,17 @@
 
 ![Screenshot of logo](./client/public/logo192.png)
 
+
 ![badge](https://img.shields.io/badge/license-MIT-informational) ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge](https://img.shields.io/github/last-commit/jmalone506/carrestore)
 
 ## Table of Contents
+=======
+![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore) ![badge](https://img.shields.io/badge/license-MIT-informational?color=light-blue) ![npm](https://img.shields.io/badge/library-react.js-red/?color=red?style=flat&logo=react)  
+
+![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore?color=blue) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jmalone506/carrestore?color=blue) ![GitHub language count](https://img.shields.io/github/languages/count/jmalone506/carrestore?color=blue&logo=GitHub&style=flat)
+
+![react](https://img.shields.io/github/package-json/dependency-version/jmalone506/carrestore/axios?color=red&label=axios&logo=NPM) ![npm](https://img.shields.io/github/package-json/dependency-version/jmalone506/carrestore/mongoose?color=red&label=mongoose&logo=NPM) ![npm](https://img.shields.io/badge/authentication-passport-red)  
+
 
 - [Description](#description)
 - [User Story](#userstory)
@@ -22,6 +30,9 @@
 
 ## Description:
 
+
+=======
+=======
 Deployed Link: [https://carhacks.herokuapp.com/]
 
 A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. We're here to help! Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources. In addition to not having to deal with car salesmen, you will have access to the best offers for your needs!
@@ -57,11 +68,16 @@ This project required:
 - Must not expose sensitive API key information on the server
 ```
 
+
 ## Technologies:
 MongoDB
 React
 sweetalert2-react
 react-quotes-rotator
+## Installation:
+
+=======
+ 
 ## Installation:
 
 ```text
@@ -94,6 +110,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 | Alicia Qiu | [:octocat: aliciaqiu27](https://github.com/aliciaqiu27)| \
 | Jammie Hardy | [:octocat: jamehardy2](https://github.com/jamehardy2)|
 
+## Test:
+
+
+=======
 ## Test:
 
 ![Screenshot of car app](./client/src/images/test1.PNG)
