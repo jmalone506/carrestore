@@ -18,9 +18,6 @@
 ![Screenshot of start header](./client/src/images/signup.png)
 ## Description:
 
-  [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
-
-Car Hacks is a MERN application that allows 
 =======
 Deployed Link: [https://carhacks.herokuapp.com/]
 
@@ -53,7 +50,7 @@ This project required:
 - Must not expose sensitive API key information on the server
 ```
  
-  ## Installation:
+## Installation:
 ```text
 npm init 
 npm run
@@ -74,7 +71,7 @@ npm eslint
 | Jammie Hardy  | [:octocat: jamehardy2](https://github.com/jamehardy2)|
 
 
-  ## Test:
+## Test:
 ![Screenshot of car app](./client/src/images/test1.PNG)
 ![Screenshot of car app](./client/src/images/test.PNG)
 
