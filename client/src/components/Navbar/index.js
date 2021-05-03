@@ -96,7 +96,7 @@ function Navbar() {
               to="/history"
               className={window.location.pathname === "/history" ? "nav-link active" : "nav-link"}
             >
-              Search History
+              Future 
             </Link>
           </li>
 

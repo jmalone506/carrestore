@@ -7,7 +7,7 @@ import axios from "axios";
 import { CarList, CarListItem } from "../../components/CarList/CarList";
 import { Input } from "../../components/Form/";
 import Button from "../../components/Button";
-
+import FutureIMG from "../../components/Header/Future"
 
 function History() {
 
@@ -48,10 +48,7 @@ function History() {
             <Navbar />
             <Row>
                 <Col size="md-12">
-                    <h1>Your Recent Searches </h1>
-                    <Jumbotron>
-                        <h1>Image</h1>
-                    </Jumbotron>
+                    <FutureIMG></FutureIMG>
                 </Col>
             </Row>
 

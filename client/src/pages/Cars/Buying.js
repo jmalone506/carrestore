@@ -12,7 +12,7 @@ function Buying() {
             <Navbar></Navbar>
             <Row>
                 <Col size="md-12">
-                    <h1>Buying </h1>
+              
                     <CarouselIMG />
                 </Col>
             </Row>

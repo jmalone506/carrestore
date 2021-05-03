@@ -7,7 +7,7 @@ import Welcome from "../../components/Welcome"
 import loginIMG from "../../images/login.png";
 import "./style.css";
 
-// import { GoogleLogin } from "react-google-login";
+
 // import GoogleBtn from "../../components/GoogleBtn"
 
 class Login extends Component {

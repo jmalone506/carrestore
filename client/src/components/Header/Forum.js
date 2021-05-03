@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
 import forumIMG from "../../images/forum.gif";
 
@@ -12,7 +11,7 @@ function Forum( ) {
 
       <img className="forumIMG" src={forumIMG} alt="page under construction" ></img>
 
-      <h1 className="forumTitle" src="./cars">
+      <h1 className="forumTitle">
         
           Page Under Construction
              
