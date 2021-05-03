@@ -28,10 +28,10 @@
   --primary-dark: #000000;
 }
 
-.background {
+/* .background {
     background-color: var(--primary-dark);
-}
+} */
 
-body {
+/* body {
     background-color: var(--primary-dark) !important;
-}
+} */

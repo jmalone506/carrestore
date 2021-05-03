@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import Navbar from "../../components/Navbar";
+
 
 function Notes() {
 
@@ -23,7 +25,7 @@ function Notes() {
                 setNotes(res.data);
             }).catch(err => console.log(err));
         }
-        
+
     function deleteNote(id) {
         API.deleteNote(id)
             .then(res => loadNotes())
@@ -52,6 +54,7 @@ function Notes() {
 
     return (
         <Container fluid>
+            <Navbar />
             <Row>
                 <Col size="md-6">
                     <Jumbotron>

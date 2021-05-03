@@ -85,6 +85,15 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
+              to="/notes"
+              className={window.location.pathname === "/notes" ? "nav-link active" : "nav-link"}
+            >
+              Notes
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link
               to="/forum"
               className={window.location.pathname === "/forum" ? "nav-link active" : "nav-link"}
             >

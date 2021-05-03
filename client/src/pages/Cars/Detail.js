@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
+import Navbar from "../../components/Navbar";
 
 function Detail(props) {
   const [note, setNote] = useState({})
@@ -12,12 +13,16 @@ function Detail(props) {
   const {id} = useParams()
   useEffect(() => {
     API.getNote(id)
-      .then(res => setNote(res.data))
+      .then(res => {
+        console.log(res.data);
+        setNote(res.data);
+        })
       .catch(err => console.log(err));
   }, [])
 
   return (
       <Container fluid>
+        <Navbar />
         <Row>
           <Col size="md-12">
             <Jumbotron>
