@@ -8,8 +8,6 @@ import loginIMG from "../../images/login.png";
 import "./style.css";
 
 
-// import GoogleBtn from "../../components/GoogleBtn"
-
 class Login extends Component {
     constructor() {
         super()

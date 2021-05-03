@@ -3,11 +3,10 @@ import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input } from "../../components/Form";
 import { useHistory } from "react-router-dom";
-// import { GoogleLogin } from 'react-google-login';
-import GoogleBtn from "../../components/GoogleBtn"
-import Welcome from "../../components/Welcome"
-import signupIMG from "../../images/signup.png"
-import "./style.css"
+
+import Welcome from "../../components/Welcome";
+import signupIMG from "../../images/signup.png";
+import "./style.css";
 
 function SignUp() {
     // Setting our component's initial state
@@ -73,6 +72,9 @@ function SignUp() {
                         <div className="col">
                             <div className="card mx-auto">
                                 <div className="card-body">
+                                    
+                                  
+
                                     <h1
                                         className="card-title"
                                         style={{ borderBottom: "1px solid #efefef" }}
