@@ -19,8 +19,7 @@
 ## Description:
   [Deployed Link: xx.herokuapp.com/](xx.herokuapp.com/)
 
-A car can take you to places regardless of age. The process is overwhelming wherever you may be on your car journey.
-Car Hacks is an app that can help you conveniently buy, maintain, modify, and sell your car with a tap of a button. There are millions of website out there to search on. Our app aimed to streamline the process by gathering all the best resources out there.
+A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources.
 
 
 <a name="userstory"></a>
