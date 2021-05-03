@@ -94,10 +94,10 @@ function Navbar() {
 
           <li className="nav-item">
             <Link
-              to="/forum"
-              className={window.location.pathname === "/forum" ? "nav-link active" : "nav-link"}
+              to="/search"
+              className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
             >
-              Forum
+              search
             </Link>
           </li>
 

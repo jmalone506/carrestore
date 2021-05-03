@@ -85,12 +85,12 @@ class Cards extends Component {
                         {<br />}
                         {<br />} <ol>
                             <li>Tint your windows.</li>
-                           <li>Add some wheels.</li>  
+                            <li>Add some wheels.</li>
                             <li> Add an intake.</li>
                             <li>(For truck owners ideally) let’s get lifted.</li>
                             <li>Lamborghini doors on the escalade (Is that still a thing).</li>
                             <li>Engine upgrade.</li>
-                            <li>Upgrade the sound system.</li> 
+                            <li>Upgrade the sound system.</li>
                             <li>Give it a wrap.</li>
                         </ol>
                         {<br />}
@@ -146,7 +146,7 @@ class Cards extends Component {
                                         <h3 className="card-title">Sparco</h3>
                                         <p className="card-text text-secondary">
 
-                                            Sparco USA is an online retailer for action sports enthusiasts offering accessories for vehicles, racing and karts
+                                            Sparco USA is an online retailer for action sports enthusiasts offering accessories for vehicles.
                                 </p>
                                         <button type="button" disabled className="btn btn-secondary">Save Website</button>
                                         <a href="https://www.sparcousa.com/" className="btn btn-danger">Visit</a>
