@@ -2,16 +2,16 @@
 
 ![Screenshot of logo](./client/public/logo192.png)
 
-
-![badge](https://img.shields.io/badge/license-MIT-informational) ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge](https://img.shields.io/github/last-commit/jmalone506/carrestore)
-
-## Table of Contents
-
 ![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore) ![badge](https://img.shields.io/badge/license-MIT-informational?color=light-blue) ![npm](https://img.shields.io/badge/library-react.js-red/?color=red?style=flat&logo=react)  
 
 ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore?color=blue) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jmalone506/carrestore?color=blue) ![GitHub language count](https://img.shields.io/github/languages/count/jmalone506/carrestore?color=blue&logo=GitHub&style=flat)
 
 ![react](https://img.shields.io/github/package-json/dependency-version/jmalone506/carrestore/axios?color=red&label=axios&logo=NPM) ![npm](https://img.shields.io/github/package-json/dependency-version/jmalone506/carrestore/mongoose?color=red&label=mongoose&logo=NPM) ![npm](https://img.shields.io/badge/authentication-passport-red)  
+
+
+
+## Table of Contents
+
 
 
 - [Description](#description)
@@ -28,7 +28,7 @@
 
 ![Screenshot of start header](./client/src/images/signup.png)
 
-Deployed Link: [https://carhacks.herokuapp.com/]
+![Deployed Link:](https://carhacks.herokuapp.com/)
 ## Description:
 
 Cars are essential to our daily life. They can be utilized to conveniently take you places and save time. Whether you are in the market to buy, maintain, modify, or sell your car, the process can be overwhelming. Car Hacks is here to help! This app can assist you through this journey with a tap of a button. The app links to millions of websites out there to gather all the best available resources for your needs!
