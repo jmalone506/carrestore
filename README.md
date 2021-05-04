@@ -29,16 +29,12 @@
 ![Screenshot of start header](./client/src/images/signup.png)
 
 ## Description:
-
-
-=======
-=======
 Deployed Link: [https://carhacks.herokuapp.com/]
 
-A car can take you to places and saves time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. We're here to help! Car Hacks is an app that can help you in the journey with a tap of a button. This app links to millions of websites out there to search on. Our app is aimed to streamline the process by gathering all the best available resources. In addition to not having to deal with car salesmen, you will have access to the best offers for your needs!
+A car is essential to in everyone's life. It can conveniently take you to place and help you save time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. Car Hacks is here to help! This app can help you through this journey with a tap of a button. The Car Hacks app links to millions of websites out there to gather all the best available resources.
+
 
 <a name="userstory"></a>
-
 ## User Story
 
 ```md
@@ -70,22 +66,23 @@ This project required:
 
 
 ## Technologies:
-MongoDB
-React
-sweetalert2-react
+MongoDB \
+Mongoose \
+React \
+Anxios \
+Asana \
+sweetalert2-react \
 react-quotes-rotator
-## Installation:
 
-=======
- 
 ## Installation:
 
 ```text
 npm init
-npm i react-quotes-rotator
-npm i sweetalert2-react
 npm run
 npm start
+npm run build
+npm i react-quotes-rotator
+npm i sweetalert2-react
 npm eslint
 ```
 
@@ -110,10 +107,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 | Alicia Qiu | [:octocat: aliciaqiu27](https://github.com/aliciaqiu27)| \
 | Jammie Hardy | [:octocat: jamehardy2](https://github.com/jamehardy2)|
 
-## Test:
-
-
-=======
 ## Test:
 
 ![Screenshot of car app](./client/src/images/test1.PNG)
