@@ -3,19 +3,19 @@ import { Element } from "react-scroll";
 import { Marginer } from "../../components/Styled/Marginer";
 import styled from "styled-components";
 import "./style.css"
-
+import truckcar from "../../images/landing3.gif";
 import greddy from "../../images/greddy.png";
 import muscle from "../../images//muscle.png";
 import sparco from "../../images/sparco.png";
 
 const MoreAboutContainer = styled(Element)`
-margin-top:50px;
-min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 1em;
-  background-color: black;
+    margin-top:50px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
+    background-color: black;
  
 `;
 
@@ -40,9 +40,9 @@ const AboutText = styled.p`
 `;
 
 const AboutImg = styled.img`
-   width: 40vw;
-height: 30vh;
-  margin-left: 2em;
+    width: 40vw;
+    height: 30vh;
+    margin-left: 2em;
 
   @media screen and (max-width: 480px) {
     width: 40vw;
@@ -52,11 +52,11 @@ height: 30vh;
 `;
 
 const SectionTitle = styled.h1`
-  font-size: 34px;
-  margin-top:50px;
-  font-color: white;
-  font-weight: bold;
-  color: #fff;
+    font-size: 34px;
+    margin-top:50px;
+    font-color: white;
+    font-weight: bold;
+    color: #ee2228;
 
   @media screen and (max-width: 480px) {
     text-align: center;
@@ -64,12 +64,12 @@ const SectionTitle = styled.h1`
 `;
 
 const ServicesContainer = styled(Element)`
-  width: 100%;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
 `;
 
 
@@ -80,8 +80,8 @@ class Cards extends Component {
                 <SectionTitle>Let Me Upgrade You:</SectionTitle>
                 <AboutContainer>
                     <AboutText>
-                        {<br />}
-                        {<br />} <b>You could be like Xzibit and "pimp" your ride: :</b>
+                        {<br />} Do you want to accessorize and upgrade your car?
+                        {<br />} <b>You could be like Xzibit and "pimp" your ride by following these styling tips :</b>
                         {<br />}
                         {<br />} <ol>
                             <li>Tint your windows.</li>
@@ -97,7 +97,7 @@ class Cards extends Component {
                         {<br />}
                         {<br />} Upgrading or accessorizing your vehicle is the fun part. Keep in mind it could be costly to your investment when posting it up for sale. So make sure this is something you want to do. We have some links for accessorizing your vehicle.
         </AboutText>
-                    <AboutImg src={greddy} />
+                    <AboutImg src={truckcar} />
                 </AboutContainer>
 
                 <ServicesContainer name="servicesSection">

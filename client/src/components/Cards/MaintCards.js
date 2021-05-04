@@ -7,6 +7,8 @@ import autozone from "../../images/autozone.jpg";
 import pepboys from "../../images/pepboys.jpg";
 import maps from "../../images/maps.png";
 
+import van from "../../images/landing4.gif"
+
 const MoreAboutContainer = styled(Element)`
 margin-top:50px;
 min-height: 500px;
@@ -55,7 +57,7 @@ const SectionTitle = styled.h1`
   margin-top:50px;
   font-color: white;
   font-weight: bold;
-  color: #fff;
+  color: #ee2228;
 
   @media screen and (max-width: 480px) {
     text-align: center;
@@ -95,7 +97,7 @@ class Cards extends Component {
                         {<br />}
                         {<br />} Routine maintenance plays a pivotal role in your vehicle’s health. Maintenance could save you the hassle of having to shop for a new car, being stuck on the side of the road, or outrageous auto shop fees.
         </AboutText>
-                    <AboutImg src={maps} />
+                    <AboutImg src={van} />
                 </AboutContainer>
 
                 <ServicesContainer name="servicesSection">

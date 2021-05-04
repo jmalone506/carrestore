@@ -3,6 +3,7 @@ import { Element } from "react-scroll";
 import { Marginer } from "../../components/Styled/Marginer";
 import styled from "styled-components";
 import "./style.css"
+import redcar from "../../images/landing2.gif";
 import carguru from "../../images/carguru.jpg";
 import hemmings from "../../images/hemmings.png";
 import carsandbids from "../../images/carsandbids.jpg";
@@ -55,7 +56,7 @@ const SectionTitle = styled.h1`
   margin-top:50px;
   font-color: white;
   font-weight: bold;
-  color: #fff;
+   color: #74ee15;
 
   @media screen and (max-width: 480px) {
     text-align: center;
@@ -95,7 +96,7 @@ class Cards extends Component {
                         {<br />}
                         {<br />} This page highlights some of the best websites for car buying. Remember to take it slow! It's a car buying process for a reason. You got this!
         </AboutText>
-                    <AboutImg src={carguru} />
+                    <AboutImg src={redcar} />
                 </AboutContainer>
 
                 <ServicesContainer name="servicesSection">

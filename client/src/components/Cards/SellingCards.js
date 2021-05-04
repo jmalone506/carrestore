@@ -6,7 +6,7 @@ import "./style.css"
 import carvana from "../../images/carvana.png";
 import tred from "../../images/tred.png";
 import offerup from "../../images/offerup.png"
-
+import selling from "../../images/landing1.gif"
 
 
 const MoreAboutContainer = styled(Element)`
@@ -57,7 +57,7 @@ const SectionTitle = styled.h1`
   margin-top:50px;
   font-color: white;
   font-weight: bold;
-  color: #fff;
+    color: #74ee15;
 
   @media screen and (max-width: 480px) {
     text-align: center;
@@ -78,7 +78,7 @@ class Cards extends Component {
     render() {
         return (
             <MoreAboutContainer>
-                <SectionTitle>So you want to sell your car?</SectionTitle>
+                <SectionTitle>Want To Sell Your Car?</SectionTitle>
                 <AboutContainer>
                     <AboutText>
                         {<br />}
@@ -96,7 +96,7 @@ class Cards extends Component {
                         {<br />}
                         {<br />} Selling a car depends on the current market value. It could be rough, but stay patient the right buyer will come along. We’ve shared some of the best sites to sell your vehicle.
         </AboutText>
-                    <AboutImg src={tred} />
+                    <AboutImg src={selling} />
                 </AboutContainer>
 
                 <ServicesContainer name="servicesSection">

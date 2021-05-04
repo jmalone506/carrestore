@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 import { Marginer } from "../../components/Styled/Marginer";
 import { OurSerivce } from "../../components/Styled/Container";
 import styled from "styled-components";
-import logo from "../../images/logo.png"
+import robot from "../../images/landing.gif"
 import rose from "../../images/rose.png";
 import josh from "../../images/josh.png";
 import jammie from "../../images/jammie.png";
@@ -40,14 +40,16 @@ const AboutText = styled.p`
   line-height: 1.4;
 `;
 
+
+
 const AboutImg = styled.img`
-   width: 30vw;
-height: 20vh;
+   width: 18em;
+  height: 15em;
   margin-left: 2em;
 
   @media screen and (max-width: 480px) {
-    width: 30vw;
-    height: 20vh;
+     width: 18em;
+  height: 13em;
     margin-left: 0;
   }
 `;
@@ -80,7 +82,7 @@ class Cards extends Component {
 
       <MoreAboutContainer>
 
-        <SectionTitle>About Car Hacks</SectionTitle>
+        <SectionTitle>Welcome to Car Hacks</SectionTitle>
         <AboutContainer>
           <AboutText>
             Car Hacks is a MERN application created for the University of Arizona Boot Camp Course.{<br />}
@@ -91,7 +93,7 @@ class Cards extends Component {
             {<br />}
             {<br />} Thanks for visiting!
         </AboutText>
-          <AboutImg src={logo} />
+          <AboutImg src={robot} />
         </AboutContainer>
 
         <ServicesContainer name="servicesSection">
