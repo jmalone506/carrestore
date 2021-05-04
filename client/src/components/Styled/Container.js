@@ -15,8 +15,8 @@ const ServiceContainer = styled.div`
 `;
 
 const ServiceImg = styled.img`
-  width: 22em;
-  height: 17em;
+  width: 18em;
+  height: 15em;
 
   @media screen and (max-width: 480px) {
     width: 18em;

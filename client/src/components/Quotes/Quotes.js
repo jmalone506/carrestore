@@ -42,8 +42,8 @@ class Quotes extends Component {
             <QuotesRotator
                 data={quotes}
                 progressBarColor="#B5D43C"
-                backgroundColor="#fff"
-                textColor="#212121"
+                backgroundColor="#000"
+                textColor="#fff"
                 timer="5000"
             />
 

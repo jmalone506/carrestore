@@ -2,16 +2,16 @@
 
 ![Screenshot of logo](./client/public/logo192.png)
 
-
-![badge](https://img.shields.io/badge/license-MIT-informational) ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge](https://img.shields.io/github/last-commit/jmalone506/carrestore)
-
-## Table of Contents
-=======
 ![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore) ![badge](https://img.shields.io/badge/license-MIT-informational?color=light-blue) ![npm](https://img.shields.io/badge/library-react.js-red/?color=red?style=flat&logo=react)  
 
 ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore?color=blue) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jmalone506/carrestore?color=blue) ![GitHub language count](https://img.shields.io/github/languages/count/jmalone506/carrestore?color=blue&logo=GitHub&style=flat)
 
 ![react](https://img.shields.io/github/package-json/dependency-version/jmalone506/carrestore/axios?color=red&label=axios&logo=NPM) ![npm](https://img.shields.io/github/package-json/dependency-version/jmalone506/carrestore/mongoose?color=red&label=mongoose&logo=NPM) ![npm](https://img.shields.io/badge/authentication-passport-red)  
+
+
+
+## Table of Contents
+
 
 
 - [Description](#description)
@@ -28,11 +28,10 @@
 
 ![Screenshot of start header](./client/src/images/signup.png)
 
+![Deployed Link:](https://carhacks.herokuapp.com/)
 ## Description:
-Deployed Link: [https://carhacks.herokuapp.com/]
 
-A car is essential to in everyone's life. It can conveniently take you to place and help you save time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. Car Hacks is here to help! This app can help you through this journey with a tap of a button. The Car Hacks app links to millions of websites out there to gather all the best available resources.
-
+Cars are essential to our daily life. They can be utilized to conveniently take you places and save time. Whether you are in the market to buy, maintain, modify, or sell your car, the process can be overwhelming. Car Hacks is here to help! This app can assist you through this journey with a tap of a button. The app links to millions of websites out there to gather all the best available resources for your needs!
 
 <a name="userstory"></a>
 ## User Story
@@ -64,28 +63,39 @@ This project required:
 - Must not expose sensitive API key information on the server
 ```
 
-
 ## Technologies:
-MongoDB \
-Mongoose \
-React \
-Anxios \
-Asana \
-sweetalert2-react \
+
+Mongo and Mongo Atlas
+React and its related NPM packages
+Express and Node
+Heroku
+NPM Packages:
+sweetalert2-react
 react-quotes-rotator
 
 ## Installation:
 
 ```text
 npm init
-npm run
-npm start
 npm run build
-npm i express
+npm start
 npm i mongoose
-npm i react-quotes-rotator
+npm i react
 npm i sweetalert2-react
-npm eslint
+npm i react-quotes-rotator
+npm i axios
+npm i bcryptjs
+npm i body-parser
+npm i express
+npm i express-ejs-layouts
+npm i express-session
+npm i if-env
+npm i jsonwebtoken
+npm i jwt-decode
+npm i passport
+npm i passport-local
+npm i request
+npm i eslint
 ```
 
 ![Screenshot of car app](./client/src/images/welcome.gif)
