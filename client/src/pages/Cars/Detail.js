@@ -27,26 +27,30 @@ function Detail(props) {
       <Row>
         <Col size="md-12">
           <Jumbotron>
-            <h1>
+            <h1 >
               {note.title} by {note.author}
             </h1>
           </Jumbotron>
         </Col>
       </Row>
       <Row>
-        <Col size="md-10 md-offset-1">
-          <article>
-            <h1>Note</h1>
-            <p>
+     
+        <Col size="md-10 md-offset-3">
+          
+            <article>
+            <h1 style={{ color: "white" }} >Note</h1>
+            <p style={{ color: "white" }}>
               {note.body}
             </p>
           </article>
+        
         </Col>
       </Row>
       <Row>
         <Col size="md-2">
-          <Link to="/notes">← Back to Note Page</Link>
+          <Link to="/notes"><p style={{ color: "white" }}>← Back to Note Page</p></Link>
         </Col>
+      
       </Row>
     </Container>
   );
