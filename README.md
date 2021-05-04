@@ -6,7 +6,7 @@
 ![badge](https://img.shields.io/badge/license-MIT-informational) ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore) ![badge](https://img.shields.io/github/last-commit/jmalone506/carrestore)
 
 ## Table of Contents
-=======
+
 ![badge]( https://img.shields.io/github/last-commit/jmalone506/carrestore) ![badge](https://img.shields.io/badge/license-MIT-informational?color=light-blue) ![npm](https://img.shields.io/badge/library-react.js-red/?color=red?style=flat&logo=react)  
 
 ![badge](https://img.shields.io/github/languages/top/jmalone506/carrestore?color=blue) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jmalone506/carrestore?color=blue) ![GitHub language count](https://img.shields.io/github/languages/count/jmalone506/carrestore?color=blue&logo=GitHub&style=flat)
@@ -28,8 +28,8 @@
 
 ![Screenshot of start header](./client/src/images/signup.png)
 
-## Description:
 Deployed Link: [https://carhacks.herokuapp.com/]
+## Description:
 
 A car is essential to in everyone's life. It can conveniently take you to place and help you save time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. Car Hacks is here to help! This app can help you through this journey with a tap of a button. The Car Hacks app links to millions of websites out there to gather all the best available resources.
 
@@ -65,6 +65,7 @@ This project required:
 ```
 
 ## Technologies:
+
 Mongo and Mongo Atlas
 React and its related NPM packages
 Express and Node
@@ -74,6 +75,7 @@ sweetalert2-react
 react-quotes-rotator
 
 ## Installation:
+
 ```text
 npm init
 npm run build
