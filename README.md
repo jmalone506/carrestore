@@ -31,8 +31,7 @@
 Deployed Link: [https://carhacks.herokuapp.com/]
 ## Description:
 
-Cars are essential to our daily life. They can be utilized to conveniently take you places and save time. Whether you are in the market of buying, maintaining, modifying, and selling your car, the process can be overwhelming. Car Hacks is here to help! This app can help you through this journey with a tap of a button. The Car Hacks app links to millions of websites out there to gather all the best available resources.
-
+Cars are essential to our daily life. They can be utilized to conveniently take you places and save time. Whether you are in the market to buy, maintain, modify, or sell your car, the process can be overwhelming. Car Hacks is here to help! This app can assist you through this journey with a tap of a button. The app links to millions of websites out there to gather all the best available resources for your needs!
 
 <a name="userstory"></a>
 ## User Story
