@@ -81,6 +81,8 @@ npm init
 npm run
 npm start
 npm run build
+npm i express
+npm i mongoose
 npm i react-quotes-rotator
 npm i sweetalert2-react
 npm eslint
