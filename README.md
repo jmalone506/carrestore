@@ -64,28 +64,37 @@ This project required:
 - Must not expose sensitive API key information on the server
 ```
 
-
 ## Technologies:
-MongoDB \
-Mongoose \
-React \
-Anxios \
-Asana \
-sweetalert2-react \
+Mongo and Mongo Atlas
+React and its related NPM packages
+Express and Node
+Heroku
+NPM Packages:
+sweetalert2-react
 react-quotes-rotator
 
 ## Installation:
-
 ```text
 npm init
-npm run
-npm start
 npm run build
-npm i express
+npm start
 npm i mongoose
-npm i react-quotes-rotator
+npm i react
 npm i sweetalert2-react
-npm eslint
+npm i react-quotes-rotator
+npm i axios
+npm i bcryptjs
+npm i body-parser
+npm i express
+npm i express-ejs-layouts
+npm i express-session
+npm i if-env
+npm i jsonwebtoken
+npm i jwt-decode
+npm i passport
+npm i passport-local
+npm i request
+npm i eslint
 ```
 
 ![Screenshot of car app](./client/src/images/welcome.gif)
